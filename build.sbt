@@ -1,4 +1,4 @@
-name := """play-scala"""
+name := """aircheck-server"""
 
 version := "1.0-SNAPSHOT"
 
