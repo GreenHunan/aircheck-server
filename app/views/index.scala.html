@@ -1,0 +1,85 @@
+@*
+ * This template takes a single argument, a String containing a
+ * message to display.
+ *@
+@(message_num:Int, user_num:Int)(implicit request: RequestHeader)
+@import helper._
+
+@bootstrap("Aircheck"){
+<link rel="stylesheet" href="@routes.Assets.versioned("css/index.css")">
+<div>
+    <nav class="navbar navbar-inverse navbar-fixed-top" style="color: #34495e;">
+        <div class="navbar-header">
+            <a class="navbar-brand">Aircheck</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="/">Home</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="/contact">Contact</a></li>
+            </ul>
+            <a href="user/registrate" class="btn btn-success pull-right signup_b" role="button">Sign up</a>
+            <div class="navbar-form navbar-right">
+
+                @form(CSRF( routes.AuthController.login() ) ){
+                <div class="form-group">
+                    <input type="text" name="username" class="form-control raw_input" placeholder="username" style="margin-right:5px;" required>
+                    <input type="password" name="password" class="form-control raw_input" placeholder="password" required>
+                </div>
+                <button type="submit" class="btn btn-primary pull-right signin_b">Login</button>
+                }
+            </div>
+        </div><!--/.nav-collapse -->
+        <div>
+        </div>
+    </nav>
+</div>
+
+
+
+
+    <div class="row upper_row">
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <div class="col-md-4">
+            <h1 class="text-center txt_s">Collect</h1>
+            <br/>
+            <img src="@routes.Assets.versioned("images/collect.png")" class="img-responsive center-block" width="250" height="250">
+        </div>
+        <div class="col-md-4">
+            <h1 class="text-center txt_s">Analyse</h1>
+            <br/>
+            <img src="@routes.Assets.versioned("images/analyse.png")" class="img-responsive center-block" width="250" height="250">
+        </div>
+        <div class="col-md-4 txt_s">
+            <h1 class="text-center">Explore</h1>
+            <br/>
+            <img src="@routes.Assets.versioned("images/explore.png")" class="img-responsive center-block" width="250" height="250">
+        </div>
+    </div>
+<div class="row upper_row">
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+</div>
+
+<div class="row bottom_row">
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <h1 class="text-center big_attractive" style="color: #ecf0f1;">Aircheck</h1>
+    <br/>
+    <h1 class="text-center">Geek's solution for air pollution</h1>
+    <br/>
+    <br/><br/>
+    <h5 class="text-center" style="color: #2c3e50;">Proudly hosting @message_num pieces of data and @user_num users</h5>
+</div>
+}
+

@@ -1,0 +1,28 @@
+.Rbtn{
+margin-left:5px;
+margin-top: 2px;
+background-color: #2980b9;
+}
+
+.raw_input{
+background-color: #ecf0f1;
+}
+
+.txt_s{
+color: #ecf0f1;
+}
+div{
+}
+
+.big_attractive{
+font-size: 90px;
+}
+
+.bottom_row{
+margin-bottom: 0;
+background: #e67e22;
+}
+
+.upper_row{
+background: #16a085;
+}

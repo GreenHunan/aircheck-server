@@ -1,0 +1,69 @@
+@(name:String)
+
+@bootstrap("Aircheck"){
+<link rel="stylesheet" href="@routes.Assets.versioned("css/index_logined.css")">
+<div>
+    <nav class="navbar navbar-inverse navbar-fixed-top" style="color: #34495e;">
+        <div class="navbar-header">
+            <a class="navbar-brand">Aircheck</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="/">Home</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="/contact">Contact</a></li>
+            </ul>
+            <a class="btn btn-primary btn-lg pull-right Rbtn" href="/user/logout" role="button">Logout</a>
+            <a class="navbar-brand pull-right">Welcome:  @name</a>
+        </div><!--/.nav-collapse -->
+    </nav>
+</div>
+
+
+
+
+    <div class="row upper_row">
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <div class="col-md-4">
+            <h1 class="text-center txt_s">Collect</h1>
+            <br/>
+            <img src="@routes.Assets.versioned("images/collect.png")" class="img-responsive center-block" width="250" height="250">
+        </div>
+        <div class="col-md-4">
+            <h1 class="text-center txt_s">Analyse</h1>
+            <br/>
+            <img src="@routes.Assets.versioned("images/analyse.png")" class="img-responsive center-block" width="250" height="250">
+        </div>
+        <div class="col-md-4 txt_s">
+            <h1 class="text-center">Explore</h1>
+            <br/>
+            <img src="@routes.Assets.versioned("images/explore.png")" class="img-responsive center-block" width="250" height="250">
+        </div>
+    </div>
+<div class="row upper_row">
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+</div>
+
+<div class="row bottom_row">
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <h1 class="text-center big_attractive" style="color: #ecf0f1;">Aircheck</h1>
+    <br/>
+    <h1 class="text-center">Geek's solution for air pollution</h1>
+    <br/>
+    <br/><br/>
+    <h5 class="text-center" style="color: #2c3e50;">Proudly hosting and analysing data for you.</h5>
+</div>
+}
+
