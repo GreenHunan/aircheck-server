@@ -11,7 +11,11 @@ import com.google.inject.ImplementedBy
 @ImplementedBy(classOf[MySQL])
 trait DAO {
   def insert(r:model.Record):Unit
+  def insertUser(registrationInfo: RegistrationInfo): Unit
+
   def getPasswdHash(user:String):Option[String]
   def getCount:Count
-  def insertUser(registrationInfo: RegistrationInfo): Unit
+  def getUserIDbyName(username:String):Int
+  def getRecordByUserID(id: Int):List[model.Record]
+  def getRecordByUserID(id:Int, limit:Int):List[model.Record]
 }

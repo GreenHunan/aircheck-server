@@ -5,16 +5,9 @@ CREATE TABLE IF NOT EXISTS `aircheck`.`record` (
   `longitude` DOUBLE NOT NULL,
   `latitude` DOUBLE NOT NULL,
   `density` FLOAT NOT NULL,
-  `device_id` INT NOT NULL,
   `user_id` INT NOT NULL,
-  `unix_time` MEDIUMTEXT NOT NULL,
+  `time` DATETIME NOT NULL,
   PRIMARY KEY (`id`))
-ENGINE = InnoDB;
-
-CREATE TABLE IF NOT EXISTS `aircheck`.`device` (
-  `id` INT NOT NULL,
-  `user_id` INT NOT NULL,
-  `type` VARCHAR(45) NULL)
 ENGINE = InnoDB;
 
 CREATE TABLE IF NOT EXISTS `aircheck`.`user` (

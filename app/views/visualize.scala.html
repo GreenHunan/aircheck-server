@@ -1,0 +1,23 @@
+@import model.Record
+@(name:String, records:List[Record])
+
+@bootstrap("Visualize--Aircheck"){
+<link rel="stylesheet" href="@routes.Assets.versioned("css/visualize.css")">
+<link rel="stylesheet" href="@routes.Assets.versioned("css/common.css")"
+
+<div>
+    <nav class="navbar navbar-inverse navbar-fixed-top" style="color: #34495e;">
+        <div class="navbar-header">
+            <a class="navbar-brand">Aircheck</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li><a href="/">Console</a></li>
+                <li class="active"><a href="/visualize">Visualize</a></li>
+            </ul>
+            <a class="btn btn-danger pull-right" href="/user/logout" role="button">Logout</a>
+            <a class="navbar-brand pull-right">Welcome:  @name</a>
+        </div><!--/.nav-collapse -->
+    </nav>
+</div>
+}

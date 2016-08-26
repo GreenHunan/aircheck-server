@@ -1,4 +1,33 @@
 
+.btn-lg, .btn-group-lg > .btn {
+    padding: 10px 19px;
+    font-size: 17px;
+    line-height: 1.471;
+    border-radius: 6px;
+}
+.btn-primary {
+    color: #ffffff;
+    background-color: #1abc9c;
+}
+.btn-success {
+    color: #ffffff;
+    background-color: #2ecc71;
+}
+
+.form-control, .select2-search input[type="text"] {
+    border: 2px solid #bdc3c7;
+    color: #34495e;
+    font-family: "Lato", Helvetica, Arial, sans-serif;
+    font-size: 15px;
+    line-height: 1.467;
+    padding: 8px 12px;
+    height: 35px;
+    border-radius: 6px;
+    box-shadow: none;
+    -webkit-transition: border 0.25s linear, color 0.25s linear, background-color 0.25s linear;
+    transition: border 0.25s linear, color 0.25s linear, background-color 0.25s linear;
+}
+
 .signin_b{
 margin-left:10px;
 }
