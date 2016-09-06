@@ -5,6 +5,7 @@ import model.{Count, Record, RegistrationInfo}
 import play.api.db._
 
 import scala.collection.mutable.ListBuffer
+import play.api.Logger
 /**
   * Created by hadoop on 16-7-24.
   */
@@ -13,12 +14,13 @@ class MySQL @Inject() (db: Database) extends DAO{
   def insert(r:Record): Unit ={
     val conn = db.getConnection()
     try{
-      val stmt = conn.prepareStatement("INSERT INTO record('density', 'longitude', 'latitude', 'user_id', 'time') VALUES( ?, ?, ?, ?, ?);")
+      val stmt = conn.prepareStatement("INSERT INTO record(density, longitude, latitude, user_id, time) VALUES( ?, ?, ?, ?, ?);")
       stmt.setFloat(1, r.density)
       stmt.setDouble(2, r.longitude)
       stmt.setDouble(3, r.latitude)
       stmt.setInt(4, r.user_id)
       stmt.setTimestamp(5, r.time)
+      Logger.info(stmt.toString)
       stmt.execute()
     } finally{
       conn.close()
@@ -102,7 +104,7 @@ class MySQL @Inject() (db: Database) extends DAO{
         val latitude: Double = results.getDouble(3)
         val user_id: Int = results.getInt(4)
         val time: java.sql.Timestamp = results.getTimestamp(5)
-        val r = Record(density, longitude, latitude, user_id, time)
+        val r = Record(density, longitude, latitude, user_id, Record.date_format format time)
         buf += r
       }
       buf.toList
@@ -125,7 +127,7 @@ class MySQL @Inject() (db: Database) extends DAO{
         val latitude: Double = results.getDouble(3)
         val user_id: Int = results.getInt(4)
         val time: java.sql.Timestamp = results.getTimestamp(5)
-        val r = Record(density, longitude, latitude, user_id, time)
+        val r = Record(density, longitude, latitude, user_id, Record.date_format format time)
         buf += r
       }
       buf.toList

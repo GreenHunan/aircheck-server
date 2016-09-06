@@ -12,7 +12,6 @@ import com.google.inject.ImplementedBy
 trait DAO {
   def insert(r:model.Record):Unit
   def insertUser(registrationInfo: RegistrationInfo): Unit
-
   def getPasswdHash(user:String):Option[String]
   def getCount:Count
   def getUserIDbyName(username:String):Int
