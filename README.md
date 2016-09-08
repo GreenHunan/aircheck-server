@@ -19,6 +19,20 @@ Execute the two SQL query in create_schema.sql
 
 Simply: `activator ui` under this folder
 
+###Android Insertion Convention:
+```
+POST /api/insert
+
+{
+  "density":25.0,
+  "lng": 179.9999999,
+  "lat":123.444444,
+  "user_id":1,
+  "time":"2016-09-06 20:46:00"
+}
+
+```
+
 
 
 
