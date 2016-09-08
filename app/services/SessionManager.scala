@@ -6,6 +6,7 @@ import com.google.inject.Singleton
   * Created by hadoop on 16-7-24.
   */
 import scala.util.Random
+
 @Singleton
 class SessionManager {
   private val rand = scala.util.Random

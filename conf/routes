@@ -11,8 +11,11 @@ GET     /contact                    controllers.HomeController.contact
 
 POST    /user/login                 controllers.AuthController.login
 GET    /user/logout                 controllers.AuthController.logout
-GET    /user/registrate                  controllers.RegistrationController.mainPage
-POST    /user/registrate                  controllers.RegistrationController.postPage
-GET     /visualize                        controllers.HomeController.visualize
+GET    /user/registrate             controllers.RegistrationController.mainPage
+
+POST    /user/registrate            controllers.RegistrationController.postPage
+GET     /visualize                  controllers.HomeController.visualize
+
+POST /api/insert                    controllers.APIController.insert
 # Map static resources from the /public folder to the /assets URL path
 GET     /assets/*file               controllers.Assets.versioned(path="/public", file: Asset)
