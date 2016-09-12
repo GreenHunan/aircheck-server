@@ -15,3 +15,6 @@
     -webkit-transition: border 0.25s linear, color 0.25s linear, background-color 0.25s linear;
     transition: border 0.25s linear, color 0.25s linear, background-color 0.25s linear;
 }
+.container_body {
+    margin-top: 50px;
+}
