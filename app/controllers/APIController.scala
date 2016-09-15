@@ -9,6 +9,9 @@ import play.api.libs.json._
 import model.Record
 import javax.inject._
 
+import play.filters.csrf.CSRF
+import play.filters.csrf.CSRF.Token
+
 @Singleton
 class APIController @Inject() (dao:DAO)extends Controller{
 
@@ -34,5 +37,11 @@ class APIController @Inject() (dao:DAO)extends Controller{
       case e: JsError =>
         Ok("failure")
     }
+  }
+
+  def token = Action{
+    implicit request =>
+      val Token(name, value) = CSRF.getToken.get
+      Ok(s"$name=$value")
   }
 }

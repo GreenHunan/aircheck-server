@@ -1,23 +1,29 @@
-@import model.Record
-@(name:String, records:List[Record])
+@(name:String, desPointsJsString:String, center_lng:Double, center_lat:Double, zoom:Int)
 
-@bootstrap("Visualize--Aircheck"){
-<link rel="stylesheet" href="@routes.Assets.versioned("css/visualize.css")">
-<link rel="stylesheet" href="@routes.Assets.versioned("css/common.css")"
 
-<div>
-    <nav class="navbar navbar-inverse navbar-fixed-top" style="color: #34495e;">
-        <div class="navbar-header">
-            <a class="navbar-brand">Aircheck</a>
-        </div>
-        <div id="navbar" class="navbar-collapse collapse">
-            <ul class="nav navbar-nav">
-                <li><a href="/">Console</a></li>
-                <li class="active"><a href="/visualize">Visualize</a></li>
-            </ul>
-            <a class="btn btn-danger pull-right" href="/user/logout" role="button">Logout</a>
-            <a class="navbar-brand pull-right">Welcome:  @name</a>
-        </div><!--/.nav-collapse -->
-    </nav>
-</div>
-}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+    <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=IuEijhwH9dsRWdDvhGQshKcRNdu6aONQ"></script>
+    <script type="text/javascript" src="http://api.map.baidu.com/library/Heatmap/2.0/src/Heatmap_min.js"></script>
+    <title>@name</title>
+    <style type="text/css">
+		ul,li{list-style: none;margin:0;padding:0;float:left;}
+		html{height:100%}
+		body{height:100%;margin:0px;padding:0px;font-family:"微软雅黑";}
+		#container{height:500px;width:100%;}
+		#r-result{width:100%;}
+    </style>
+</head>
+<body>
+<div id="container"></div>
+</body>
+</html>
+<script type="text/javascript" src="@routes.Assets.versioned("js/baidumap.js")"></script>
+<script>
+var data_points = @Html(desPointsJsString) ;
+createMap( @center_lng , @center_lat , @zoom, data_points);
+</script>

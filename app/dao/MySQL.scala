@@ -114,7 +114,7 @@ class MySQL @Inject() (db: Database) extends DAO{
   def getRecordByUserID(id:Int, limit:Int):List[model.Record] = {
     val conn = db.getConnection()
     try{
-      val stmt = conn.prepareStatement("SELECT * FROM record WHERE user_id = ? LIMIT ? ORDER BY time DESC;")
+      val stmt = conn.prepareStatement("SELECT * FROM record WHERE user_id = ? LIMIT ?;")
 
       stmt.setInt(1,id)
       stmt.setInt(2, limit)
@@ -122,10 +122,10 @@ class MySQL @Inject() (db: Database) extends DAO{
       val results = stmt.executeQuery()
       val buf = new ListBuffer[Record]
       while(results.next()){
-        val density:Float = results.getFloat(1)
+        val density:Float = results.getFloat(4)
         val longitude:Double = results.getDouble(2)
         val latitude: Double = results.getDouble(3)
-        val user_id: Int = results.getInt(4)
+        val user_id: Int = results.getInt(5)
         val time: java.sql.Timestamp = results.getTimestamp(5)
         val r = Record(density, longitude, latitude, user_id, Record.date_format format time)
         buf += r
