@@ -29,14 +29,4 @@ class HomeController @Inject() (dao:DAO, credManager:SessionManager) extends Con
   def contact = Action{
     Ok(views.html.contact())
   }
-  def visualize = Action { implicit request =>
-    request.session.get("login_key").map { cred =>
-      credManager.getUsername(cred) match {
-        case Some(x) => Ok(views.html.visualize(x, Nil))
-        case None => Redirect("/")
-      }
-    }.getOrElse {
-      Redirect("/")
-    }
-  }
 }

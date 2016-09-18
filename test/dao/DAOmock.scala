@@ -15,7 +15,6 @@ class DAOmock extends DAO with FlatSpecLike with ShouldMatchers {
     r.latitude shouldBe < (180.0)
     r.longitude shouldBe < (180.0)
     r.user_id shouldBe > (0)
-    r.time.toString.length shouldNot equal (0)
   }
 
   def insertUser(registrationInfo: RegistrationInfo): Unit = {

@@ -1,17 +1,33 @@
-New log file opened at Mon Aug 08 20:12:41 CST 2016 by 22862@slave3
-Scala compilation took 0.77359207 s
-New invalidations:
-	Set()
-Initial set of included nodes: Set()
-Previously invalidated, but (transitively) depend on new invalidations:
-	Set()
-All newly invalidated sources after taking into account (previously) recompiled sources:Set()
-Total time: 1 s, completed Aug 8, 2016 8:12:42 PM
-> server-post-command-cleanup
-> server-handle-next-server-request
-> {file:/home/hadoop/Code/aircheck-server/}root/*:playForkReload
-Evaluating tasks: *:playForkReload
-Running task... Cancel: sbt.server.ServerTaskCancellation@2e8af068, check cycles: false
+New log file opened at Sun Sep 18 14:09:50 CST 2016 by 548@Scotts-MacBook-Pro.local
+jvm 548@Scotts-MacBook-Pro.local
+jvm vmName=Java HotSpot(TM) 64-Bit Server VM vmVendor=Oracle Corporation vmVersion=25.65-b01
+jvm specName=Java Virtual Machine Specification specVendor=Oracle Corporation specVersion=1.8
+jvm arguments: [-Xms256m, -Xmx1024m, -XX:MetaspaceSize=64m, -XX:MaxMetaspaceSize=256m]
+Starting event engine
+Starting sbt command engine
+Waiting for sbt command engine
+Command engine arguments=List()
+Command engine baseDirectory=/Users/Scott/Code/aircheck-server
+Command engine initial remaining commands List(--initialize, onFailure load-failed, boot, server-send-ready-for-request, server-handle-next-server-request)
+> --initialize
+> initialize
+> onFailure load-failed
+> boot
+> reload
+[Loading] Scanning directory /Users/Scott/.sbt/0.13/plugins
+[Loading] Found non-root projects 
+[Loading] Done in /Users/Scott/.sbt/0.13/plugins, returning: ()
+deducing auto plugins based on known facts Set(Atom(sbt.plugins.CorePlugin)) and clauses Clauses(List(Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.IvyPlugin))), Clause(Atom(sbt.plugins.JUnitXmlReportPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.IvyPlugin))), Clause(Atom(sbt.plugins.IvyPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.JUnitXmlReportPlugin)))))
+  :: deduced result: Matched(sbt.plugins.CorePlugin,sbt.plugins.IvyPlugin,sbt.plugins.JvmPlugin,sbt.plugins.JUnitXmlReportPlugin)
+sorting: ns: List(sbt.plugins.CorePlugin, sbt.plugins.IvyPlugin, sbt.plugins.JvmPlugin, sbt.plugins.JUnitXmlReportPlugin)
+  :: sorting:: found: List(sbt.plugins.CorePlugin) not found List(sbt.plugins.IvyPlugin, sbt.plugins.JvmPlugin, sbt.plugins.JUnitXmlReportPlugin)
+  :: sorting:: found: List(sbt.plugins.CorePlugin, sbt.plugins.IvyPlugin) not found List(sbt.plugins.JvmPlugin, sbt.plugins.JUnitXmlReportPlugin)
+  :: sorting:: found: List(sbt.plugins.CorePlugin, sbt.plugins.IvyPlugin, sbt.plugins.JvmPlugin) not found List(sbt.plugins.JUnitXmlReportPlugin)
+  :: sorting:: found: List(sbt.plugins.CorePlugin, sbt.plugins.IvyPlugin, sbt.plugins.JvmPlugin, sbt.plugins.JUnitXmlReportPlugin) not found List()
+  :: sorted deduced result: List(sbt.plugins.CorePlugin, sbt.plugins.IvyPlugin, sbt.plugins.JvmPlugin, sbt.plugins.JUnitXmlReportPlugin)
+[Loading] Done in /Users/Scott/.sbt/0.13/plugins, returning: (global-plugins)
+Loading global plugins from /Users/Scott/.sbt/0.13/plugins
+Running task... Cancel: sbt.TaskCancellationStrategy$Null$@63646d0c, check cycles: false
 
 Initial source changes: 
 	removed:Set()
@@ -29,427 +45,136 @@ Sources indirectly invalidated by:
 All initially invalidated sources: Set()
 
 Copy resource mappings: 
-	(/home/hadoop/Code/aircheck-server/conf/application.conf,/home/hadoop/Code/aircheck-server/target/scala-2.11/classes/application.conf)
-	(/home/hadoop/Code/aircheck-server/conf/routes,/home/hadoop/Code/aircheck-server/target/scala-2.11/classes/routes)
-	(/home/hadoop/Code/aircheck-server/conf/logback.xml,/home/hadoop/Code/aircheck-server/target/scala-2.11/classes/logback.xml)
-Total time: 1 s, completed Aug 8, 2016 8:13:54 PM
-> server-post-command-cleanup
-> server-handle-next-server-request
-> {file:/home/hadoop/Code/aircheck-server/}root/*:playForkReload
-Evaluating tasks: *:playForkReload
-Running task... Cancel: sbt.server.ServerTaskCancellation@6019394b, check cycles: false
+	
+Other repositories:
+Default repositories:
+Using inline dependencies specified in Scala.
+[Loading] Scanning directory /Users/Scott/Code/aircheck-server/project
+[Loading] Found non-root projects 
+[Loading] Done in /Users/Scott/Code/aircheck-server/project, returning: ()
+deducing auto plugins based on known facts Set(Atom(sbt.plugins.CorePlugin)) and clauses Clauses(List(Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.IvyPlugin))), Clause(Atom(sbt.plugins.JUnitXmlReportPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.IvyPlugin))), Clause(Atom(sbt.plugins.IvyPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.JUnitXmlReportPlugin)))))
+  :: deduced result: Matched(sbt.plugins.CorePlugin,sbt.plugins.IvyPlugin,sbt.plugins.JvmPlugin,sbt.plugins.JUnitXmlReportPlugin)
+sorting: ns: List(sbt.plugins.CorePlugin, sbt.plugins.IvyPlugin, sbt.plugins.JvmPlugin, sbt.plugins.JUnitXmlReportPlugin)
+  :: sorting:: found: List(sbt.plugins.CorePlugin) not found List(sbt.plugins.IvyPlugin, sbt.plugins.JvmPlugin, sbt.plugins.JUnitXmlReportPlugin)
+  :: sorting:: found: List(sbt.plugins.CorePlugin, sbt.plugins.IvyPlugin) not found List(sbt.plugins.JvmPlugin, sbt.plugins.JUnitXmlReportPlugin)
+  :: sorting:: found: List(sbt.plugins.CorePlugin, sbt.plugins.IvyPlugin, sbt.plugins.JvmPlugin) not found List(sbt.plugins.JUnitXmlReportPlugin)
+  :: sorting:: found: List(sbt.plugins.CorePlugin, sbt.plugins.IvyPlugin, sbt.plugins.JvmPlugin, sbt.plugins.JUnitXmlReportPlugin) not found List()
+  :: sorted deduced result: List(sbt.plugins.CorePlugin, sbt.plugins.IvyPlugin, sbt.plugins.JvmPlugin, sbt.plugins.JUnitXmlReportPlugin)
+[Loading] Done in /Users/Scott/Code/aircheck-server/project, returning: (aircheck-server-build)
+Loading project definition from /Users/Scott/Code/aircheck-server/project
+Running task... Cancel: sbt.TaskCancellationStrategy$Null$@63646d0c, check cycles: false
 
 Initial source changes: 
 	removed:Set()
 	added: Set()
-	modified: Set(/home/hadoop/Code/aircheck-server/target/scala-2.11/twirl/main/views/html/index_logined.template.scala)
+	modified: Set()
 Removed products: Set()
 External API changes: API Changes: Set()
 Modified binary dependencies: Set()
-Initial directly invalidated sources: Set(/home/hadoop/Code/aircheck-server/target/scala-2.11/twirl/main/views/html/index_logined.template.scala)
+Initial directly invalidated sources: Set()
 
 Sources indirectly invalidated by:
 	product: Set()
 	binary dep: Set()
 	external source: Set()
-All initially invalidated sources: Set(/home/hadoop/Code/aircheck-server/target/scala-2.11/twirl/main/views/html/index_logined.template.scala)
+All initially invalidated sources: Set()
 
-Read from stdout: Compiling 1 Scala source to /home/hadoop/Code/aircheck-server/target/scala-2.11/classes...
-Compiling 1 Scala source to /home/hadoop/Code/aircheck-server/target/scala-2.11/classes...
-Getting compiler-interface from component compiler for Scala 2.11.7
-Other repositories:
-Default repositories:
-Getting compiler-interface from component compiler for Scala 2.11.7
-Other repositories:
-Default repositories:
-Running cached compiler 12e9d06d, interfacing (CompilerInterface) with Scala compiler version 2.11.7
-Calling Scala compiler with arguments  (CompilerInterface):
-	-deprecation
-	-unchecked
-	-encoding
-	utf8
-	-bootclasspath
-	/usr/lib/jvm/java-8-oracle/jre/lib/resources.jar:/usr/lib/jvm/java-8-oracle/jre/lib/rt.jar:/usr/lib/jvm/java-8-oracle/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jsse.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jce.jar:/usr/lib/jvm/java-8-oracle/jre/lib/charsets.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jfr.jar:/usr/lib/jvm/java-8-oracle/jre/classes:/home/hadoop/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.7.jar
-	-classpath
-	/home/hadoop/Code/aircheck-server/target/scala-2.11/classes:/home/hadoop/activator/repository/com.typesafe.play/twirl-api_2.11/1.1.1/jars/twirl-api_2.11.jar:/home/hadoop/activator/repository/org.apache.commons/commons-lang3/3.4/jars/commons-lang3.jar:/home/hadoop/.ivy2/cache/org.scala-lang.modules/scala-xml_2.11/bundles/scala-xml_2.11-1.0.1.jar:/home/hadoop/.ivy2/cache/com.typesafe.play/play-server_2.11/jars/play-server_2.11-2.5.4.jar:/home/hadoop/.ivy2/cache/com.typesafe.play/play_2.11/jars/play_2.11-2.5.4.jar:/home/hadoop/.ivy2/cache/com.typesafe.play/build-link/jars/build-link-2.5.4.jar:/home/hadoop/.ivy2/cache/com.typesafe.play/play-exceptions/jars/play-exceptions-2.5.4.jar:/home/hadoop/.ivy2/cache/com.typesafe.play/play-iteratees_2.11/jars/play-iteratees_2.11-2.5.4.jar:/home/hadoop/.ivy2/cache/org.scala-stm/scala-stm_2.11/jars/scala-stm_2.11-0.7.jar:/home/hadoop/.ivy2/cache/com.typesafe/config/bundles/config-1.3.0.jar:/home/hadoop/.ivy2/cache/ch.qos.logback/logback-classic/jars/logback-classic-1.1.7.jar:/home/hadoop/.ivy2/cache/ch.qos.logback/logback-core/jars/logback-core-1.1.7.jar:/home/hadoop/.ivy2/cache/com.typesafe.play/play-json_2.11/jars/play-json_2.11-2.5.4.jar:/home/hadoop/.ivy2/cache/com.typesafe.play/play-functional_2.11/jars/play-functional_2.11-2.5.4.jar:/home/hadoop/.ivy2/cache/com.typesafe.play/play-datacommons_2.11/jars/play-datacommons_2.11-2.5.4.jar:/home/hadoop/activator/repository/joda-time/joda-time/2.9.2/jars/joda-time.jar:/home/hadoop/activator/repository/org.joda/joda-convert/1.8.1/jars/joda-convert.jar:/home/hadoop/.ivy2/cache/org.scala-lang/scala-reflect/jars/scala-reflect-2.11.7.jar:/home/hadoop/activator/repository/com.fasterxml.jackson.core/jackson-core/2.7.1/bundles/jackson-core.jar:/home/hadoop/activator/repository/com.fasterxml.jackson.core/jackson-annotations/2.7.1/bundles/jackson-annotations.jar:/home/hadoop/activator/repository/com.fasterxml.jackson.core/jackson-databind/2.7.1/bundles/jackson-databind.jar:/home/hadoop/activator/repository/com.fasterxml.jackson.datatype/jackson-datatype-jdk8/2.7.1/bundles/jackson-datatype-jdk8.jar:/home/hadoop/activator/repository/com.fasterxml.jackson.datatype/jackson-datatype-jsr310/2.7.1/bundles/jackson-datatype-jsr310.jar:/home/hadoop/.ivy2/cache/com.typesafe.play/play-netty-utils/jars/play-netty-utils-2.5.4.jar:/home/hadoop/.ivy2/cache/org.slf4j/jul-to-slf4j/jars/jul-to-slf4j-1.7.19.jar:/home/hadoop/.ivy2/cache/org.slf4j/jcl-over-slf4j/jars/jcl-over-slf4j-1.7.19.jar:/home/hadoop/.ivy2/cache/com.typesafe.play/play-streams_2.11/jars/play-streams_2.11-2.5.4.jar:/home/hadoop/.ivy2/cache/org.reactivestreams/reactive-streams/jars/reactive-streams-1.0.0.jar:/home/hadoop/.ivy2/cache/com.typesafe.akka/akka-stream_2.11/jars/akka-stream_2.11-2.4.4.jar:/home/hadoop/.ivy2/cache/com.typesafe.akka/akka-actor_2.11/jars/akka-actor_2.11-2.4.4.jar:/home/hadoop/.ivy2/cache/org.scala-lang.modules/scala-java8-compat_2.11/bundles/scala-java8-compat_2.11-0.7.0.jar:/home/hadoop/.ivy2/cache/com.typesafe/ssl-config-akka_2.11/bundles/ssl-config-akka_2.11-0.2.1.jar:/home/hadoop/.ivy2/cache/com.typesafe/ssl-config-core_2.11/bundles/ssl-config-core_2.11-0.2.1.jar:/home/hadoop/.ivy2/cache/org.scala-lang.modules/scala-parser-combinators_2.11/bundles/scala-parser-combinators_2.11-1.0.4.jar:/home/hadoop/.ivy2/cache/com.typesafe.akka/akka-slf4j_2.11/jars/akka-slf4j_2.11-2.4.4.jar:/home/hadoop/activator/repository/commons-codec/commons-codec/1.10/jars/commons-codec.jar:/home/hadoop/.ivy2/cache/xerces/xercesImpl/jars/xercesImpl-2.11.0.jar:/home/hadoop/.ivy2/cache/xml-apis/xml-apis/jars/xml-apis-1.4.01.jar:/home/hadoop/.ivy2/cache/javax.transaction/jta/jars/jta-1.1.jar:/home/hadoop/activator/repository/com.google.inject/guice/4.0/jars/guice.jar:/home/hadoop/.ivy2/cache/javax.inject/javax.inject/jars/javax.inject-1.jar:/home/hadoop/activator/repository/aopalliance/aopalliance/1.0/jars/aopalliance.jar:/home/hadoop/activator/repository/com.google.inject.extensions/guice-assistedinject/4.0/jars/guice-assistedinject.jar:/home/hadoop/.ivy2/cache/com.typesafe.play/play-netty-server_2.11/jars/play-netty-server_2.11-2.5.4.jar:/home/hadoop/.ivy2/cache/com.typesafe.netty/netty-reactive-streams-http/jars/netty-reactive-streams-http-1.0.6.jar:/home/hadoop/.ivy2/cache/com.typesafe.netty/netty-reactive-streams/jars/netty-reactive-streams-1.0.6.jar:/home/hadoop/activator/repository/io.netty/netty-handler/4.0.36.Final/jars/netty-handler.jar:/home/hadoop/activator/repository/io.netty/netty-buffer/4.0.36.Final/jars/netty-buffer.jar:/home/hadoop/activator/repository/io.netty/netty-common/4.0.36.Final/jars/netty-common.jar:/home/hadoop/activator/repository/io.netty/netty-transport/4.0.36.Final/jars/netty-transport.jar:/home/hadoop/activator/repository/io.netty/netty-codec/4.0.36.Final/jars/netty-codec.jar:/home/hadoop/activator/repository/io.netty/netty-codec-http/4.0.36.Final/jars/netty-codec-http.jar:/home/hadoop/activator/repository/io.netty/netty-transport-native-epoll/4.0.36.Final/jars/netty-transport-native-epoll-linux-x86_64.jar:/home/hadoop/.ivy2/cache/com.typesafe.play/play-logback_2.11/jars/play-logback_2.11-2.5.4.jar:/home/hadoop/.ivy2/cache/com.typesafe.play/play-jdbc_2.11/jars/play-jdbc_2.11-2.5.4.jar:/home/hadoop/.ivy2/cache/com.typesafe.play/play-jdbc-api_2.11/jars/play-jdbc-api_2.11-2.5.4.jar:/home/hadoop/activator/repository/com.jolbox/bonecp/0.8.0.RELEASE/bundles/bonecp.jar:/home/hadoop/activator/repository/com.zaxxer/HikariCP/2.4.3/bundles/HikariCP.jar:/home/hadoop/activator/repository/com.googlecode.usc/jdbcdslog/1.0.6.2/jars/jdbcdslog.jar:/home/hadoop/activator/repository/com.h2database/h2/1.4.191/jars/h2.jar:/home/hadoop/activator/repository/tyrex/tyrex/1.0.1/jars/tyrex.jar:/home/hadoop/.ivy2/cache/com.typesafe.play/play-cache_2.11/jars/play-cache_2.11-2.5.4.jar:/home/hadoop/activator/repository/net.sf.ehcache/ehcache-core/2.6.11/jars/ehcache-core.jar:/home/hadoop/.ivy2/cache/com.typesafe.play/play-ws_2.11/jars/play-ws_2.11-2.5.4.jar:/home/hadoop/activator/repository/com.google.guava/guava/19.0/bundles/guava.jar:/home/hadoop/.ivy2/cache/org.asynchttpclient/async-http-client/jars/async-http-client-2.0.2.jar:/home/hadoop/.ivy2/cache/org.asynchttpclient/netty-resolver-dns/jars/netty-resolver-dns-2.0.2.jar:/home/hadoop/.ivy2/cache/org.asynchttpclient/netty-resolver/jars/netty-resolver-2.0.2.jar:/home/hadoop/activator/repository/org.slf4j/slf4j-api/1.7.21/jars/slf4j-api.jar:/home/hadoop/.ivy2/cache/org.asynchttpclient/netty-codec-dns/jars/netty-codec-dns-2.0.2.jar:/home/hadoop/activator/repository/org.javassist/javassist/3.20.0-GA/bundles/javassist.jar:/home/hadoop/.ivy2/cache/oauth.signpost/signpost-core/jars/signpost-core-1.2.1.2.jar:/home/hadoop/.ivy2/cache/oauth.signpost/signpost-commonshttp4/jars/signpost-commonshttp4-1.2.1.2.jar:/home/hadoop/activator/repository/org.apache.httpcomponents/httpcore/4.0.1/jars/httpcore.jar:/home/hadoop/activator/repository/org.apache.httpcomponents/httpclient/4.0.1/jars/httpclient.jar:/home/hadoop/.ivy2/cache/commons-logging/commons-logging/jars/commons-logging-1.1.1.jar:/home/hadoop/.ivy2/cache/com.typesafe.play/filters-helpers_2.11/jars/filters-helpers_2.11-2.5.4.jar:/home/hadoop/.ivy2/cache/com.typesafe.play/play-java_2.11/jars/play-java_2.11-2.5.4.jar:/home/hadoop/activator/repository/org.yaml/snakeyaml/1.16/bundles/snakeyaml.jar:/home/hadoop/activator/repository/org.hibernate/hibernate-validator/5.2.4.Final/jars/hibernate-validator.jar:/home/hadoop/activator/repository/javax.validation/validation-api/1.1.0.Final/jars/validation-api.jar:/home/hadoop/activator/repository/org.jboss.logging/jboss-logging/3.2.1.Final/jars/jboss-logging.jar:/home/hadoop/activator/repository/com.fasterxml/classmate/1.1.0/bundles/classmate.jar:/home/hadoop/activator/repository/javax.el/javax.el-api/3.0.0/jars/javax.el-api.jar:/home/hadoop/activator/repository/org.springframework/spring-context/4.2.4.RELEASE/jars/spring-context.jar:/home/hadoop/activator/repository/org.springframework/spring-core/4.2.4.RELEASE/jars/spring-core.jar:/home/hadoop/activator/repository/org.springframework/spring-beans/4.2.4.RELEASE/jars/spring-beans.jar:/home/hadoop/activator/repository/org.reflections/reflections/0.9.10/jars/reflections.jar:/home/hadoop/activator/repository/net.jodah/typetools/0.4.4/bundles/typetools.jar:/home/hadoop/activator/repository/com.google.code.findbugs/jsr305/3.0.1/jars/jsr305.jar:/home/hadoop/.ivy2/cache/org.apache.tomcat/tomcat-servlet-api/jars/tomcat-servlet-api-8.0.33.jar:/home/hadoop/.ivy2/cache/mysql/mysql-connector-java/jars/mysql-connector-java-6.0.3.jar
-Scala compilation took 0.960090194 s
-New invalidations:
-	Set()
-Initial set of included nodes: Set()
-Previously invalidated, but (transitively) depend on new invalidations:
-	Set()
-All newly invalidated sources after taking into account (previously) recompiled sources:Set()
 Copy resource mappings: 
-	(/home/hadoop/Code/aircheck-server/conf/application.conf,/home/hadoop/Code/aircheck-server/target/scala-2.11/classes/application.conf)
-	(/home/hadoop/Code/aircheck-server/conf/routes,/home/hadoop/Code/aircheck-server/target/scala-2.11/classes/routes)
-	(/home/hadoop/Code/aircheck-server/conf/logback.xml,/home/hadoop/Code/aircheck-server/target/scala-2.11/classes/logback.xml)
-Total time: 1 s, completed Aug 8, 2016 8:15:31 PM
-> server-post-command-cleanup
-> server-handle-next-server-request
-> {file:/home/hadoop/Code/aircheck-server/}root/*:playForkReload
-Evaluating tasks: *:playForkReload
-Running task... Cancel: sbt.server.ServerTaskCancellation@65b82c65, check cycles: false
-
-Initial source changes: 
-	removed:Set()
-	added: Set()
-	modified: Set(/home/hadoop/Code/aircheck-server/target/scala-2.11/twirl/main/views/html/index_logined.template.scala)
-Removed products: Set()
-External API changes: API Changes: Set()
-Modified binary dependencies: Set()
-Initial directly invalidated sources: Set(/home/hadoop/Code/aircheck-server/target/scala-2.11/twirl/main/views/html/index_logined.template.scala)
-
-Sources indirectly invalidated by:
-	product: Set()
-	binary dep: Set()
-	external source: Set()
-All initially invalidated sources: Set(/home/hadoop/Code/aircheck-server/target/scala-2.11/twirl/main/views/html/index_logined.template.scala)
-
-Read from stdout: Compiling 1 Scala source to /home/hadoop/Code/aircheck-server/target/scala-2.11/classes...
-Compiling 1 Scala source to /home/hadoop/Code/aircheck-server/target/scala-2.11/classes...
-Getting compiler-interface from component compiler for Scala 2.11.7
-Other repositories:
-Default repositories:
-Getting compiler-interface from component compiler for Scala 2.11.7
-Other repositories:
-Default repositories:
-Running cached compiler 5f02a0d, interfacing (CompilerInterface) with Scala compiler version 2.11.7
-Calling Scala compiler with arguments  (CompilerInterface):
-	-deprecation
-	-unchecked
-	-encoding
-	utf8
-	-bootclasspath
-	/usr/lib/jvm/java-8-oracle/jre/lib/resources.jar:/usr/lib/jvm/java-8-oracle/jre/lib/rt.jar:/usr/lib/jvm/java-8-oracle/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jsse.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jce.jar:/usr/lib/jvm/java-8-oracle/jre/lib/charsets.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jfr.jar:/usr/lib/jvm/java-8-oracle/jre/classes:/home/hadoop/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.7.jar
-	-classpath
-	/home/hadoop/Code/aircheck-server/target/scala-2.11/classes:/home/hadoop/activator/repository/com.typesafe.play/twirl-api_2.11/1.1.1/jars/twirl-api_2.11.jar:/home/hadoop/activator/repository/org.apache.commons/commons-lang3/3.4/jars/commons-lang3.jar:/home/hadoop/.ivy2/cache/org.scala-lang.modules/scala-xml_2.11/bundles/scala-xml_2.11-1.0.1.jar:/home/hadoop/.ivy2/cache/com.typesafe.play/play-server_2.11/jars/play-server_2.11-2.5.4.jar:/home/hadoop/.ivy2/cache/com.typesafe.play/play_2.11/jars/play_2.11-2.5.4.jar:/home/hadoop/.ivy2/cache/com.typesafe.play/build-link/jars/build-link-2.5.4.jar:/home/hadoop/.ivy2/cache/com.typesafe.play/play-exceptions/jars/play-exceptions-2.5.4.jar:/home/hadoop/.ivy2/cache/com.typesafe.play/play-iteratees_2.11/jars/play-iteratees_2.11-2.5.4.jar:/home/hadoop/.ivy2/cache/org.scala-stm/scala-stm_2.11/jars/scala-stm_2.11-0.7.jar:/home/hadoop/.ivy2/cache/com.typesafe/config/bundles/config-1.3.0.jar:/home/hadoop/.ivy2/cache/ch.qos.logback/logback-classic/jars/logback-classic-1.1.7.jar:/home/hadoop/.ivy2/cache/ch.qos.logback/logback-core/jars/logback-core-1.1.7.jar:/home/hadoop/.ivy2/cache/com.typesafe.play/play-json_2.11/jars/play-json_2.11-2.5.4.jar:/home/hadoop/.ivy2/cache/com.typesafe.play/play-functional_2.11/jars/play-functional_2.11-2.5.4.jar:/home/hadoop/.ivy2/cache/com.typesafe.play/play-datacommons_2.11/jars/play-datacommons_2.11-2.5.4.jar:/home/hadoop/activator/repository/joda-time/joda-time/2.9.2/jars/joda-time.jar:/home/hadoop/activator/repository/org.joda/joda-convert/1.8.1/jars/joda-convert.jar:/home/hadoop/.ivy2/cache/org.scala-lang/scala-reflect/jars/scala-reflect-2.11.7.jar:/home/hadoop/activator/repository/com.fasterxml.jackson.core/jackson-core/2.7.1/bundles/jackson-core.jar:/home/hadoop/activator/repository/com.fasterxml.jackson.core/jackson-annotations/2.7.1/bundles/jackson-annotations.jar:/home/hadoop/activator/repository/com.fasterxml.jackson.core/jackson-databind/2.7.1/bundles/jackson-databind.jar:/home/hadoop/activator/repository/com.fasterxml.jackson.datatype/jackson-datatype-jdk8/2.7.1/bundles/jackson-datatype-jdk8.jar:/home/hadoop/activator/repository/com.fasterxml.jackson.datatype/jackson-datatype-jsr310/2.7.1/bundles/jackson-datatype-jsr310.jar:/home/hadoop/.ivy2/cache/com.typesafe.play/play-netty-utils/jars/play-netty-utils-2.5.4.jar:/home/hadoop/.ivy2/cache/org.slf4j/jul-to-slf4j/jars/jul-to-slf4j-1.7.19.jar:/home/hadoop/.ivy2/cache/org.slf4j/jcl-over-slf4j/jars/jcl-over-slf4j-1.7.19.jar:/home/hadoop/.ivy2/cache/com.typesafe.play/play-streams_2.11/jars/play-streams_2.11-2.5.4.jar:/home/hadoop/.ivy2/cache/org.reactivestreams/reactive-streams/jars/reactive-streams-1.0.0.jar:/home/hadoop/.ivy2/cache/com.typesafe.akka/akka-stream_2.11/jars/akka-stream_2.11-2.4.4.jar:/home/hadoop/.ivy2/cache/com.typesafe.akka/akka-actor_2.11/jars/akka-actor_2.11-2.4.4.jar:/home/hadoop/.ivy2/cache/org.scala-lang.modules/scala-java8-compat_2.11/bundles/scala-java8-compat_2.11-0.7.0.jar:/home/hadoop/.ivy2/cache/com.typesafe/ssl-config-akka_2.11/bundles/ssl-config-akka_2.11-0.2.1.jar:/home/hadoop/.ivy2/cache/com.typesafe/ssl-config-core_2.11/bundles/ssl-config-core_2.11-0.2.1.jar:/home/hadoop/.ivy2/cache/org.scala-lang.modules/scala-parser-combinators_2.11/bundles/scala-parser-combinators_2.11-1.0.4.jar:/home/hadoop/.ivy2/cache/com.typesafe.akka/akka-slf4j_2.11/jars/akka-slf4j_2.11-2.4.4.jar:/home/hadoop/activator/repository/commons-codec/commons-codec/1.10/jars/commons-codec.jar:/home/hadoop/.ivy2/cache/xerces/xercesImpl/jars/xercesImpl-2.11.0.jar:/home/hadoop/.ivy2/cache/xml-apis/xml-apis/jars/xml-apis-1.4.01.jar:/home/hadoop/.ivy2/cache/javax.transaction/jta/jars/jta-1.1.jar:/home/hadoop/activator/repository/com.google.inject/guice/4.0/jars/guice.jar:/home/hadoop/.ivy2/cache/javax.inject/javax.inject/jars/javax.inject-1.jar:/home/hadoop/activator/repository/aopalliance/aopalliance/1.0/jars/aopalliance.jar:/home/hadoop/activator/repository/com.google.inject.extensions/guice-assistedinject/4.0/jars/guice-assistedinject.jar:/home/hadoop/.ivy2/cache/com.typesafe.play/play-netty-server_2.11/jars/play-netty-server_2.11-2.5.4.jar:/home/hadoop/.ivy2/cache/com.typesafe.netty/netty-reactive-streams-http/jars/netty-reactive-streams-http-1.0.6.jar:/home/hadoop/.ivy2/cache/com.typesafe.netty/netty-reactive-streams/jars/netty-reactive-streams-1.0.6.jar:/home/hadoop/activator/repository/io.netty/netty-handler/4.0.36.Final/jars/netty-handler.jar:/home/hadoop/activator/repository/io.netty/netty-buffer/4.0.36.Final/jars/netty-buffer.jar:/home/hadoop/activator/repository/io.netty/netty-common/4.0.36.Final/jars/netty-common.jar:/home/hadoop/activator/repository/io.netty/netty-transport/4.0.36.Final/jars/netty-transport.jar:/home/hadoop/activator/repository/io.netty/netty-codec/4.0.36.Final/jars/netty-codec.jar:/home/hadoop/activator/repository/io.netty/netty-codec-http/4.0.36.Final/jars/netty-codec-http.jar:/home/hadoop/activator/repository/io.netty/netty-transport-native-epoll/4.0.36.Final/jars/netty-transport-native-epoll-linux-x86_64.jar:/home/hadoop/.ivy2/cache/com.typesafe.play/play-logback_2.11/jars/play-logback_2.11-2.5.4.jar:/home/hadoop/.ivy2/cache/com.typesafe.play/play-jdbc_2.11/jars/play-jdbc_2.11-2.5.4.jar:/home/hadoop/.ivy2/cache/com.typesafe.play/play-jdbc-api_2.11/jars/play-jdbc-api_2.11-2.5.4.jar:/home/hadoop/activator/repository/com.jolbox/bonecp/0.8.0.RELEASE/bundles/bonecp.jar:/home/hadoop/activator/repository/com.zaxxer/HikariCP/2.4.3/bundles/HikariCP.jar:/home/hadoop/activator/repository/com.googlecode.usc/jdbcdslog/1.0.6.2/jars/jdbcdslog.jar:/home/hadoop/activator/repository/com.h2database/h2/1.4.191/jars/h2.jar:/home/hadoop/activator/repository/tyrex/tyrex/1.0.1/jars/tyrex.jar:/home/hadoop/.ivy2/cache/com.typesafe.play/play-cache_2.11/jars/play-cache_2.11-2.5.4.jar:/home/hadoop/activator/repository/net.sf.ehcache/ehcache-core/2.6.11/jars/ehcache-core.jar:/home/hadoop/.ivy2/cache/com.typesafe.play/play-ws_2.11/jars/play-ws_2.11-2.5.4.jar:/home/hadoop/activator/repository/com.google.guava/guava/19.0/bundles/guava.jar:/home/hadoop/.ivy2/cache/org.asynchttpclient/async-http-client/jars/async-http-client-2.0.2.jar:/home/hadoop/.ivy2/cache/org.asynchttpclient/netty-resolver-dns/jars/netty-resolver-dns-2.0.2.jar:/home/hadoop/.ivy2/cache/org.asynchttpclient/netty-resolver/jars/netty-resolver-2.0.2.jar:/home/hadoop/activator/repository/org.slf4j/slf4j-api/1.7.21/jars/slf4j-api.jar:/home/hadoop/.ivy2/cache/org.asynchttpclient/netty-codec-dns/jars/netty-codec-dns-2.0.2.jar:/home/hadoop/activator/repository/org.javassist/javassist/3.20.0-GA/bundles/javassist.jar:/home/hadoop/.ivy2/cache/oauth.signpost/signpost-core/jars/signpost-core-1.2.1.2.jar:/home/hadoop/.ivy2/cache/oauth.signpost/signpost-commonshttp4/jars/signpost-commonshttp4-1.2.1.2.jar:/home/hadoop/activator/repository/org.apache.httpcomponents/httpcore/4.0.1/jars/httpcore.jar:/home/hadoop/activator/repository/org.apache.httpcomponents/httpclient/4.0.1/jars/httpclient.jar:/home/hadoop/.ivy2/cache/commons-logging/commons-logging/jars/commons-logging-1.1.1.jar:/home/hadoop/.ivy2/cache/com.typesafe.play/filters-helpers_2.11/jars/filters-helpers_2.11-2.5.4.jar:/home/hadoop/.ivy2/cache/com.typesafe.play/play-java_2.11/jars/play-java_2.11-2.5.4.jar:/home/hadoop/activator/repository/org.yaml/snakeyaml/1.16/bundles/snakeyaml.jar:/home/hadoop/activator/repository/org.hibernate/hibernate-validator/5.2.4.Final/jars/hibernate-validator.jar:/home/hadoop/activator/repository/javax.validation/validation-api/1.1.0.Final/jars/validation-api.jar:/home/hadoop/activator/repository/org.jboss.logging/jboss-logging/3.2.1.Final/jars/jboss-logging.jar:/home/hadoop/activator/repository/com.fasterxml/classmate/1.1.0/bundles/classmate.jar:/home/hadoop/activator/repository/javax.el/javax.el-api/3.0.0/jars/javax.el-api.jar:/home/hadoop/activator/repository/org.springframework/spring-context/4.2.4.RELEASE/jars/spring-context.jar:/home/hadoop/activator/repository/org.springframework/spring-core/4.2.4.RELEASE/jars/spring-core.jar:/home/hadoop/activator/repository/org.springframework/spring-beans/4.2.4.RELEASE/jars/spring-beans.jar:/home/hadoop/activator/repository/org.reflections/reflections/0.9.10/jars/reflections.jar:/home/hadoop/activator/repository/net.jodah/typetools/0.4.4/bundles/typetools.jar:/home/hadoop/activator/repository/com.google.code.findbugs/jsr305/3.0.1/jars/jsr305.jar:/home/hadoop/.ivy2/cache/org.apache.tomcat/tomcat-servlet-api/jars/tomcat-servlet-api-8.0.33.jar:/home/hadoop/.ivy2/cache/mysql/mysql-connector-java/jars/mysql-connector-java-6.0.3.jar
-Scala compilation took 0.91976061 s
-New invalidations:
-	Set()
-Initial set of included nodes: Set()
-Previously invalidated, but (transitively) depend on new invalidations:
-	Set()
-All newly invalidated sources after taking into account (previously) recompiled sources:Set()
-Copy resource mappings: 
-	(/home/hadoop/Code/aircheck-server/conf/application.conf,/home/hadoop/Code/aircheck-server/target/scala-2.11/classes/application.conf)
-	(/home/hadoop/Code/aircheck-server/conf/routes,/home/hadoop/Code/aircheck-server/target/scala-2.11/classes/routes)
-	(/home/hadoop/Code/aircheck-server/conf/logback.xml,/home/hadoop/Code/aircheck-server/target/scala-2.11/classes/logback.xml)
-Total time: 1 s, completed Aug 8, 2016 8:15:56 PM
-> server-post-command-cleanup
+	
+[Loading] Scanning directory /Users/Scott/Code/aircheck-server
+[Loading] Found root project root w/ remaining 
+deducing auto plugins based on known facts Set(Atom(play.sbt.PlayScala), Atom(sbt.plugins.CorePlugin)) and clauses Clauses(List(Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.IvyPlugin))), Clause(Atom(sbt.plugins.JUnitXmlReportPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(play.sbt.forkrun.PlayForkRun),Set(Atom(sbt.plugins.BackgroundRunPlugin))), Clause(Atom(play.sbt.forkrun.PlayForkRun),Set(Atom(play.sbt.Play))), Clause(Atom(play.sbt.forkrun.PlayForkRun),Set(Atom(sbt.plugins.SerializersPlugin))), Clause(Atom(play.sbt.Play),Set(Atom(com.typesafe.sbt.packager.archetypes.JavaServerAppPackaging))), Clause(Atom(play.sbt.Play),Set(Atom(play.sbt.routes.RoutesCompiler))), Clause(Atom(play.sbt.Play),Set(Atom(play.twirl.sbt.SbtTwirl))), Clause(Atom(play.sbt.Play),Set(Atom(com.typesafe.sbt.jse.SbtJsTask))), Clause(Atom(play.sbt.PlayAkkaHttpServer),Set(Atom(play.sbt.Play))), Clause(Atom(play.sbt.PlayJava),Set(Atom(play.sbt.Play))), Clause(Atom(play.sbt.PlayLayoutPlugin),Set(Atom(play.sbt.Play))), Clause(Atom(play.sbt.PlayLogback),Set(Atom(play.sbt.Play))), Clause(Atom(play.sbt.PlayNettyServer),Set(Atom(play.sbt.Play))), Clause(Atom(play.sbt.PlayScala),Set(Atom(play.sbt.Play))), Clause(Atom(play.sbt.routes.RoutesCompiler),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(play.twirl.sbt.SbtTwirl),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(com.typesafe.sbt.packager.archetypes.AkkaAppPackaging),Set(Atom(com.typesafe.sbt.packager.archetypes.JavaAppPackaging))), Clause(Atom(com.typesafe.sbt.packager.archetypes.JavaAppPackaging),Set(Atom(com.typesafe.sbt.packager.windows.WindowsPlugin))), Clause(Atom(com.typesafe.sbt.packager.archetypes.JavaAppPackaging),Set(Atom(com.typesafe.sbt.packager.docker.DockerPlugin))), Clause(Atom(com.typesafe.sbt.packager.archetypes.JavaAppPackaging),Set(Atom(com.typesafe.sbt.packager.debian.DebianPlugin))), Clause(Atom(com.typesafe.sbt.packager.archetypes.JavaAppPackaging),Set(Atom(com.typesafe.sbt.packager.rpm.RpmPlugin))), Clause(Atom(com.typesafe.sbt.packager.archetypes.JavaServerAppPackaging),Set(Atom(com.typesafe.sbt.packager.archetypes.JavaAppPackaging))), Clause(Atom(com.typesafe.sbt.packager.archetypes.jar.ClasspathJarPlugin),Set(Atom(com.typesafe.sbt.packager.archetypes.JavaAppPackaging))), Clause(Atom(com.typesafe.sbt.packager.archetypes.jar.LauncherJarPlugin),Set(Atom(com.typesafe.sbt.packager.archetypes.JavaAppPackaging))), Clause(Atom(com.typesafe.sbt.packager.debian.DebianDeployPlugin),Set(Atom(com.typesafe.sbt.packager.debian.DebianPlugin))), Clause(Atom(com.typesafe.sbt.packager.debian.DebianPlugin),Set(Atom(com.typesafe.sbt.packager.linux.LinuxPlugin))), Clause(Atom(com.typesafe.sbt.packager.debian.JDebPackaging),Set(Atom(com.typesafe.sbt.packager.debian.DebianPlugin))), Clause(Atom(com.typesafe.sbt.packager.docker.DockerPlugin),Set(Atom(com.typesafe.sbt.packager.universal.UniversalPlugin))), Clause(Atom(com.typesafe.sbt.packager.jdkpackager.JDKPackagerDeployPlugin),Set(Atom(com.typesafe.sbt.packager.jdkpackager.JDKPackagerPlugin))), Clause(Atom(com.typesafe.sbt.packager.jdkpackager.JDKPackagerPlugin),Set(Atom(com.typesafe.sbt.packager.archetypes.JavaAppPackaging))), Clause(Atom(com.typesafe.sbt.packager.jdkpackager.JDKPackagerPlugin),Set(Atom(com.typesafe.sbt.packager.archetypes.jar.LauncherJarPlugin))), Clause(Atom(com.typesafe.sbt.packager.linux.LinuxPlugin),Set(Atom(com.typesafe.sbt.packager.universal.UniversalPlugin))), Clause(Atom(com.typesafe.sbt.packager.rpm.RpmDeployPlugin),Set(Atom(com.typesafe.sbt.packager.rpm.RpmPlugin))), Clause(Atom(com.typesafe.sbt.packager.rpm.RpmPlugin),Set(Atom(com.typesafe.sbt.packager.linux.LinuxPlugin))), Clause(Atom(com.typesafe.sbt.packager.universal.UniversalDeployPlugin),Set(Atom(com.typesafe.sbt.packager.universal.UniversalPlugin))), Clause(Atom(com.typesafe.sbt.packager.universal.UniversalPlugin),Set(Atom(com.typesafe.sbt.SbtNativePackager))), Clause(Atom(com.typesafe.sbt.packager.windows.WindowsDeployPlugin),Set(Atom(com.typesafe.sbt.packager.windows.WindowsPlugin))), Clause(Atom(com.typesafe.sbt.packager.windows.WindowsPlugin),Set(Atom(com.typesafe.sbt.packager.universal.UniversalPlugin))), Clause(Atom(com.typesafe.sbt.web.SbtWeb),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(com.typesafe.sbt.jse.SbtJsEngine),Set(Atom(com.typesafe.sbt.web.SbtWeb))), Clause(Atom(com.typesafe.sbt.jse.SbtJsTask),Set(Atom(com.typesafe.sbt.jse.SbtJsEngine))), Clause(Atom(sbt.plugins.BackgroundRunPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(com.typesafe.sbt.coffeescript.SbtCoffeeScript),Set(Atom(com.typesafe.sbt.jse.SbtJsTask))), Clause(Atom(com.typesafe.sbt.less.SbtLess),Set(Atom(com.typesafe.sbt.jse.SbtJsTask))), Clause(Atom(com.typesafe.sbt.jshint.SbtJSHint),Set(Atom(com.typesafe.sbt.jse.SbtJsTask))), Clause(Atom(com.typesafe.sbt.rjs.SbtRjs),Set(Atom(com.typesafe.sbt.jse.SbtJsTask))), Clause(Atom(com.typesafe.sbt.digest.SbtDigest),Set(Atom(com.typesafe.sbt.web.SbtWeb))), Clause(Atom(com.typesafe.sbt.mocha.SbtMocha),Set(Atom(com.typesafe.sbt.jse.SbtJsTask))), Clause(Atom(org.irundaia.sbt.sass.SbtSassify),Set(Atom(com.typesafe.sbt.web.SbtWeb))), Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.IvyPlugin))), Clause(Atom(sbt.plugins.IvyPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.JUnitXmlReportPlugin))), Clause(And(Set(Atom(sbt.plugins.BackgroundRunPlugin), Atom(play.sbt.Play), Atom(sbt.plugins.SerializersPlugin))),Set(Atom(play.sbt.forkrun.PlayForkRun))), Clause(Atom(play.sbt.Play),Set(Atom(play.sbt.PlayLayoutPlugin))), Clause(Atom(play.sbt.Play),Set(Atom(play.sbt.PlayLogback))), Clause(Atom(play.sbt.Play),Set(Atom(play.sbt.PlayNettyServer))), Clause(Atom(com.typesafe.sbt.web.SbtWeb),Set(Atom(com.typesafe.sbt.jse.SbtJsEngine))), Clause(Atom(com.typesafe.sbt.jse.SbtJsEngine),Set(Atom(com.typesafe.sbt.jse.SbtJsTask))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.BackgroundRunPlugin))), Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.InteractionServicePlugin))), Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.SendEventServicePlugin))), Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.SerializersPlugin))), Clause(Atom(com.typesafe.sbt.jse.SbtJsTask),Set(Atom(com.typesafe.sbt.coffeescript.SbtCoffeeScript))), Clause(Atom(com.typesafe.sbt.jse.SbtJsTask),Set(Atom(com.typesafe.sbt.less.SbtLess))), Clause(Atom(com.typesafe.sbt.jse.SbtJsTask),Set(Atom(com.typesafe.sbt.jshint.SbtJSHint))), Clause(Atom(com.typesafe.sbt.jse.SbtJsTask),Set(Atom(com.typesafe.sbt.rjs.SbtRjs))), Clause(Atom(com.typesafe.sbt.web.SbtWeb),Set(Atom(com.typesafe.sbt.digest.SbtDigest))), Clause(Atom(com.typesafe.sbt.jse.SbtJsTask),Set(Atom(com.typesafe.sbt.mocha.SbtMocha))), Clause(Atom(com.typesafe.sbt.web.SbtWeb),Set(Atom(org.irundaia.sbt.sass.SbtSassify)))))
+  :: deduced result: Matched(sbt.plugins.CorePlugin,play.sbt.PlayScala,sbt.plugins.InteractionServicePlugin,sbt.plugins.SendEventServicePlugin,play.sbt.Play,sbt.plugins.SerializersPlugin,sbt.plugins.IvyPlugin,com.typesafe.sbt.packager.archetypes.JavaServerAppPackaging,play.twirl.sbt.SbtTwirl,sbt.plugins.JvmPlugin,play.sbt.PlayNettyServer,play.sbt.PlayLayoutPlugin,play.sbt.routes.RoutesCompiler,play.sbt.PlayLogback,com.typesafe.sbt.jse.SbtJsTask,com.typesafe.sbt.jshint.SbtJSHint,com.typesafe.sbt.packager.archetypes.JavaAppPackaging,sbt.plugins.JUnitXmlReportPlugin,com.typesafe.sbt.mocha.SbtMocha,com.typesafe.sbt.less.SbtLess,com.typesafe.sbt.rjs.SbtRjs,com.typesafe.sbt.jse.SbtJsEngine,com.typesafe.sbt.coffeescript.SbtCoffeeScript,sbt.plugins.BackgroundRunPlugin,com.typesafe.sbt.packager.rpm.RpmPlugin,com.typesafe.sbt.packager.windows.WindowsPlugin,com.typesafe.sbt.web.SbtWeb,com.typesafe.sbt.packager.docker.DockerPlugin,play.sbt.forkrun.PlayForkRun,com.typesafe.sbt.packager.debian.DebianPlugin,org.irundaia.sbt.sass.SbtSassify,com.typesafe.sbt.digest.SbtDigest,com.typesafe.sbt.packager.universal.UniversalPlugin,com.typesafe.sbt.packager.linux.LinuxPlugin,com.typesafe.sbt.SbtNativePackager)
+sorting: ns: List(sbt.plugins.CorePlugin, play.sbt.PlayScala, sbt.plugins.InteractionServicePlugin, sbt.plugins.SendEventServicePlugin, play.sbt.Play, sbt.plugins.SerializersPlugin, sbt.plugins.IvyPlugin, com.typesafe.sbt.packager.archetypes.JavaServerAppPackaging, play.twirl.sbt.SbtTwirl, sbt.plugins.JvmPlugin, play.sbt.PlayNettyServer, play.sbt.PlayLayoutPlugin, play.sbt.routes.RoutesCompiler, play.sbt.PlayLogback, com.typesafe.sbt.jse.SbtJsTask, com.typesafe.sbt.jshint.SbtJSHint, com.typesafe.sbt.packager.archetypes.JavaAppPackaging, sbt.plugins.JUnitXmlReportPlugin, com.typesafe.sbt.mocha.SbtMocha, com.typesafe.sbt.less.SbtLess, com.typesafe.sbt.rjs.SbtRjs, com.typesafe.sbt.jse.SbtJsEngine, com.typesafe.sbt.coffeescript.SbtCoffeeScript, sbt.plugins.BackgroundRunPlugin, com.typesafe.sbt.packager.rpm.RpmPlugin, com.typesafe.sbt.packager.windows.WindowsPlugin, com.typesafe.sbt.web.SbtWeb, com.typesafe.sbt.packager.docker.DockerPlugin, play.sbt.forkrun.PlayForkRun, com.typesafe.sbt.packager.debian.DebianPlugin, org.irundaia.sbt.sass.SbtSassify, com.typesafe.sbt.digest.SbtDigest, com.typesafe.sbt.packager.universal.UniversalPlugin, com.typesafe.sbt.packager.linux.LinuxPlugin, com.typesafe.sbt.SbtNativePackager)
+  :: sorting:: found: List(sbt.plugins.CorePlugin, com.typesafe.sbt.SbtNativePackager) not found List(play.sbt.PlayScala, sbt.plugins.InteractionServicePlugin, sbt.plugins.SendEventServicePlugin, play.sbt.Play, sbt.plugins.SerializersPlugin, sbt.plugins.IvyPlugin, com.typesafe.sbt.packager.archetypes.JavaServerAppPackaging, play.twirl.sbt.SbtTwirl, sbt.plugins.JvmPlugin, play.sbt.PlayNettyServer, play.sbt.PlayLayoutPlugin, play.sbt.routes.RoutesCompiler, play.sbt.PlayLogback, com.typesafe.sbt.jse.SbtJsTask, com.typesafe.sbt.jshint.SbtJSHint, com.typesafe.sbt.packager.archetypes.JavaAppPackaging, sbt.plugins.JUnitXmlReportPlugin, com.typesafe.sbt.mocha.SbtMocha, com.typesafe.sbt.less.SbtLess, com.typesafe.sbt.rjs.SbtRjs, com.typesafe.sbt.jse.SbtJsEngine, com.typesafe.sbt.coffeescript.SbtCoffeeScript, sbt.plugins.BackgroundRunPlugin, com.typesafe.sbt.packager.rpm.RpmPlugin, com.typesafe.sbt.packager.windows.WindowsPlugin, com.typesafe.sbt.web.SbtWeb, com.typesafe.sbt.packager.docker.DockerPlugin, play.sbt.forkrun.PlayForkRun, com.typesafe.sbt.packager.debian.DebianPlugin, org.irundaia.sbt.sass.SbtSassify, com.typesafe.sbt.digest.SbtDigest, com.typesafe.sbt.packager.universal.UniversalPlugin, com.typesafe.sbt.packager.linux.LinuxPlugin)
+  :: sorting:: found: List(sbt.plugins.CorePlugin, com.typesafe.sbt.SbtNativePackager, sbt.plugins.InteractionServicePlugin, sbt.plugins.SendEventServicePlugin, sbt.plugins.SerializersPlugin, sbt.plugins.IvyPlugin, com.typesafe.sbt.packager.universal.UniversalPlugin) not found List(play.sbt.PlayScala, play.sbt.Play, com.typesafe.sbt.packager.archetypes.JavaServerAppPackaging, play.twirl.sbt.SbtTwirl, sbt.plugins.JvmPlugin, play.sbt.PlayNettyServer, play.sbt.PlayLayoutPlugin, play.sbt.routes.RoutesCompiler, play.sbt.PlayLogback, com.typesafe.sbt.jse.SbtJsTask, com.typesafe.sbt.jshint.SbtJSHint, com.typesafe.sbt.packager.archetypes.JavaAppPackaging, sbt.plugins.JUnitXmlReportPlugin, com.typesafe.sbt.mocha.SbtMocha, com.typesafe.sbt.less.SbtLess, com.typesafe.sbt.rjs.SbtRjs, com.typesafe.sbt.jse.SbtJsEngine, com.typesafe.sbt.coffeescript.SbtCoffeeScript, sbt.plugins.BackgroundRunPlugin, com.typesafe.sbt.packager.rpm.RpmPlugin, com.typesafe.sbt.packager.windows.WindowsPlugin, com.typesafe.sbt.web.SbtWeb, com.typesafe.sbt.packager.docker.DockerPlugin, play.sbt.forkrun.PlayForkRun, com.typesafe.sbt.packager.debian.DebianPlugin, org.irundaia.sbt.sass.SbtSassify, com.typesafe.sbt.digest.SbtDigest, com.typesafe.sbt.packager.linux.LinuxPlugin)
+  :: sorting:: found: List(sbt.plugins.CorePlugin, com.typesafe.sbt.SbtNativePackager, sbt.plugins.InteractionServicePlugin, sbt.plugins.SendEventServicePlugin, sbt.plugins.SerializersPlugin, sbt.plugins.IvyPlugin, com.typesafe.sbt.packager.universal.UniversalPlugin, sbt.plugins.JvmPlugin, com.typesafe.sbt.packager.windows.WindowsPlugin, com.typesafe.sbt.packager.docker.DockerPlugin, com.typesafe.sbt.packager.linux.LinuxPlugin) not found List(play.sbt.PlayScala, play.sbt.Play, com.typesafe.sbt.packager.archetypes.JavaServerAppPackaging, play.twirl.sbt.SbtTwirl, play.sbt.PlayNettyServer, play.sbt.PlayLayoutPlugin, play.sbt.routes.RoutesCompiler, play.sbt.PlayLogback, com.typesafe.sbt.jse.SbtJsTask, com.typesafe.sbt.jshint.SbtJSHint, com.typesafe.sbt.packager.archetypes.JavaAppPackaging, sbt.plugins.JUnitXmlReportPlugin, com.typesafe.sbt.mocha.SbtMocha, com.typesafe.sbt.less.SbtLess, com.typesafe.sbt.rjs.SbtRjs, com.typesafe.sbt.jse.SbtJsEngine, com.typesafe.sbt.coffeescript.SbtCoffeeScript, sbt.plugins.BackgroundRunPlugin, com.typesafe.sbt.packager.rpm.RpmPlugin, com.typesafe.sbt.web.SbtWeb, play.sbt.forkrun.PlayForkRun, com.typesafe.sbt.packager.debian.DebianPlugin, org.irundaia.sbt.sass.SbtSassify, com.typesafe.sbt.digest.SbtDigest)
+  :: sorting:: found: List(sbt.plugins.CorePlugin, com.typesafe.sbt.SbtNativePackager, sbt.plugins.InteractionServicePlugin, sbt.plugins.SendEventServicePlugin, sbt.plugins.SerializersPlugin, sbt.plugins.IvyPlugin, com.typesafe.sbt.packager.universal.UniversalPlugin, sbt.plugins.JvmPlugin, com.typesafe.sbt.packager.windows.WindowsPlugin, com.typesafe.sbt.packager.docker.DockerPlugin, com.typesafe.sbt.packager.linux.LinuxPlugin, play.twirl.sbt.SbtTwirl, play.sbt.routes.RoutesCompiler, sbt.plugins.JUnitXmlReportPlugin, sbt.plugins.BackgroundRunPlugin, com.typesafe.sbt.packager.rpm.RpmPlugin, com.typesafe.sbt.web.SbtWeb, com.typesafe.sbt.packager.debian.DebianPlugin) not found List(play.sbt.PlayScala, play.sbt.Play, com.typesafe.sbt.packager.archetypes.JavaServerAppPackaging, play.sbt.PlayNettyServer, play.sbt.PlayLayoutPlugin, play.sbt.PlayLogback, com.typesafe.sbt.jse.SbtJsTask, com.typesafe.sbt.jshint.SbtJSHint, com.typesafe.sbt.packager.archetypes.JavaAppPackaging, com.typesafe.sbt.mocha.SbtMocha, com.typesafe.sbt.less.SbtLess, com.typesafe.sbt.rjs.SbtRjs, com.typesafe.sbt.jse.SbtJsEngine, com.typesafe.sbt.coffeescript.SbtCoffeeScript, play.sbt.forkrun.PlayForkRun, org.irundaia.sbt.sass.SbtSassify, com.typesafe.sbt.digest.SbtDigest)
+  :: sorting:: found: List(sbt.plugins.CorePlugin, com.typesafe.sbt.SbtNativePackager, sbt.plugins.InteractionServicePlugin, sbt.plugins.SendEventServicePlugin, sbt.plugins.SerializersPlugin, sbt.plugins.IvyPlugin, com.typesafe.sbt.packager.universal.UniversalPlugin, sbt.plugins.JvmPlugin, com.typesafe.sbt.packager.windows.WindowsPlugin, com.typesafe.sbt.packager.docker.DockerPlugin, com.typesafe.sbt.packager.linux.LinuxPlugin, play.twirl.sbt.SbtTwirl, play.sbt.routes.RoutesCompiler, sbt.plugins.JUnitXmlReportPlugin, sbt.plugins.BackgroundRunPlugin, com.typesafe.sbt.packager.rpm.RpmPlugin, com.typesafe.sbt.web.SbtWeb, com.typesafe.sbt.packager.debian.DebianPlugin, com.typesafe.sbt.packager.archetypes.JavaAppPackaging, com.typesafe.sbt.jse.SbtJsEngine, org.irundaia.sbt.sass.SbtSassify, com.typesafe.sbt.digest.SbtDigest) not found List(play.sbt.PlayScala, play.sbt.Play, com.typesafe.sbt.packager.archetypes.JavaServerAppPackaging, play.sbt.PlayNettyServer, play.sbt.PlayLayoutPlugin, play.sbt.PlayLogback, com.typesafe.sbt.jse.SbtJsTask, com.typesafe.sbt.jshint.SbtJSHint, com.typesafe.sbt.mocha.SbtMocha, com.typesafe.sbt.less.SbtLess, com.typesafe.sbt.rjs.SbtRjs, com.typesafe.sbt.coffeescript.SbtCoffeeScript, play.sbt.forkrun.PlayForkRun)
+  :: sorting:: found: List(sbt.plugins.CorePlugin, com.typesafe.sbt.SbtNativePackager, sbt.plugins.InteractionServicePlugin, sbt.plugins.SendEventServicePlugin, sbt.plugins.SerializersPlugin, sbt.plugins.IvyPlugin, com.typesafe.sbt.packager.universal.UniversalPlugin, sbt.plugins.JvmPlugin, com.typesafe.sbt.packager.windows.WindowsPlugin, com.typesafe.sbt.packager.docker.DockerPlugin, com.typesafe.sbt.packager.linux.LinuxPlugin, play.twirl.sbt.SbtTwirl, play.sbt.routes.RoutesCompiler, sbt.plugins.JUnitXmlReportPlugin, sbt.plugins.BackgroundRunPlugin, com.typesafe.sbt.packager.rpm.RpmPlugin, com.typesafe.sbt.web.SbtWeb, com.typesafe.sbt.packager.debian.DebianPlugin, com.typesafe.sbt.packager.archetypes.JavaAppPackaging, com.typesafe.sbt.jse.SbtJsEngine, org.irundaia.sbt.sass.SbtSassify, com.typesafe.sbt.digest.SbtDigest, com.typesafe.sbt.packager.archetypes.JavaServerAppPackaging, com.typesafe.sbt.jse.SbtJsTask) not found List(play.sbt.PlayScala, play.sbt.Play, play.sbt.PlayNettyServer, play.sbt.PlayLayoutPlugin, play.sbt.PlayLogback, com.typesafe.sbt.jshint.SbtJSHint, com.typesafe.sbt.mocha.SbtMocha, com.typesafe.sbt.less.SbtLess, com.typesafe.sbt.rjs.SbtRjs, com.typesafe.sbt.coffeescript.SbtCoffeeScript, play.sbt.forkrun.PlayForkRun)
+  :: sorting:: found: List(sbt.plugins.CorePlugin, com.typesafe.sbt.SbtNativePackager, sbt.plugins.InteractionServicePlugin, sbt.plugins.SendEventServicePlugin, sbt.plugins.SerializersPlugin, sbt.plugins.IvyPlugin, com.typesafe.sbt.packager.universal.UniversalPlugin, sbt.plugins.JvmPlugin, com.typesafe.sbt.packager.windows.WindowsPlugin, com.typesafe.sbt.packager.docker.DockerPlugin, com.typesafe.sbt.packager.linux.LinuxPlugin, play.twirl.sbt.SbtTwirl, play.sbt.routes.RoutesCompiler, sbt.plugins.JUnitXmlReportPlugin, sbt.plugins.BackgroundRunPlugin, com.typesafe.sbt.packager.rpm.RpmPlugin, com.typesafe.sbt.web.SbtWeb, com.typesafe.sbt.packager.debian.DebianPlugin, com.typesafe.sbt.packager.archetypes.JavaAppPackaging, com.typesafe.sbt.jse.SbtJsEngine, org.irundaia.sbt.sass.SbtSassify, com.typesafe.sbt.digest.SbtDigest, com.typesafe.sbt.packager.archetypes.JavaServerAppPackaging, com.typesafe.sbt.jse.SbtJsTask, play.sbt.Play, com.typesafe.sbt.jshint.SbtJSHint, com.typesafe.sbt.mocha.SbtMocha, com.typesafe.sbt.less.SbtLess, com.typesafe.sbt.rjs.SbtRjs, com.typesafe.sbt.coffeescript.SbtCoffeeScript) not found List(play.sbt.PlayScala, play.sbt.PlayNettyServer, play.sbt.PlayLayoutPlugin, play.sbt.PlayLogback, play.sbt.forkrun.PlayForkRun)
+  :: sorting:: found: List(sbt.plugins.CorePlugin, com.typesafe.sbt.SbtNativePackager, sbt.plugins.InteractionServicePlugin, sbt.plugins.SendEventServicePlugin, sbt.plugins.SerializersPlugin, sbt.plugins.IvyPlugin, com.typesafe.sbt.packager.universal.UniversalPlugin, sbt.plugins.JvmPlugin, com.typesafe.sbt.packager.windows.WindowsPlugin, com.typesafe.sbt.packager.docker.DockerPlugin, com.typesafe.sbt.packager.linux.LinuxPlugin, play.twirl.sbt.SbtTwirl, play.sbt.routes.RoutesCompiler, sbt.plugins.JUnitXmlReportPlugin, sbt.plugins.BackgroundRunPlugin, com.typesafe.sbt.packager.rpm.RpmPlugin, com.typesafe.sbt.web.SbtWeb, com.typesafe.sbt.packager.debian.DebianPlugin, com.typesafe.sbt.packager.archetypes.JavaAppPackaging, com.typesafe.sbt.jse.SbtJsEngine, org.irundaia.sbt.sass.SbtSassify, com.typesafe.sbt.digest.SbtDigest, com.typesafe.sbt.packager.archetypes.JavaServerAppPackaging, com.typesafe.sbt.jse.SbtJsTask, play.sbt.Play, com.typesafe.sbt.jshint.SbtJSHint, com.typesafe.sbt.mocha.SbtMocha, com.typesafe.sbt.less.SbtLess, com.typesafe.sbt.rjs.SbtRjs, com.typesafe.sbt.coffeescript.SbtCoffeeScript, play.sbt.PlayScala, play.sbt.PlayNettyServer, play.sbt.PlayLayoutPlugin, play.sbt.PlayLogback, play.sbt.forkrun.PlayForkRun) not found List()
+  :: sorted deduced result: List(sbt.plugins.CorePlugin, com.typesafe.sbt.SbtNativePackager, sbt.plugins.InteractionServicePlugin, sbt.plugins.SendEventServicePlugin, sbt.plugins.SerializersPlugin, sbt.plugins.IvyPlugin, com.typesafe.sbt.packager.universal.UniversalPlugin, sbt.plugins.JvmPlugin, com.typesafe.sbt.packager.windows.WindowsPlugin, com.typesafe.sbt.packager.docker.DockerPlugin, com.typesafe.sbt.packager.linux.LinuxPlugin, play.twirl.sbt.SbtTwirl, play.sbt.routes.RoutesCompiler, sbt.plugins.JUnitXmlReportPlugin, sbt.plugins.BackgroundRunPlugin, com.typesafe.sbt.packager.rpm.RpmPlugin, com.typesafe.sbt.web.SbtWeb, com.typesafe.sbt.packager.debian.DebianPlugin, com.typesafe.sbt.packager.archetypes.JavaAppPackaging, com.typesafe.sbt.jse.SbtJsEngine, org.irundaia.sbt.sass.SbtSassify, com.typesafe.sbt.digest.SbtDigest, com.typesafe.sbt.packager.archetypes.JavaServerAppPackaging, com.typesafe.sbt.jse.SbtJsTask, play.sbt.Play, com.typesafe.sbt.jshint.SbtJSHint, com.typesafe.sbt.mocha.SbtMocha, com.typesafe.sbt.less.SbtLess, com.typesafe.sbt.rjs.SbtRjs, com.typesafe.sbt.coffeescript.SbtCoffeeScript, play.sbt.PlayScala, play.sbt.PlayNettyServer, play.sbt.PlayLayoutPlugin, play.sbt.PlayLogback, play.sbt.forkrun.PlayForkRun)
+[Loading] Done in /Users/Scott/Code/aircheck-server, returning: (root)
+Set current project to aircheck-server (in build file:/Users/Scott/Code/aircheck-server/)
+Reapplying settings...
+Set current project to aircheck-server (in build file:/Users/Scott/Code/aircheck-server/)
+> iflast shell
+> server-send-ready-for-request
 > server-handle-next-server-request
 > compile
 Evaluating tasks: compile:compile
-Running task... Cancel: sbt.server.ServerTaskCancellation@2ba102f0, check cycles: false
-Read from stdout: /home/hadoop/Code/aircheck-server/app/views/visualize.scala.htm;.html:1: Invalid template name [visualize.scala.htm;.html], filenames must only consist of alphanumeric characters and underscores or periods.
-/home/hadoop/Code/aircheck-server/app/views/visualize.scala.htm;.html:1: Invalid template name [visualize.scala.htm;.html], filenames must only consist of alphanumeric characters and underscores or periods.
-Read from stdout: <!DOCTYPE html>
-<!DOCTYPE html>
-Read from stdout: ^
-^
-Read from stdout: (compile:twirlCompileTemplates) Twirl compilation failed
-(compile:twirlCompileTemplates) Twirl compilation failed
-Total time: 0 s, completed Aug 8, 2016 8:17:14 PM
+Running task... Cancel: sbt.server.ServerTaskCancellation@426975f1, check cycles: false
+Received TaskFinished for a task we don't know about TaskFinished(1,41,None,true,None)
+Received TaskFinished for a task we don't know about TaskFinished(1,41,None,true,None)
+Use 'last' for the full log.
 > server-post-command-error-handler
 > server-post-command-cleanup
 > server-handle-next-server-request
-> compile
-Evaluating tasks: compile:compile
-Running task... Cancel: sbt.server.ServerTaskCancellation@3f65ac54, check cycles: false
-
-Initial source changes: 
-	removed:Set()
-	added: Set(/home/hadoop/Code/aircheck-server/target/scala-2.11/twirl/main/views/html/visualize.template.scala)
-	modified: Set(/home/hadoop/Code/aircheck-server/app/controllers/HomeController.scala)
-Removed products: Set()
-External API changes: API Changes: Set()
-Modified binary dependencies: Set()
-Initial directly invalidated sources: Set(/home/hadoop/Code/aircheck-server/target/scala-2.11/twirl/main/views/html/visualize.template.scala, /home/hadoop/Code/aircheck-server/app/controllers/HomeController.scala)
-
-Sources indirectly invalidated by:
-	product: Set()
-	binary dep: Set()
-	external source: Set()
-All initially invalidated sources: Set(/home/hadoop/Code/aircheck-server/target/scala-2.11/twirl/main/views/html/visualize.template.scala, /home/hadoop/Code/aircheck-server/app/controllers/HomeController.scala)
-
-Read from stdout: Compiling 2 Scala sources to /home/hadoop/Code/aircheck-server/target/scala-2.11/classes...
-Compiling 2 Scala sources to /home/hadoop/Code/aircheck-server/target/scala-2.11/classes...
-Getting compiler-interface from component compiler for Scala 2.11.7
-Other repositories:
-Default repositories:
-Getting compiler-interface from component compiler for Scala 2.11.7
-Other repositories:
-Default repositories:
-Running cached compiler 1480e7ac, interfacing (CompilerInterface) with Scala compiler version 2.11.7
-Calling Scala compiler with arguments  (CompilerInterface):
-	-deprecation
-	-unchecked
-	-encoding
-	utf8
-	-bootclasspath
-	/usr/lib/jvm/java-8-oracle/jre/lib/resources.jar:/usr/lib/jvm/java-8-oracle/jre/lib/rt.jar:/usr/lib/jvm/java-8-oracle/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jsse.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jce.jar:/usr/lib/jvm/java-8-oracle/jre/lib/charsets.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jfr.jar:/usr/lib/jvm/java-8-oracle/jre/classes:/home/hadoop/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.7.jar
-	-classpath
-	/home/hadoop/Code/aircheck-server/target/scala-2.11/classes:/home/hadoop/activator/repository/com.typesafe.play/twirl-api_2.11/1.1.1/jars/twirl-api_2.11.jar:/home/hadoop/activator/repository/org.apache.commons/commons-lang3/3.4/jars/commons-lang3.jar:/home/hadoop/.ivy2/cache/org.scala-lang.modules/scala-xml_2.11/bundles/scala-xml_2.11-1.0.1.jar:/home/hadoop/.ivy2/cache/com.typesafe.play/play-server_2.11/jars/play-server_2.11-2.5.4.jar:/home/hadoop/.ivy2/cache/com.typesafe.play/play_2.11/jars/play_2.11-2.5.4.jar:/home/hadoop/.ivy2/cache/com.typesafe.play/build-link/jars/build-link-2.5.4.jar:/home/hadoop/.ivy2/cache/com.typesafe.play/play-exceptions/jars/play-exceptions-2.5.4.jar:/home/hadoop/.ivy2/cache/com.typesafe.play/play-iteratees_2.11/jars/play-iteratees_2.11-2.5.4.jar:/home/hadoop/.ivy2/cache/org.scala-stm/scala-stm_2.11/jars/scala-stm_2.11-0.7.jar:/home/hadoop/.ivy2/cache/com.typesafe/config/bundles/config-1.3.0.jar:/home/hadoop/.ivy2/cache/ch.qos.logback/logback-classic/jars/logback-classic-1.1.7.jar:/home/hadoop/.ivy2/cache/ch.qos.logback/logback-core/jars/logback-core-1.1.7.jar:/home/hadoop/.ivy2/cache/com.typesafe.play/play-json_2.11/jars/play-json_2.11-2.5.4.jar:/home/hadoop/.ivy2/cache/com.typesafe.play/play-functional_2.11/jars/play-functional_2.11-2.5.4.jar:/home/hadoop/.ivy2/cache/com.typesafe.play/play-datacommons_2.11/jars/play-datacommons_2.11-2.5.4.jar:/home/hadoop/activator/repository/joda-time/joda-time/2.9.2/jars/joda-time.jar:/home/hadoop/activator/repository/org.joda/joda-convert/1.8.1/jars/joda-convert.jar:/home/hadoop/.ivy2/cache/org.scala-lang/scala-reflect/jars/scala-reflect-2.11.7.jar:/home/hadoop/activator/repository/com.fasterxml.jackson.core/jackson-core/2.7.1/bundles/jackson-core.jar:/home/hadoop/activator/repository/com.fasterxml.jackson.core/jackson-annotations/2.7.1/bundles/jackson-annotations.jar:/home/hadoop/activator/repository/com.fasterxml.jackson.core/jackson-databind/2.7.1/bundles/jackson-databind.jar:/home/hadoop/activator/repository/com.fasterxml.jackson.datatype/jackson-datatype-jdk8/2.7.1/bundles/jackson-datatype-jdk8.jar:/home/hadoop/activator/repository/com.fasterxml.jackson.datatype/jackson-datatype-jsr310/2.7.1/bundles/jackson-datatype-jsr310.jar:/home/hadoop/.ivy2/cache/com.typesafe.play/play-netty-utils/jars/play-netty-utils-2.5.4.jar:/home/hadoop/.ivy2/cache/org.slf4j/jul-to-slf4j/jars/jul-to-slf4j-1.7.19.jar:/home/hadoop/.ivy2/cache/org.slf4j/jcl-over-slf4j/jars/jcl-over-slf4j-1.7.19.jar:/home/hadoop/.ivy2/cache/com.typesafe.play/play-streams_2.11/jars/play-streams_2.11-2.5.4.jar:/home/hadoop/.ivy2/cache/org.reactivestreams/reactive-streams/jars/reactive-streams-1.0.0.jar:/home/hadoop/.ivy2/cache/com.typesafe.akka/akka-stream_2.11/jars/akka-stream_2.11-2.4.4.jar:/home/hadoop/.ivy2/cache/com.typesafe.akka/akka-actor_2.11/jars/akka-actor_2.11-2.4.4.jar:/home/hadoop/.ivy2/cache/org.scala-lang.modules/scala-java8-compat_2.11/bundles/scala-java8-compat_2.11-0.7.0.jar:/home/hadoop/.ivy2/cache/com.typesafe/ssl-config-akka_2.11/bundles/ssl-config-akka_2.11-0.2.1.jar:/home/hadoop/.ivy2/cache/com.typesafe/ssl-config-core_2.11/bundles/ssl-config-core_2.11-0.2.1.jar:/home/hadoop/.ivy2/cache/org.scala-lang.modules/scala-parser-combinators_2.11/bundles/scala-parser-combinators_2.11-1.0.4.jar:/home/hadoop/.ivy2/cache/com.typesafe.akka/akka-slf4j_2.11/jars/akka-slf4j_2.11-2.4.4.jar:/home/hadoop/activator/repository/commons-codec/commons-codec/1.10/jars/commons-codec.jar:/home/hadoop/.ivy2/cache/xerces/xercesImpl/jars/xercesImpl-2.11.0.jar:/home/hadoop/.ivy2/cache/xml-apis/xml-apis/jars/xml-apis-1.4.01.jar:/home/hadoop/.ivy2/cache/javax.transaction/jta/jars/jta-1.1.jar:/home/hadoop/activator/repository/com.google.inject/guice/4.0/jars/guice.jar:/home/hadoop/.ivy2/cache/javax.inject/javax.inject/jars/javax.inject-1.jar:/home/hadoop/activator/repository/aopalliance/aopalliance/1.0/jars/aopalliance.jar:/home/hadoop/activator/repository/com.google.inject.extensions/guice-assistedinject/4.0/jars/guice-assistedinject.jar:/home/hadoop/.ivy2/cache/com.typesafe.play/play-netty-server_2.11/jars/play-netty-server_2.11-2.5.4.jar:/home/hadoop/.ivy2/cache/com.typesafe.netty/netty-reactive-streams-http/jars/netty-reactive-streams-http-1.0.6.jar:/home/hadoop/.ivy2/cache/com.typesafe.netty/netty-reactive-streams/jars/netty-reactive-streams-1.0.6.jar:/home/hadoop/activator/repository/io.netty/netty-handler/4.0.36.Final/jars/netty-handler.jar:/home/hadoop/activator/repository/io.netty/netty-buffer/4.0.36.Final/jars/netty-buffer.jar:/home/hadoop/activator/repository/io.netty/netty-common/4.0.36.Final/jars/netty-common.jar:/home/hadoop/activator/repository/io.netty/netty-transport/4.0.36.Final/jars/netty-transport.jar:/home/hadoop/activator/repository/io.netty/netty-codec/4.0.36.Final/jars/netty-codec.jar:/home/hadoop/activator/repository/io.netty/netty-codec-http/4.0.36.Final/jars/netty-codec-http.jar:/home/hadoop/activator/repository/io.netty/netty-transport-native-epoll/4.0.36.Final/jars/netty-transport-native-epoll-linux-x86_64.jar:/home/hadoop/.ivy2/cache/com.typesafe.play/play-logback_2.11/jars/play-logback_2.11-2.5.4.jar:/home/hadoop/.ivy2/cache/com.typesafe.play/play-jdbc_2.11/jars/play-jdbc_2.11-2.5.4.jar:/home/hadoop/.ivy2/cache/com.typesafe.play/play-jdbc-api_2.11/jars/play-jdbc-api_2.11-2.5.4.jar:/home/hadoop/activator/repository/com.jolbox/bonecp/0.8.0.RELEASE/bundles/bonecp.jar:/home/hadoop/activator/repository/com.zaxxer/HikariCP/2.4.3/bundles/HikariCP.jar:/home/hadoop/activator/repository/com.googlecode.usc/jdbcdslog/1.0.6.2/jars/jdbcdslog.jar:/home/hadoop/activator/repository/com.h2database/h2/1.4.191/jars/h2.jar:/home/hadoop/activator/repository/tyrex/tyrex/1.0.1/jars/tyrex.jar:/home/hadoop/.ivy2/cache/com.typesafe.play/play-cache_2.11/jars/play-cache_2.11-2.5.4.jar:/home/hadoop/activator/repository/net.sf.ehcache/ehcache-core/2.6.11/jars/ehcache-core.jar:/home/hadoop/.ivy2/cache/com.typesafe.play/play-ws_2.11/jars/play-ws_2.11-2.5.4.jar:/home/hadoop/activator/repository/com.google.guava/guava/19.0/bundles/guava.jar:/home/hadoop/.ivy2/cache/org.asynchttpclient/async-http-client/jars/async-http-client-2.0.2.jar:/home/hadoop/.ivy2/cache/org.asynchttpclient/netty-resolver-dns/jars/netty-resolver-dns-2.0.2.jar:/home/hadoop/.ivy2/cache/org.asynchttpclient/netty-resolver/jars/netty-resolver-2.0.2.jar:/home/hadoop/activator/repository/org.slf4j/slf4j-api/1.7.21/jars/slf4j-api.jar:/home/hadoop/.ivy2/cache/org.asynchttpclient/netty-codec-dns/jars/netty-codec-dns-2.0.2.jar:/home/hadoop/activator/repository/org.javassist/javassist/3.20.0-GA/bundles/javassist.jar:/home/hadoop/.ivy2/cache/oauth.signpost/signpost-core/jars/signpost-core-1.2.1.2.jar:/home/hadoop/.ivy2/cache/oauth.signpost/signpost-commonshttp4/jars/signpost-commonshttp4-1.2.1.2.jar:/home/hadoop/activator/repository/org.apache.httpcomponents/httpcore/4.0.1/jars/httpcore.jar:/home/hadoop/activator/repository/org.apache.httpcomponents/httpclient/4.0.1/jars/httpclient.jar:/home/hadoop/.ivy2/cache/commons-logging/commons-logging/jars/commons-logging-1.1.1.jar:/home/hadoop/.ivy2/cache/com.typesafe.play/filters-helpers_2.11/jars/filters-helpers_2.11-2.5.4.jar:/home/hadoop/.ivy2/cache/com.typesafe.play/play-java_2.11/jars/play-java_2.11-2.5.4.jar:/home/hadoop/activator/repository/org.yaml/snakeyaml/1.16/bundles/snakeyaml.jar:/home/hadoop/activator/repository/org.hibernate/hibernate-validator/5.2.4.Final/jars/hibernate-validator.jar:/home/hadoop/activator/repository/javax.validation/validation-api/1.1.0.Final/jars/validation-api.jar:/home/hadoop/activator/repository/org.jboss.logging/jboss-logging/3.2.1.Final/jars/jboss-logging.jar:/home/hadoop/activator/repository/com.fasterxml/classmate/1.1.0/bundles/classmate.jar:/home/hadoop/activator/repository/javax.el/javax.el-api/3.0.0/jars/javax.el-api.jar:/home/hadoop/activator/repository/org.springframework/spring-context/4.2.4.RELEASE/jars/spring-context.jar:/home/hadoop/activator/repository/org.springframework/spring-core/4.2.4.RELEASE/jars/spring-core.jar:/home/hadoop/activator/repository/org.springframework/spring-beans/4.2.4.RELEASE/jars/spring-beans.jar:/home/hadoop/activator/repository/org.reflections/reflections/0.9.10/jars/reflections.jar:/home/hadoop/activator/repository/net.jodah/typetools/0.4.4/bundles/typetools.jar:/home/hadoop/activator/repository/com.google.code.findbugs/jsr305/3.0.1/jars/jsr305.jar:/home/hadoop/.ivy2/cache/org.apache.tomcat/tomcat-servlet-api/jars/tomcat-servlet-api-8.0.33.jar:/home/hadoop/.ivy2/cache/mysql/mysql-connector-java/jars/mysql-connector-java-6.0.3.jar
-Read from stdout: /home/hadoop/Code/aircheck-server/app/views/visualize.scala.html:17: not found: value name
-/home/hadoop/Code/aircheck-server/app/views/visualize.scala.html:17: not found: value name
-Read from stdout: <a class="navbar-brand pull-right">Welcome:  @name</a>
-            <a class="navbar-brand pull-right">Welcome:  @name</a>
-Read from stdout: ^
-                                                          ^
-Read from stdout: one error found
-one error found
-Compilation failed (CompilerInterface)
-Read from stdout: (compile:compileIncremental) Compilation failed
-(compile:compileIncremental) Compilation failed
-Total time: 1 s, completed Aug 8, 2016 8:24:25 PM
+> {file:/Users/Scott/Code/aircheck-server/}root/compile:discoveredMainClasses
+Evaluating tasks: compile:discoveredMainClasses
+Running task... Cancel: sbt.server.ServerTaskCancellation@1fe4b18, check cycles: false
+registered more than once? Task((taskDefinitionKey: ScopedKey(Scope(Select(ProjectRef(file:/Users/Scott/Code/aircheck-server/,root)),Select(ConfigKey(compile)),Global,Global),compile)))
+registered more than once? Task((taskDefinitionKey: ScopedKey(Scope(Select(ProjectRef(file:/Users/Scott/Code/aircheck-server/,root)),Select(ConfigKey(compile)),Global,Global),compile)))
+Use 'last' for the full log.
 > server-post-command-error-handler
 > server-post-command-cleanup
 > server-handle-next-server-request
-> {file:/home/hadoop/Code/aircheck-server/}root/*:playForkReload
-Evaluating tasks: *:playForkReload
-Running task... Cancel: sbt.server.ServerTaskCancellation@78e538a1, check cycles: false
-
-Initial source changes: 
-	removed:Set()
-	added: Set(/home/hadoop/Code/aircheck-server/target/scala-2.11/twirl/main/views/html/visualize.template.scala)
-	modified: Set(/home/hadoop/Code/aircheck-server/target/scala-2.11/routes/main/controllers/ReverseRoutes.scala, /home/hadoop/Code/aircheck-server/target/scala-2.11/routes/main/router/Routes.scala, /home/hadoop/Code/aircheck-server/target/scala-2.11/routes/main/controllers/javascript/JavaScriptReverseRoutes.scala, /home/hadoop/Code/aircheck-server/target/scala-2.11/routes/main/router/RoutesPrefix.scala, /home/hadoop/Code/aircheck-server/target/scala-2.11/routes/main/controllers/routes.java, /home/hadoop/Code/aircheck-server/app/controllers/HomeController.scala)
-Removed products: Set()
-External API changes: API Changes: Set()
-Modified binary dependencies: Set()
-Initial directly invalidated sources: Set(/home/hadoop/Code/aircheck-server/target/scala-2.11/routes/main/controllers/ReverseRoutes.scala, /home/hadoop/Code/aircheck-server/target/scala-2.11/twirl/main/views/html/visualize.template.scala, /home/hadoop/Code/aircheck-server/target/scala-2.11/routes/main/router/Routes.scala, /home/hadoop/Code/aircheck-server/target/scala-2.11/routes/main/controllers/javascript/JavaScriptReverseRoutes.scala, /home/hadoop/Code/aircheck-server/target/scala-2.11/routes/main/router/RoutesPrefix.scala, /home/hadoop/Code/aircheck-server/target/scala-2.11/routes/main/controllers/routes.java, /home/hadoop/Code/aircheck-server/app/controllers/HomeController.scala)
-
-Sources indirectly invalidated by:
-	product: Set()
-	binary dep: Set()
-	external source: Set()
-All initially invalidated sources: Set(/home/hadoop/Code/aircheck-server/target/scala-2.11/routes/main/controllers/ReverseRoutes.scala, /home/hadoop/Code/aircheck-server/target/scala-2.11/twirl/main/views/html/visualize.template.scala, /home/hadoop/Code/aircheck-server/target/scala-2.11/routes/main/router/Routes.scala, /home/hadoop/Code/aircheck-server/target/scala-2.11/routes/main/controllers/javascript/JavaScriptReverseRoutes.scala, /home/hadoop/Code/aircheck-server/target/scala-2.11/routes/main/router/RoutesPrefix.scala, /home/hadoop/Code/aircheck-server/target/scala-2.11/routes/main/controllers/routes.java, /home/hadoop/Code/aircheck-server/app/controllers/HomeController.scala)
-
-Read from stdout: Compiling 6 Scala sources and 1 Java source to /home/hadoop/Code/aircheck-server/target/scala-2.11/classes...
-Compiling 6 Scala sources and 1 Java source to /home/hadoop/Code/aircheck-server/target/scala-2.11/classes...
-Getting compiler-interface from component compiler for Scala 2.11.7
-Other repositories:
-Default repositories:
-Getting compiler-interface from component compiler for Scala 2.11.7
-Other repositories:
-Default repositories:
-Running cached compiler 40c3eb35, interfacing (CompilerInterface) with Scala compiler version 2.11.7
-Calling Scala compiler with arguments  (CompilerInterface):
-	-deprecation
-	-unchecked
-	-encoding
-	utf8
-	-bootclasspath
-	/usr/lib/jvm/java-8-oracle/jre/lib/resources.jar:/usr/lib/jvm/java-8-oracle/jre/lib/rt.jar:/usr/lib/jvm/java-8-oracle/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jsse.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jce.jar:/usr/lib/jvm/java-8-oracle/jre/lib/charsets.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jfr.jar:/usr/lib/jvm/java-8-oracle/jre/classes:/home/hadoop/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.7.jar
-	-classpath
-	/home/hadoop/Code/aircheck-server/target/scala-2.11/classes:/home/hadoop/activator/repository/com.typesafe.play/twirl-api_2.11/1.1.1/jars/twirl-api_2.11.jar:/home/hadoop/activator/repository/org.apache.commons/commons-lang3/3.4/jars/commons-lang3.jar:/home/hadoop/.ivy2/cache/org.scala-lang.modules/scala-xml_2.11/bundles/scala-xml_2.11-1.0.1.jar:/home/hadoop/.ivy2/cache/com.typesafe.play/play-server_2.11/jars/play-server_2.11-2.5.4.jar:/home/hadoop/.ivy2/cache/com.typesafe.play/play_2.11/jars/play_2.11-2.5.4.jar:/home/hadoop/.ivy2/cache/com.typesafe.play/build-link/jars/build-link-2.5.4.jar:/home/hadoop/.ivy2/cache/com.typesafe.play/play-exceptions/jars/play-exceptions-2.5.4.jar:/home/hadoop/.ivy2/cache/com.typesafe.play/play-iteratees_2.11/jars/play-iteratees_2.11-2.5.4.jar:/home/hadoop/.ivy2/cache/org.scala-stm/scala-stm_2.11/jars/scala-stm_2.11-0.7.jar:/home/hadoop/.ivy2/cache/com.typesafe/config/bundles/config-1.3.0.jar:/home/hadoop/.ivy2/cache/ch.qos.logback/logback-classic/jars/logback-classic-1.1.7.jar:/home/hadoop/.ivy2/cache/ch.qos.logback/logback-core/jars/logback-core-1.1.7.jar:/home/hadoop/.ivy2/cache/com.typesafe.play/play-json_2.11/jars/play-json_2.11-2.5.4.jar:/home/hadoop/.ivy2/cache/com.typesafe.play/play-functional_2.11/jars/play-functional_2.11-2.5.4.jar:/home/hadoop/.ivy2/cache/com.typesafe.play/play-datacommons_2.11/jars/play-datacommons_2.11-2.5.4.jar:/home/hadoop/activator/repository/joda-time/joda-time/2.9.2/jars/joda-time.jar:/home/hadoop/activator/repository/org.joda/joda-convert/1.8.1/jars/joda-convert.jar:/home/hadoop/.ivy2/cache/org.scala-lang/scala-reflect/jars/scala-reflect-2.11.7.jar:/home/hadoop/activator/repository/com.fasterxml.jackson.core/jackson-core/2.7.1/bundles/jackson-core.jar:/home/hadoop/activator/repository/com.fasterxml.jackson.core/jackson-annotations/2.7.1/bundles/jackson-annotations.jar:/home/hadoop/activator/repository/com.fasterxml.jackson.core/jackson-databind/2.7.1/bundles/jackson-databind.jar:/home/hadoop/activator/repository/com.fasterxml.jackson.datatype/jackson-datatype-jdk8/2.7.1/bundles/jackson-datatype-jdk8.jar:/home/hadoop/activator/repository/com.fasterxml.jackson.datatype/jackson-datatype-jsr310/2.7.1/bundles/jackson-datatype-jsr310.jar:/home/hadoop/.ivy2/cache/com.typesafe.play/play-netty-utils/jars/play-netty-utils-2.5.4.jar:/home/hadoop/.ivy2/cache/org.slf4j/jul-to-slf4j/jars/jul-to-slf4j-1.7.19.jar:/home/hadoop/.ivy2/cache/org.slf4j/jcl-over-slf4j/jars/jcl-over-slf4j-1.7.19.jar:/home/hadoop/.ivy2/cache/com.typesafe.play/play-streams_2.11/jars/play-streams_2.11-2.5.4.jar:/home/hadoop/.ivy2/cache/org.reactivestreams/reactive-streams/jars/reactive-streams-1.0.0.jar:/home/hadoop/.ivy2/cache/com.typesafe.akka/akka-stream_2.11/jars/akka-stream_2.11-2.4.4.jar:/home/hadoop/.ivy2/cache/com.typesafe.akka/akka-actor_2.11/jars/akka-actor_2.11-2.4.4.jar:/home/hadoop/.ivy2/cache/org.scala-lang.modules/scala-java8-compat_2.11/bundles/scala-java8-compat_2.11-0.7.0.jar:/home/hadoop/.ivy2/cache/com.typesafe/ssl-config-akka_2.11/bundles/ssl-config-akka_2.11-0.2.1.jar:/home/hadoop/.ivy2/cache/com.typesafe/ssl-config-core_2.11/bundles/ssl-config-core_2.11-0.2.1.jar:/home/hadoop/.ivy2/cache/org.scala-lang.modules/scala-parser-combinators_2.11/bundles/scala-parser-combinators_2.11-1.0.4.jar:/home/hadoop/.ivy2/cache/com.typesafe.akka/akka-slf4j_2.11/jars/akka-slf4j_2.11-2.4.4.jar:/home/hadoop/activator/repository/commons-codec/commons-codec/1.10/jars/commons-codec.jar:/home/hadoop/.ivy2/cache/xerces/xercesImpl/jars/xercesImpl-2.11.0.jar:/home/hadoop/.ivy2/cache/xml-apis/xml-apis/jars/xml-apis-1.4.01.jar:/home/hadoop/.ivy2/cache/javax.transaction/jta/jars/jta-1.1.jar:/home/hadoop/activator/repository/com.google.inject/guice/4.0/jars/guice.jar:/home/hadoop/.ivy2/cache/javax.inject/javax.inject/jars/javax.inject-1.jar:/home/hadoop/activator/repository/aopalliance/aopalliance/1.0/jars/aopalliance.jar:/home/hadoop/activator/repository/com.google.inject.extensions/guice-assistedinject/4.0/jars/guice-assistedinject.jar:/home/hadoop/.ivy2/cache/com.typesafe.play/play-netty-server_2.11/jars/play-netty-server_2.11-2.5.4.jar:/home/hadoop/.ivy2/cache/com.typesafe.netty/netty-reactive-streams-http/jars/netty-reactive-streams-http-1.0.6.jar:/home/hadoop/.ivy2/cache/com.typesafe.netty/netty-reactive-streams/jars/netty-reactive-streams-1.0.6.jar:/home/hadoop/activator/repository/io.netty/netty-handler/4.0.36.Final/jars/netty-handler.jar:/home/hadoop/activator/repository/io.netty/netty-buffer/4.0.36.Final/jars/netty-buffer.jar:/home/hadoop/activator/repository/io.netty/netty-common/4.0.36.Final/jars/netty-common.jar:/home/hadoop/activator/repository/io.netty/netty-transport/4.0.36.Final/jars/netty-transport.jar:/home/hadoop/activator/repository/io.netty/netty-codec/4.0.36.Final/jars/netty-codec.jar:/home/hadoop/activator/repository/io.netty/netty-codec-http/4.0.36.Final/jars/netty-codec-http.jar:/home/hadoop/activator/repository/io.netty/netty-transport-native-epoll/4.0.36.Final/jars/netty-transport-native-epoll-linux-x86_64.jar:/home/hadoop/.ivy2/cache/com.typesafe.play/play-logback_2.11/jars/play-logback_2.11-2.5.4.jar:/home/hadoop/.ivy2/cache/com.typesafe.play/play-jdbc_2.11/jars/play-jdbc_2.11-2.5.4.jar:/home/hadoop/.ivy2/cache/com.typesafe.play/play-jdbc-api_2.11/jars/play-jdbc-api_2.11-2.5.4.jar:/home/hadoop/activator/repository/com.jolbox/bonecp/0.8.0.RELEASE/bundles/bonecp.jar:/home/hadoop/activator/repository/com.zaxxer/HikariCP/2.4.3/bundles/HikariCP.jar:/home/hadoop/activator/repository/com.googlecode.usc/jdbcdslog/1.0.6.2/jars/jdbcdslog.jar:/home/hadoop/activator/repository/com.h2database/h2/1.4.191/jars/h2.jar:/home/hadoop/activator/repository/tyrex/tyrex/1.0.1/jars/tyrex.jar:/home/hadoop/.ivy2/cache/com.typesafe.play/play-cache_2.11/jars/play-cache_2.11-2.5.4.jar:/home/hadoop/activator/repository/net.sf.ehcache/ehcache-core/2.6.11/jars/ehcache-core.jar:/home/hadoop/.ivy2/cache/com.typesafe.play/play-ws_2.11/jars/play-ws_2.11-2.5.4.jar:/home/hadoop/activator/repository/com.google.guava/guava/19.0/bundles/guava.jar:/home/hadoop/.ivy2/cache/org.asynchttpclient/async-http-client/jars/async-http-client-2.0.2.jar:/home/hadoop/.ivy2/cache/org.asynchttpclient/netty-resolver-dns/jars/netty-resolver-dns-2.0.2.jar:/home/hadoop/.ivy2/cache/org.asynchttpclient/netty-resolver/jars/netty-resolver-2.0.2.jar:/home/hadoop/activator/repository/org.slf4j/slf4j-api/1.7.21/jars/slf4j-api.jar:/home/hadoop/.ivy2/cache/org.asynchttpclient/netty-codec-dns/jars/netty-codec-dns-2.0.2.jar:/home/hadoop/activator/repository/org.javassist/javassist/3.20.0-GA/bundles/javassist.jar:/home/hadoop/.ivy2/cache/oauth.signpost/signpost-core/jars/signpost-core-1.2.1.2.jar:/home/hadoop/.ivy2/cache/oauth.signpost/signpost-commonshttp4/jars/signpost-commonshttp4-1.2.1.2.jar:/home/hadoop/activator/repository/org.apache.httpcomponents/httpcore/4.0.1/jars/httpcore.jar:/home/hadoop/activator/repository/org.apache.httpcomponents/httpclient/4.0.1/jars/httpclient.jar:/home/hadoop/.ivy2/cache/commons-logging/commons-logging/jars/commons-logging-1.1.1.jar:/home/hadoop/.ivy2/cache/com.typesafe.play/filters-helpers_2.11/jars/filters-helpers_2.11-2.5.4.jar:/home/hadoop/.ivy2/cache/com.typesafe.play/play-java_2.11/jars/play-java_2.11-2.5.4.jar:/home/hadoop/activator/repository/org.yaml/snakeyaml/1.16/bundles/snakeyaml.jar:/home/hadoop/activator/repository/org.hibernate/hibernate-validator/5.2.4.Final/jars/hibernate-validator.jar:/home/hadoop/activator/repository/javax.validation/validation-api/1.1.0.Final/jars/validation-api.jar:/home/hadoop/activator/repository/org.jboss.logging/jboss-logging/3.2.1.Final/jars/jboss-logging.jar:/home/hadoop/activator/repository/com.fasterxml/classmate/1.1.0/bundles/classmate.jar:/home/hadoop/activator/repository/javax.el/javax.el-api/3.0.0/jars/javax.el-api.jar:/home/hadoop/activator/repository/org.springframework/spring-context/4.2.4.RELEASE/jars/spring-context.jar:/home/hadoop/activator/repository/org.springframework/spring-core/4.2.4.RELEASE/jars/spring-core.jar:/home/hadoop/activator/repository/org.springframework/spring-beans/4.2.4.RELEASE/jars/spring-beans.jar:/home/hadoop/activator/repository/org.reflections/reflections/0.9.10/jars/reflections.jar:/home/hadoop/activator/repository/net.jodah/typetools/0.4.4/bundles/typetools.jar:/home/hadoop/activator/repository/com.google.code.findbugs/jsr305/3.0.1/jars/jsr305.jar:/home/hadoop/.ivy2/cache/org.apache.tomcat/tomcat-servlet-api/jars/tomcat-servlet-api-8.0.33.jar:/home/hadoop/.ivy2/cache/mysql/mysql-connector-java/jars/mysql-connector-java-6.0.3.jar
-Read from stdout: /home/hadoop/Code/aircheck-server/app/views/visualize.scala.html:17: not found: value name
-/home/hadoop/Code/aircheck-server/app/views/visualize.scala.html:17: not found: value name
-Read from stdout: <a class="navbar-brand pull-right">Welcome:  @name</a>
-            <a class="navbar-brand pull-right">Welcome:  @name</a>
-Read from stdout: ^
-                                                          ^
-Read from stdout: one error found
-one error found
-Compilation failed (CompilerInterface)
-Total time: 2 s, completed Aug 8, 2016 8:25:36 PM
+> {file:/Users/Scott/Code/aircheck-server/}root/compile:mainClass
+Evaluating tasks: compile:mainClass
+Running task... Cancel: sbt.server.ServerTaskCancellation@7f636b9a, check cycles: false
+Total time: 0 s, completed Sep 18, 2016 2:10:02 PM
 > server-post-command-cleanup
 > server-handle-next-server-request
-> {file:/home/hadoop/Code/aircheck-server/}root/*:playForkReload
-Evaluating tasks: *:playForkReload
-Running task... Cancel: sbt.server.ServerTaskCancellation@7448e6fb, check cycles: false
-
-Initial source changes: 
-	removed:Set()
-	added: Set(/home/hadoop/Code/aircheck-server/target/scala-2.11/twirl/main/views/html/visualize.template.scala)
-	modified: Set(/home/hadoop/Code/aircheck-server/target/scala-2.11/routes/main/controllers/ReverseRoutes.scala, /home/hadoop/Code/aircheck-server/target/scala-2.11/routes/main/router/Routes.scala, /home/hadoop/Code/aircheck-server/target/scala-2.11/routes/main/controllers/javascript/JavaScriptReverseRoutes.scala, /home/hadoop/Code/aircheck-server/target/scala-2.11/routes/main/router/RoutesPrefix.scala, /home/hadoop/Code/aircheck-server/target/scala-2.11/routes/main/controllers/routes.java, /home/hadoop/Code/aircheck-server/app/controllers/HomeController.scala)
-Removed products: Set()
-External API changes: API Changes: Set()
-Modified binary dependencies: Set()
-Initial directly invalidated sources: Set(/home/hadoop/Code/aircheck-server/target/scala-2.11/routes/main/controllers/ReverseRoutes.scala, /home/hadoop/Code/aircheck-server/target/scala-2.11/twirl/main/views/html/visualize.template.scala, /home/hadoop/Code/aircheck-server/target/scala-2.11/routes/main/router/Routes.scala, /home/hadoop/Code/aircheck-server/target/scala-2.11/routes/main/controllers/javascript/JavaScriptReverseRoutes.scala, /home/hadoop/Code/aircheck-server/target/scala-2.11/routes/main/router/RoutesPrefix.scala, /home/hadoop/Code/aircheck-server/target/scala-2.11/routes/main/controllers/routes.java, /home/hadoop/Code/aircheck-server/app/controllers/HomeController.scala)
-
-Sources indirectly invalidated by:
-	product: Set()
-	binary dep: Set()
-	external source: Set()
-All initially invalidated sources: Set(/home/hadoop/Code/aircheck-server/target/scala-2.11/routes/main/controllers/ReverseRoutes.scala, /home/hadoop/Code/aircheck-server/target/scala-2.11/twirl/main/views/html/visualize.template.scala, /home/hadoop/Code/aircheck-server/target/scala-2.11/routes/main/router/Routes.scala, /home/hadoop/Code/aircheck-server/target/scala-2.11/routes/main/controllers/javascript/JavaScriptReverseRoutes.scala, /home/hadoop/Code/aircheck-server/target/scala-2.11/routes/main/router/RoutesPrefix.scala, /home/hadoop/Code/aircheck-server/target/scala-2.11/routes/main/controllers/routes.java, /home/hadoop/Code/aircheck-server/app/controllers/HomeController.scala)
-
-Read from stdout: Compiling 6 Scala sources and 1 Java source to /home/hadoop/Code/aircheck-server/target/scala-2.11/classes...
-Compiling 6 Scala sources and 1 Java source to /home/hadoop/Code/aircheck-server/target/scala-2.11/classes...
-Getting compiler-interface from component compiler for Scala 2.11.7
-Other repositories:
-Default repositories:
-Getting compiler-interface from component compiler for Scala 2.11.7
-Other repositories:
-Default repositories:
-Running cached compiler 6f0fe2c7, interfacing (CompilerInterface) with Scala compiler version 2.11.7
-Calling Scala compiler with arguments  (CompilerInterface):
-	-deprecation
-	-unchecked
-	-encoding
-	utf8
-	-bootclasspath
-	/usr/lib/jvm/java-8-oracle/jre/lib/resources.jar:/usr/lib/jvm/java-8-oracle/jre/lib/rt.jar:/usr/lib/jvm/java-8-oracle/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jsse.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jce.jar:/usr/lib/jvm/java-8-oracle/jre/lib/charsets.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jfr.jar:/usr/lib/jvm/java-8-oracle/jre/classes:/home/hadoop/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.7.jar
-	-classpath
-	/home/hadoop/Code/aircheck-server/target/scala-2.11/classes:/home/hadoop/activator/repository/com.typesafe.play/twirl-api_2.11/1.1.1/jars/twirl-api_2.11.jar:/home/hadoop/activator/repository/org.apache.commons/commons-lang3/3.4/jars/commons-lang3.jar:/home/hadoop/.ivy2/cache/org.scala-lang.modules/scala-xml_2.11/bundles/scala-xml_2.11-1.0.1.jar:/home/hadoop/.ivy2/cache/com.typesafe.play/play-server_2.11/jars/play-server_2.11-2.5.4.jar:/home/hadoop/.ivy2/cache/com.typesafe.play/play_2.11/jars/play_2.11-2.5.4.jar:/home/hadoop/.ivy2/cache/com.typesafe.play/build-link/jars/build-link-2.5.4.jar:/home/hadoop/.ivy2/cache/com.typesafe.play/play-exceptions/jars/play-exceptions-2.5.4.jar:/home/hadoop/.ivy2/cache/com.typesafe.play/play-iteratees_2.11/jars/play-iteratees_2.11-2.5.4.jar:/home/hadoop/.ivy2/cache/org.scala-stm/scala-stm_2.11/jars/scala-stm_2.11-0.7.jar:/home/hadoop/.ivy2/cache/com.typesafe/config/bundles/config-1.3.0.jar:/home/hadoop/.ivy2/cache/ch.qos.logback/logback-classic/jars/logback-classic-1.1.7.jar:/home/hadoop/.ivy2/cache/ch.qos.logback/logback-core/jars/logback-core-1.1.7.jar:/home/hadoop/.ivy2/cache/com.typesafe.play/play-json_2.11/jars/play-json_2.11-2.5.4.jar:/home/hadoop/.ivy2/cache/com.typesafe.play/play-functional_2.11/jars/play-functional_2.11-2.5.4.jar:/home/hadoop/.ivy2/cache/com.typesafe.play/play-datacommons_2.11/jars/play-datacommons_2.11-2.5.4.jar:/home/hadoop/activator/repository/joda-time/joda-time/2.9.2/jars/joda-time.jar:/home/hadoop/activator/repository/org.joda/joda-convert/1.8.1/jars/joda-convert.jar:/home/hadoop/.ivy2/cache/org.scala-lang/scala-reflect/jars/scala-reflect-2.11.7.jar:/home/hadoop/activator/repository/com.fasterxml.jackson.core/jackson-core/2.7.1/bundles/jackson-core.jar:/home/hadoop/activator/repository/com.fasterxml.jackson.core/jackson-annotations/2.7.1/bundles/jackson-annotations.jar:/home/hadoop/activator/repository/com.fasterxml.jackson.core/jackson-databind/2.7.1/bundles/jackson-databind.jar:/home/hadoop/activator/repository/com.fasterxml.jackson.datatype/jackson-datatype-jdk8/2.7.1/bundles/jackson-datatype-jdk8.jar:/home/hadoop/activator/repository/com.fasterxml.jackson.datatype/jackson-datatype-jsr310/2.7.1/bundles/jackson-datatype-jsr310.jar:/home/hadoop/.ivy2/cache/com.typesafe.play/play-netty-utils/jars/play-netty-utils-2.5.4.jar:/home/hadoop/.ivy2/cache/org.slf4j/jul-to-slf4j/jars/jul-to-slf4j-1.7.19.jar:/home/hadoop/.ivy2/cache/org.slf4j/jcl-over-slf4j/jars/jcl-over-slf4j-1.7.19.jar:/home/hadoop/.ivy2/cache/com.typesafe.play/play-streams_2.11/jars/play-streams_2.11-2.5.4.jar:/home/hadoop/.ivy2/cache/org.reactivestreams/reactive-streams/jars/reactive-streams-1.0.0.jar:/home/hadoop/.ivy2/cache/com.typesafe.akka/akka-stream_2.11/jars/akka-stream_2.11-2.4.4.jar:/home/hadoop/.ivy2/cache/com.typesafe.akka/akka-actor_2.11/jars/akka-actor_2.11-2.4.4.jar:/home/hadoop/.ivy2/cache/org.scala-lang.modules/scala-java8-compat_2.11/bundles/scala-java8-compat_2.11-0.7.0.jar:/home/hadoop/.ivy2/cache/com.typesafe/ssl-config-akka_2.11/bundles/ssl-config-akka_2.11-0.2.1.jar:/home/hadoop/.ivy2/cache/com.typesafe/ssl-config-core_2.11/bundles/ssl-config-core_2.11-0.2.1.jar:/home/hadoop/.ivy2/cache/org.scala-lang.modules/scala-parser-combinators_2.11/bundles/scala-parser-combinators_2.11-1.0.4.jar:/home/hadoop/.ivy2/cache/com.typesafe.akka/akka-slf4j_2.11/jars/akka-slf4j_2.11-2.4.4.jar:/home/hadoop/activator/repository/commons-codec/commons-codec/1.10/jars/commons-codec.jar:/home/hadoop/.ivy2/cache/xerces/xercesImpl/jars/xercesImpl-2.11.0.jar:/home/hadoop/.ivy2/cache/xml-apis/xml-apis/jars/xml-apis-1.4.01.jar:/home/hadoop/.ivy2/cache/javax.transaction/jta/jars/jta-1.1.jar:/home/hadoop/activator/repository/com.google.inject/guice/4.0/jars/guice.jar:/home/hadoop/.ivy2/cache/javax.inject/javax.inject/jars/javax.inject-1.jar:/home/hadoop/activator/repository/aopalliance/aopalliance/1.0/jars/aopalliance.jar:/home/hadoop/activator/repository/com.google.inject.extensions/guice-assistedinject/4.0/jars/guice-assistedinject.jar:/home/hadoop/.ivy2/cache/com.typesafe.play/play-netty-server_2.11/jars/play-netty-server_2.11-2.5.4.jar:/home/hadoop/.ivy2/cache/com.typesafe.netty/netty-reactive-streams-http/jars/netty-reactive-streams-http-1.0.6.jar:/home/hadoop/.ivy2/cache/com.typesafe.netty/netty-reactive-streams/jars/netty-reactive-streams-1.0.6.jar:/home/hadoop/activator/repository/io.netty/netty-handler/4.0.36.Final/jars/netty-handler.jar:/home/hadoop/activator/repository/io.netty/netty-buffer/4.0.36.Final/jars/netty-buffer.jar:/home/hadoop/activator/repository/io.netty/netty-common/4.0.36.Final/jars/netty-common.jar:/home/hadoop/activator/repository/io.netty/netty-transport/4.0.36.Final/jars/netty-transport.jar:/home/hadoop/activator/repository/io.netty/netty-codec/4.0.36.Final/jars/netty-codec.jar:/home/hadoop/activator/repository/io.netty/netty-codec-http/4.0.36.Final/jars/netty-codec-http.jar:/home/hadoop/activator/repository/io.netty/netty-transport-native-epoll/4.0.36.Final/jars/netty-transport-native-epoll-linux-x86_64.jar:/home/hadoop/.ivy2/cache/com.typesafe.play/play-logback_2.11/jars/play-logback_2.11-2.5.4.jar:/home/hadoop/.ivy2/cache/com.typesafe.play/play-jdbc_2.11/jars/play-jdbc_2.11-2.5.4.jar:/home/hadoop/.ivy2/cache/com.typesafe.play/play-jdbc-api_2.11/jars/play-jdbc-api_2.11-2.5.4.jar:/home/hadoop/activator/repository/com.jolbox/bonecp/0.8.0.RELEASE/bundles/bonecp.jar:/home/hadoop/activator/repository/com.zaxxer/HikariCP/2.4.3/bundles/HikariCP.jar:/home/hadoop/activator/repository/com.googlecode.usc/jdbcdslog/1.0.6.2/jars/jdbcdslog.jar:/home/hadoop/activator/repository/com.h2database/h2/1.4.191/jars/h2.jar:/home/hadoop/activator/repository/tyrex/tyrex/1.0.1/jars/tyrex.jar:/home/hadoop/.ivy2/cache/com.typesafe.play/play-cache_2.11/jars/play-cache_2.11-2.5.4.jar:/home/hadoop/activator/repository/net.sf.ehcache/ehcache-core/2.6.11/jars/ehcache-core.jar:/home/hadoop/.ivy2/cache/com.typesafe.play/play-ws_2.11/jars/play-ws_2.11-2.5.4.jar:/home/hadoop/activator/repository/com.google.guava/guava/19.0/bundles/guava.jar:/home/hadoop/.ivy2/cache/org.asynchttpclient/async-http-client/jars/async-http-client-2.0.2.jar:/home/hadoop/.ivy2/cache/org.asynchttpclient/netty-resolver-dns/jars/netty-resolver-dns-2.0.2.jar:/home/hadoop/.ivy2/cache/org.asynchttpclient/netty-resolver/jars/netty-resolver-2.0.2.jar:/home/hadoop/activator/repository/org.slf4j/slf4j-api/1.7.21/jars/slf4j-api.jar:/home/hadoop/.ivy2/cache/org.asynchttpclient/netty-codec-dns/jars/netty-codec-dns-2.0.2.jar:/home/hadoop/activator/repository/org.javassist/javassist/3.20.0-GA/bundles/javassist.jar:/home/hadoop/.ivy2/cache/oauth.signpost/signpost-core/jars/signpost-core-1.2.1.2.jar:/home/hadoop/.ivy2/cache/oauth.signpost/signpost-commonshttp4/jars/signpost-commonshttp4-1.2.1.2.jar:/home/hadoop/activator/repository/org.apache.httpcomponents/httpcore/4.0.1/jars/httpcore.jar:/home/hadoop/activator/repository/org.apache.httpcomponents/httpclient/4.0.1/jars/httpclient.jar:/home/hadoop/.ivy2/cache/commons-logging/commons-logging/jars/commons-logging-1.1.1.jar:/home/hadoop/.ivy2/cache/com.typesafe.play/filters-helpers_2.11/jars/filters-helpers_2.11-2.5.4.jar:/home/hadoop/.ivy2/cache/com.typesafe.play/play-java_2.11/jars/play-java_2.11-2.5.4.jar:/home/hadoop/activator/repository/org.yaml/snakeyaml/1.16/bundles/snakeyaml.jar:/home/hadoop/activator/repository/org.hibernate/hibernate-validator/5.2.4.Final/jars/hibernate-validator.jar:/home/hadoop/activator/repository/javax.validation/validation-api/1.1.0.Final/jars/validation-api.jar:/home/hadoop/activator/repository/org.jboss.logging/jboss-logging/3.2.1.Final/jars/jboss-logging.jar:/home/hadoop/activator/repository/com.fasterxml/classmate/1.1.0/bundles/classmate.jar:/home/hadoop/activator/repository/javax.el/javax.el-api/3.0.0/jars/javax.el-api.jar:/home/hadoop/activator/repository/org.springframework/spring-context/4.2.4.RELEASE/jars/spring-context.jar:/home/hadoop/activator/repository/org.springframework/spring-core/4.2.4.RELEASE/jars/spring-core.jar:/home/hadoop/activator/repository/org.springframework/spring-beans/4.2.4.RELEASE/jars/spring-beans.jar:/home/hadoop/activator/repository/org.reflections/reflections/0.9.10/jars/reflections.jar:/home/hadoop/activator/repository/net.jodah/typetools/0.4.4/bundles/typetools.jar:/home/hadoop/activator/repository/com.google.code.findbugs/jsr305/3.0.1/jars/jsr305.jar:/home/hadoop/.ivy2/cache/org.apache.tomcat/tomcat-servlet-api/jars/tomcat-servlet-api-8.0.33.jar:/home/hadoop/.ivy2/cache/mysql/mysql-connector-java/jars/mysql-connector-java-6.0.3.jar
-Read from stdout: /home/hadoop/Code/aircheck-server/app/views/visualize.scala.html:17: not found: value name
-/home/hadoop/Code/aircheck-server/app/views/visualize.scala.html:17: not found: value name
-Read from stdout: <a class="navbar-brand pull-right">Welcome:  @name</a>
-            <a class="navbar-brand pull-right">Welcome:  @name</a>
-Read from stdout: ^
-                                                          ^
-Read from stdout: one error found
-one error found
-Compilation failed (CompilerInterface)
-Total time: 2 s, completed Aug 8, 2016 8:25:37 PM
-> server-post-command-cleanup
-> server-handle-next-server-request
-> compile
-Evaluating tasks: compile:compile
-Running task... Cancel: sbt.server.ServerTaskCancellation@399a4af7, check cycles: false
-
-Initial source changes: 
-	removed:Set()
-	added: Set(/home/hadoop/Code/aircheck-server/target/scala-2.11/twirl/main/views/html/visualize.template.scala)
-	modified: Set(/home/hadoop/Code/aircheck-server/target/scala-2.11/routes/main/controllers/ReverseRoutes.scala, /home/hadoop/Code/aircheck-server/target/scala-2.11/routes/main/router/Routes.scala, /home/hadoop/Code/aircheck-server/target/scala-2.11/routes/main/controllers/javascript/JavaScriptReverseRoutes.scala, /home/hadoop/Code/aircheck-server/target/scala-2.11/routes/main/router/RoutesPrefix.scala, /home/hadoop/Code/aircheck-server/target/scala-2.11/routes/main/controllers/routes.java, /home/hadoop/Code/aircheck-server/app/controllers/HomeController.scala)
-Removed products: Set()
-External API changes: API Changes: Set()
-Modified binary dependencies: Set()
-Initial directly invalidated sources: Set(/home/hadoop/Code/aircheck-server/target/scala-2.11/routes/main/controllers/ReverseRoutes.scala, /home/hadoop/Code/aircheck-server/target/scala-2.11/twirl/main/views/html/visualize.template.scala, /home/hadoop/Code/aircheck-server/target/scala-2.11/routes/main/router/Routes.scala, /home/hadoop/Code/aircheck-server/target/scala-2.11/routes/main/controllers/javascript/JavaScriptReverseRoutes.scala, /home/hadoop/Code/aircheck-server/target/scala-2.11/routes/main/router/RoutesPrefix.scala, /home/hadoop/Code/aircheck-server/target/scala-2.11/routes/main/controllers/routes.java, /home/hadoop/Code/aircheck-server/app/controllers/HomeController.scala)
-
-Sources indirectly invalidated by:
-	product: Set()
-	binary dep: Set()
-	external source: Set()
-All initially invalidated sources: Set(/home/hadoop/Code/aircheck-server/target/scala-2.11/routes/main/controllers/ReverseRoutes.scala, /home/hadoop/Code/aircheck-server/target/scala-2.11/twirl/main/views/html/visualize.template.scala, /home/hadoop/Code/aircheck-server/target/scala-2.11/routes/main/router/Routes.scala, /home/hadoop/Code/aircheck-server/target/scala-2.11/routes/main/controllers/javascript/JavaScriptReverseRoutes.scala, /home/hadoop/Code/aircheck-server/target/scala-2.11/routes/main/router/RoutesPrefix.scala, /home/hadoop/Code/aircheck-server/target/scala-2.11/routes/main/controllers/routes.java, /home/hadoop/Code/aircheck-server/app/controllers/HomeController.scala)
-
-Read from stdout: Compiling 6 Scala sources and 1 Java source to /home/hadoop/Code/aircheck-server/target/scala-2.11/classes...
-Compiling 6 Scala sources and 1 Java source to /home/hadoop/Code/aircheck-server/target/scala-2.11/classes...
-Getting compiler-interface from component compiler for Scala 2.11.7
-Other repositories:
-Default repositories:
-Getting compiler-interface from component compiler for Scala 2.11.7
-Other repositories:
-Default repositories:
-Running cached compiler 71f182d6, interfacing (CompilerInterface) with Scala compiler version 2.11.7
-Calling Scala compiler with arguments  (CompilerInterface):
-	-deprecation
-	-unchecked
-	-encoding
-	utf8
-	-bootclasspath
-	/usr/lib/jvm/java-8-oracle/jre/lib/resources.jar:/usr/lib/jvm/java-8-oracle/jre/lib/rt.jar:/usr/lib/jvm/java-8-oracle/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jsse.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jce.jar:/usr/lib/jvm/java-8-oracle/jre/lib/charsets.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jfr.jar:/usr/lib/jvm/java-8-oracle/jre/classes:/home/hadoop/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.7.jar
-	-classpath
-	/home/hadoop/Code/aircheck-server/target/scala-2.11/classes:/home/hadoop/activator/repository/com.typesafe.play/twirl-api_2.11/1.1.1/jars/twirl-api_2.11.jar:/home/hadoop/activator/repository/org.apache.commons/commons-lang3/3.4/jars/commons-lang3.jar:/home/hadoop/.ivy2/cache/org.scala-lang.modules/scala-xml_2.11/bundles/scala-xml_2.11-1.0.1.jar:/home/hadoop/.ivy2/cache/com.typesafe.play/play-server_2.11/jars/play-server_2.11-2.5.4.jar:/home/hadoop/.ivy2/cache/com.typesafe.play/play_2.11/jars/play_2.11-2.5.4.jar:/home/hadoop/.ivy2/cache/com.typesafe.play/build-link/jars/build-link-2.5.4.jar:/home/hadoop/.ivy2/cache/com.typesafe.play/play-exceptions/jars/play-exceptions-2.5.4.jar:/home/hadoop/.ivy2/cache/com.typesafe.play/play-iteratees_2.11/jars/play-iteratees_2.11-2.5.4.jar:/home/hadoop/.ivy2/cache/org.scala-stm/scala-stm_2.11/jars/scala-stm_2.11-0.7.jar:/home/hadoop/.ivy2/cache/com.typesafe/config/bundles/config-1.3.0.jar:/home/hadoop/.ivy2/cache/ch.qos.logback/logback-classic/jars/logback-classic-1.1.7.jar:/home/hadoop/.ivy2/cache/ch.qos.logback/logback-core/jars/logback-core-1.1.7.jar:/home/hadoop/.ivy2/cache/com.typesafe.play/play-json_2.11/jars/play-json_2.11-2.5.4.jar:/home/hadoop/.ivy2/cache/com.typesafe.play/play-functional_2.11/jars/play-functional_2.11-2.5.4.jar:/home/hadoop/.ivy2/cache/com.typesafe.play/play-datacommons_2.11/jars/play-datacommons_2.11-2.5.4.jar:/home/hadoop/activator/repository/joda-time/joda-time/2.9.2/jars/joda-time.jar:/home/hadoop/activator/repository/org.joda/joda-convert/1.8.1/jars/joda-convert.jar:/home/hadoop/.ivy2/cache/org.scala-lang/scala-reflect/jars/scala-reflect-2.11.7.jar:/home/hadoop/activator/repository/com.fasterxml.jackson.core/jackson-core/2.7.1/bundles/jackson-core.jar:/home/hadoop/activator/repository/com.fasterxml.jackson.core/jackson-annotations/2.7.1/bundles/jackson-annotations.jar:/home/hadoop/activator/repository/com.fasterxml.jackson.core/jackson-databind/2.7.1/bundles/jackson-databind.jar:/home/hadoop/activator/repository/com.fasterxml.jackson.datatype/jackson-datatype-jdk8/2.7.1/bundles/jackson-datatype-jdk8.jar:/home/hadoop/activator/repository/com.fasterxml.jackson.datatype/jackson-datatype-jsr310/2.7.1/bundles/jackson-datatype-jsr310.jar:/home/hadoop/.ivy2/cache/com.typesafe.play/play-netty-utils/jars/play-netty-utils-2.5.4.jar:/home/hadoop/.ivy2/cache/org.slf4j/jul-to-slf4j/jars/jul-to-slf4j-1.7.19.jar:/home/hadoop/.ivy2/cache/org.slf4j/jcl-over-slf4j/jars/jcl-over-slf4j-1.7.19.jar:/home/hadoop/.ivy2/cache/com.typesafe.play/play-streams_2.11/jars/play-streams_2.11-2.5.4.jar:/home/hadoop/.ivy2/cache/org.reactivestreams/reactive-streams/jars/reactive-streams-1.0.0.jar:/home/hadoop/.ivy2/cache/com.typesafe.akka/akka-stream_2.11/jars/akka-stream_2.11-2.4.4.jar:/home/hadoop/.ivy2/cache/com.typesafe.akka/akka-actor_2.11/jars/akka-actor_2.11-2.4.4.jar:/home/hadoop/.ivy2/cache/org.scala-lang.modules/scala-java8-compat_2.11/bundles/scala-java8-compat_2.11-0.7.0.jar:/home/hadoop/.ivy2/cache/com.typesafe/ssl-config-akka_2.11/bundles/ssl-config-akka_2.11-0.2.1.jar:/home/hadoop/.ivy2/cache/com.typesafe/ssl-config-core_2.11/bundles/ssl-config-core_2.11-0.2.1.jar:/home/hadoop/.ivy2/cache/org.scala-lang.modules/scala-parser-combinators_2.11/bundles/scala-parser-combinators_2.11-1.0.4.jar:/home/hadoop/.ivy2/cache/com.typesafe.akka/akka-slf4j_2.11/jars/akka-slf4j_2.11-2.4.4.jar:/home/hadoop/activator/repository/commons-codec/commons-codec/1.10/jars/commons-codec.jar:/home/hadoop/.ivy2/cache/xerces/xercesImpl/jars/xercesImpl-2.11.0.jar:/home/hadoop/.ivy2/cache/xml-apis/xml-apis/jars/xml-apis-1.4.01.jar:/home/hadoop/.ivy2/cache/javax.transaction/jta/jars/jta-1.1.jar:/home/hadoop/activator/repository/com.google.inject/guice/4.0/jars/guice.jar:/home/hadoop/.ivy2/cache/javax.inject/javax.inject/jars/javax.inject-1.jar:/home/hadoop/activator/repository/aopalliance/aopalliance/1.0/jars/aopalliance.jar:/home/hadoop/activator/repository/com.google.inject.extensions/guice-assistedinject/4.0/jars/guice-assistedinject.jar:/home/hadoop/.ivy2/cache/com.typesafe.play/play-netty-server_2.11/jars/play-netty-server_2.11-2.5.4.jar:/home/hadoop/.ivy2/cache/com.typesafe.netty/netty-reactive-streams-http/jars/netty-reactive-streams-http-1.0.6.jar:/home/hadoop/.ivy2/cache/com.typesafe.netty/netty-reactive-streams/jars/netty-reactive-streams-1.0.6.jar:/home/hadoop/activator/repository/io.netty/netty-handler/4.0.36.Final/jars/netty-handler.jar:/home/hadoop/activator/repository/io.netty/netty-buffer/4.0.36.Final/jars/netty-buffer.jar:/home/hadoop/activator/repository/io.netty/netty-common/4.0.36.Final/jars/netty-common.jar:/home/hadoop/activator/repository/io.netty/netty-transport/4.0.36.Final/jars/netty-transport.jar:/home/hadoop/activator/repository/io.netty/netty-codec/4.0.36.Final/jars/netty-codec.jar:/home/hadoop/activator/repository/io.netty/netty-codec-http/4.0.36.Final/jars/netty-codec-http.jar:/home/hadoop/activator/repository/io.netty/netty-transport-native-epoll/4.0.36.Final/jars/netty-transport-native-epoll-linux-x86_64.jar:/home/hadoop/.ivy2/cache/com.typesafe.play/play-logback_2.11/jars/play-logback_2.11-2.5.4.jar:/home/hadoop/.ivy2/cache/com.typesafe.play/play-jdbc_2.11/jars/play-jdbc_2.11-2.5.4.jar:/home/hadoop/.ivy2/cache/com.typesafe.play/play-jdbc-api_2.11/jars/play-jdbc-api_2.11-2.5.4.jar:/home/hadoop/activator/repository/com.jolbox/bonecp/0.8.0.RELEASE/bundles/bonecp.jar:/home/hadoop/activator/repository/com.zaxxer/HikariCP/2.4.3/bundles/HikariCP.jar:/home/hadoop/activator/repository/com.googlecode.usc/jdbcdslog/1.0.6.2/jars/jdbcdslog.jar:/home/hadoop/activator/repository/com.h2database/h2/1.4.191/jars/h2.jar:/home/hadoop/activator/repository/tyrex/tyrex/1.0.1/jars/tyrex.jar:/home/hadoop/.ivy2/cache/com.typesafe.play/play-cache_2.11/jars/play-cache_2.11-2.5.4.jar:/home/hadoop/activator/repository/net.sf.ehcache/ehcache-core/2.6.11/jars/ehcache-core.jar:/home/hadoop/.ivy2/cache/com.typesafe.play/play-ws_2.11/jars/play-ws_2.11-2.5.4.jar:/home/hadoop/activator/repository/com.google.guava/guava/19.0/bundles/guava.jar:/home/hadoop/.ivy2/cache/org.asynchttpclient/async-http-client/jars/async-http-client-2.0.2.jar:/home/hadoop/.ivy2/cache/org.asynchttpclient/netty-resolver-dns/jars/netty-resolver-dns-2.0.2.jar:/home/hadoop/.ivy2/cache/org.asynchttpclient/netty-resolver/jars/netty-resolver-2.0.2.jar:/home/hadoop/activator/repository/org.slf4j/slf4j-api/1.7.21/jars/slf4j-api.jar:/home/hadoop/.ivy2/cache/org.asynchttpclient/netty-codec-dns/jars/netty-codec-dns-2.0.2.jar:/home/hadoop/activator/repository/org.javassist/javassist/3.20.0-GA/bundles/javassist.jar:/home/hadoop/.ivy2/cache/oauth.signpost/signpost-core/jars/signpost-core-1.2.1.2.jar:/home/hadoop/.ivy2/cache/oauth.signpost/signpost-commonshttp4/jars/signpost-commonshttp4-1.2.1.2.jar:/home/hadoop/activator/repository/org.apache.httpcomponents/httpcore/4.0.1/jars/httpcore.jar:/home/hadoop/activator/repository/org.apache.httpcomponents/httpclient/4.0.1/jars/httpclient.jar:/home/hadoop/.ivy2/cache/commons-logging/commons-logging/jars/commons-logging-1.1.1.jar:/home/hadoop/.ivy2/cache/com.typesafe.play/filters-helpers_2.11/jars/filters-helpers_2.11-2.5.4.jar:/home/hadoop/.ivy2/cache/com.typesafe.play/play-java_2.11/jars/play-java_2.11-2.5.4.jar:/home/hadoop/activator/repository/org.yaml/snakeyaml/1.16/bundles/snakeyaml.jar:/home/hadoop/activator/repository/org.hibernate/hibernate-validator/5.2.4.Final/jars/hibernate-validator.jar:/home/hadoop/activator/repository/javax.validation/validation-api/1.1.0.Final/jars/validation-api.jar:/home/hadoop/activator/repository/org.jboss.logging/jboss-logging/3.2.1.Final/jars/jboss-logging.jar:/home/hadoop/activator/repository/com.fasterxml/classmate/1.1.0/bundles/classmate.jar:/home/hadoop/activator/repository/javax.el/javax.el-api/3.0.0/jars/javax.el-api.jar:/home/hadoop/activator/repository/org.springframework/spring-context/4.2.4.RELEASE/jars/spring-context.jar:/home/hadoop/activator/repository/org.springframework/spring-core/4.2.4.RELEASE/jars/spring-core.jar:/home/hadoop/activator/repository/org.springframework/spring-beans/4.2.4.RELEASE/jars/spring-beans.jar:/home/hadoop/activator/repository/org.reflections/reflections/0.9.10/jars/reflections.jar:/home/hadoop/activator/repository/net.jodah/typetools/0.4.4/bundles/typetools.jar:/home/hadoop/activator/repository/com.google.code.findbugs/jsr305/3.0.1/jars/jsr305.jar:/home/hadoop/.ivy2/cache/org.apache.tomcat/tomcat-servlet-api/jars/tomcat-servlet-api-8.0.33.jar:/home/hadoop/.ivy2/cache/mysql/mysql-connector-java/jars/mysql-connector-java-6.0.3.jar
-Scala compilation took 3.083282707 s
-Attempting to call com.sun.tools.javac.api.JavacTool@1c4d8673 directly...
-Java compilation took 1.053568788 s
-Java analysis took 0.07845476 s
-Java compile + analysis took 1.166874968 s
-Invalidating /home/hadoop/Code/aircheck-server/target/scala-2.11/routes/main/controllers/ReverseRoutes.scala...
-Invalidating (transitively) by inheritance from /home/hadoop/Code/aircheck-server/target/scala-2.11/routes/main/controllers/ReverseRoutes.scala...
-Initial set of included nodes: Set(/home/hadoop/Code/aircheck-server/target/scala-2.11/routes/main/controllers/ReverseRoutes.scala)
-Invalidated by transitive inheritance dependency: Set(/home/hadoop/Code/aircheck-server/target/scala-2.11/routes/main/controllers/ReverseRoutes.scala)
-The /home/hadoop/Code/aircheck-server/target/scala-2.11/routes/main/controllers/ReverseRoutes.scala source file has the following regular definitions changed:
-	visualize.
-All member reference dependencies will be considered within this context.
-The following modified names cause invalidation of /home/hadoop/Code/aircheck-server/target/scala-2.11/twirl/main/views/html/visualize.template.scala: Set(visualize)
-None of the modified names appears in /home/hadoop/Code/aircheck-server/target/scala-2.11/twirl/main/views/html/bootstrap.template.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /home/hadoop/Code/aircheck-server/target/scala-2.11/twirl/main/views/html/contact.template.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /home/hadoop/Code/aircheck-server/target/scala-2.11/twirl/main/views/html/index_logined.template.scala. This dependency is not being considered for invalidation.
-Name hashing optimization doesn't apply to non-Scala dependency: /home/hadoop/Code/aircheck-server/target/scala-2.11/routes/main/controllers/routes.java
-None of the modified names appears in /home/hadoop/Code/aircheck-server/target/scala-2.11/twirl/main/views/html/registrate.template.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /home/hadoop/Code/aircheck-server/target/scala-2.11/twirl/main/views/html/index.template.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /home/hadoop/Code/aircheck-server/target/scala-2.11/twirl/main/views/html/about.template.scala. This dependency is not being considered for invalidation.
-Invalidating /home/hadoop/Code/aircheck-server/target/scala-2.11/twirl/main/views/html/visualize.template.scala...
-Invalidating (transitively) by inheritance from /home/hadoop/Code/aircheck-server/target/scala-2.11/twirl/main/views/html/visualize.template.scala...
-Initial set of included nodes: Set(/home/hadoop/Code/aircheck-server/target/scala-2.11/twirl/main/views/html/visualize.template.scala)
-Invalidated by transitive inheritance dependency: Set(/home/hadoop/Code/aircheck-server/target/scala-2.11/twirl/main/views/html/visualize.template.scala)
-The /home/hadoop/Code/aircheck-server/target/scala-2.11/twirl/main/views/html/visualize.template.scala source file has the following regular definitions changed:
-	notify, format, wait, $asInstanceOf, visualize_Scope1, productArity, equals, asInstanceOf, f, synchronized, _display_, $isInstanceOf, ref, canEqual, productPrefix, notifyAll, readResolve, isInstanceOf, <init>, apply, ==, clone, visualize, copy, toString, !=, getClass, copy$default$1, render, ne, visualize_Scope0, eq, productIterator, ##, finalize, productElement, hashCode.
-All member reference dependencies will be considered within this context.
-Invalidating /home/hadoop/Code/aircheck-server/target/scala-2.11/routes/main/controllers/javascript/JavaScriptReverseRoutes.scala...
-Invalidating (transitively) by inheritance from /home/hadoop/Code/aircheck-server/target/scala-2.11/routes/main/controllers/javascript/JavaScriptReverseRoutes.scala...
-Initial set of included nodes: Set(/home/hadoop/Code/aircheck-server/target/scala-2.11/routes/main/controllers/javascript/JavaScriptReverseRoutes.scala)
-Invalidated by transitive inheritance dependency: Set(/home/hadoop/Code/aircheck-server/target/scala-2.11/routes/main/controllers/javascript/JavaScriptReverseRoutes.scala)
-The /home/hadoop/Code/aircheck-server/target/scala-2.11/routes/main/controllers/javascript/JavaScriptReverseRoutes.scala source file has the following regular definitions changed:
-	visualize.
-All member reference dependencies will be considered within this context.
-Name hashing optimization doesn't apply to non-Scala dependency: /home/hadoop/Code/aircheck-server/target/scala-2.11/routes/main/controllers/routes.java
-Invalidating /home/hadoop/Code/aircheck-server/app/controllers/HomeController.scala...
-Invalidating (transitively) by inheritance from /home/hadoop/Code/aircheck-server/app/controllers/HomeController.scala...
-Initial set of included nodes: Set(/home/hadoop/Code/aircheck-server/app/controllers/HomeController.scala)
-Invalidated by transitive inheritance dependency: Set(/home/hadoop/Code/aircheck-server/app/controllers/HomeController.scala)
-The /home/hadoop/Code/aircheck-server/app/controllers/HomeController.scala source file has the following regular definitions changed:
-	visualize.
-All member reference dependencies will be considered within this context.
-The following modified names cause invalidation of /home/hadoop/Code/aircheck-server/target/scala-2.11/routes/main/router/Routes.scala: Set(visualize)
-New invalidations:
-	Set(/home/hadoop/Code/aircheck-server/target/scala-2.11/routes/main/router/Routes.scala, /home/hadoop/Code/aircheck-server/target/scala-2.11/routes/main/controllers/routes.java)
-Initial set of included nodes: Set(/home/hadoop/Code/aircheck-server/target/scala-2.11/routes/main/router/Routes.scala, /home/hadoop/Code/aircheck-server/target/scala-2.11/routes/main/controllers/routes.java)
-Including /home/hadoop/Code/aircheck-server/target/scala-2.11/twirl/main/views/html/visualize.template.scala by /home/hadoop/Code/aircheck-server/target/scala-2.11/routes/main/controllers/routes.java
-Including /home/hadoop/Code/aircheck-server/target/scala-2.11/twirl/main/views/html/bootstrap.template.scala by /home/hadoop/Code/aircheck-server/target/scala-2.11/routes/main/controllers/routes.java
-Including /home/hadoop/Code/aircheck-server/target/scala-2.11/twirl/main/views/html/contact.template.scala by /home/hadoop/Code/aircheck-server/target/scala-2.11/twirl/main/views/html/bootstrap.template.scala
-Including /home/hadoop/Code/aircheck-server/app/controllers/HomeController.scala by /home/hadoop/Code/aircheck-server/target/scala-2.11/twirl/main/views/html/contact.template.scala
-Including /home/hadoop/Code/aircheck-server/target/scala-2.11/twirl/main/views/html/index_logined.template.scala by /home/hadoop/Code/aircheck-server/target/scala-2.11/twirl/main/views/html/bootstrap.template.scala
-Including /home/hadoop/Code/aircheck-server/target/scala-2.11/twirl/main/views/html/registrate.template.scala by /home/hadoop/Code/aircheck-server/target/scala-2.11/twirl/main/views/html/bootstrap.template.scala
-Including /home/hadoop/Code/aircheck-server/app/controllers/RegistrationController.scala by /home/hadoop/Code/aircheck-server/target/scala-2.11/twirl/main/views/html/registrate.template.scala
-Including /home/hadoop/Code/aircheck-server/target/scala-2.11/twirl/main/views/html/index.template.scala by /home/hadoop/Code/aircheck-server/target/scala-2.11/twirl/main/views/html/bootstrap.template.scala
-Including /home/hadoop/Code/aircheck-server/target/scala-2.11/twirl/main/views/html/about.template.scala by /home/hadoop/Code/aircheck-server/target/scala-2.11/twirl/main/views/html/bootstrap.template.scala
-Previously invalidated, but (transitively) depend on new invalidations:
-	Set(/home/hadoop/Code/aircheck-server/target/scala-2.11/twirl/main/views/html/visualize.template.scala, /home/hadoop/Code/aircheck-server/app/controllers/HomeController.scala)
-All newly invalidated sources after taking into account (previously) recompiled sources:Set()
-Total time: 5 s, completed Aug 8, 2016 8:29:31 PM
-> server-post-command-cleanup
-> server-handle-next-server-request
-> compile
-Evaluating tasks: compile:compile
-Running task... Cancel: sbt.server.ServerTaskCancellation@366771be, check cycles: false
+> {file:/Users/Scott/Code/aircheck-server/}root/compile:discoveredMainClasses
+Evaluating tasks: compile:discoveredMainClasses
+Running task... Cancel: sbt.server.ServerTaskCancellation@6a16c005, check cycles: false
 
 Initial source changes: 
 	removed:Set()
 	added: Set()
-	modified: Set(/home/hadoop/Code/aircheck-server/app/controllers/HomeController.scala)
+	modified: Set()
 Removed products: Set()
 External API changes: API Changes: Set()
 Modified binary dependencies: Set()
-Initial directly invalidated sources: Set(/home/hadoop/Code/aircheck-server/app/controllers/HomeController.scala)
+Initial directly invalidated sources: Set()
 
 Sources indirectly invalidated by:
 	product: Set()
 	binary dep: Set()
 	external source: Set()
-All initially invalidated sources: Set(/home/hadoop/Code/aircheck-server/app/controllers/HomeController.scala)
+All initially invalidated sources: Set()
 
-Read from stdout: Compiling 1 Scala source to /home/hadoop/Code/aircheck-server/target/scala-2.11/classes...
-Compiling 1 Scala source to /home/hadoop/Code/aircheck-server/target/scala-2.11/classes...
-Getting compiler-interface from component compiler for Scala 2.11.7
-Other repositories:
-Default repositories:
-Getting compiler-interface from component compiler for Scala 2.11.7
-Other repositories:
-Default repositories:
-Running cached compiler 68a58283, interfacing (CompilerInterface) with Scala compiler version 2.11.7
-Calling Scala compiler with arguments  (CompilerInterface):
-	-deprecation
-	-unchecked
-	-encoding
-	utf8
-	-bootclasspath
-	/usr/lib/jvm/java-8-oracle/jre/lib/resources.jar:/usr/lib/jvm/java-8-oracle/jre/lib/rt.jar:/usr/lib/jvm/java-8-oracle/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jsse.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jce.jar:/usr/lib/jvm/java-8-oracle/jre/lib/charsets.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jfr.jar:/usr/lib/jvm/java-8-oracle/jre/classes:/home/hadoop/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.7.jar
-	-classpath
-	/home/hadoop/Code/aircheck-server/target/scala-2.11/classes:/home/hadoop/activator/repository/com.typesafe.play/twirl-api_2.11/1.1.1/jars/twirl-api_2.11.jar:/home/hadoop/activator/repository/org.apache.commons/commons-lang3/3.4/jars/commons-lang3.jar:/home/hadoop/.ivy2/cache/org.scala-lang.modules/scala-xml_2.11/bundles/scala-xml_2.11-1.0.1.jar:/home/hadoop/.ivy2/cache/com.typesafe.play/play-server_2.11/jars/play-server_2.11-2.5.4.jar:/home/hadoop/.ivy2/cache/com.typesafe.play/play_2.11/jars/play_2.11-2.5.4.jar:/home/hadoop/.ivy2/cache/com.typesafe.play/build-link/jars/build-link-2.5.4.jar:/home/hadoop/.ivy2/cache/com.typesafe.play/play-exceptions/jars/play-exceptions-2.5.4.jar:/home/hadoop/.ivy2/cache/com.typesafe.play/play-iteratees_2.11/jars/play-iteratees_2.11-2.5.4.jar:/home/hadoop/.ivy2/cache/org.scala-stm/scala-stm_2.11/jars/scala-stm_2.11-0.7.jar:/home/hadoop/.ivy2/cache/com.typesafe/config/bundles/config-1.3.0.jar:/home/hadoop/.ivy2/cache/ch.qos.logback/logback-classic/jars/logback-classic-1.1.7.jar:/home/hadoop/.ivy2/cache/ch.qos.logback/logback-core/jars/logback-core-1.1.7.jar:/home/hadoop/.ivy2/cache/com.typesafe.play/play-json_2.11/jars/play-json_2.11-2.5.4.jar:/home/hadoop/.ivy2/cache/com.typesafe.play/play-functional_2.11/jars/play-functional_2.11-2.5.4.jar:/home/hadoop/.ivy2/cache/com.typesafe.play/play-datacommons_2.11/jars/play-datacommons_2.11-2.5.4.jar:/home/hadoop/activator/repository/joda-time/joda-time/2.9.2/jars/joda-time.jar:/home/hadoop/activator/repository/org.joda/joda-convert/1.8.1/jars/joda-convert.jar:/home/hadoop/.ivy2/cache/org.scala-lang/scala-reflect/jars/scala-reflect-2.11.7.jar:/home/hadoop/activator/repository/com.fasterxml.jackson.core/jackson-core/2.7.1/bundles/jackson-core.jar:/home/hadoop/activator/repository/com.fasterxml.jackson.core/jackson-annotations/2.7.1/bundles/jackson-annotations.jar:/home/hadoop/activator/repository/com.fasterxml.jackson.core/jackson-databind/2.7.1/bundles/jackson-databind.jar:/home/hadoop/activator/repository/com.fasterxml.jackson.datatype/jackson-datatype-jdk8/2.7.1/bundles/jackson-datatype-jdk8.jar:/home/hadoop/activator/repository/com.fasterxml.jackson.datatype/jackson-datatype-jsr310/2.7.1/bundles/jackson-datatype-jsr310.jar:/home/hadoop/.ivy2/cache/com.typesafe.play/play-netty-utils/jars/play-netty-utils-2.5.4.jar:/home/hadoop/.ivy2/cache/org.slf4j/jul-to-slf4j/jars/jul-to-slf4j-1.7.19.jar:/home/hadoop/.ivy2/cache/org.slf4j/jcl-over-slf4j/jars/jcl-over-slf4j-1.7.19.jar:/home/hadoop/.ivy2/cache/com.typesafe.play/play-streams_2.11/jars/play-streams_2.11-2.5.4.jar:/home/hadoop/.ivy2/cache/org.reactivestreams/reactive-streams/jars/reactive-streams-1.0.0.jar:/home/hadoop/.ivy2/cache/com.typesafe.akka/akka-stream_2.11/jars/akka-stream_2.11-2.4.4.jar:/home/hadoop/.ivy2/cache/com.typesafe.akka/akka-actor_2.11/jars/akka-actor_2.11-2.4.4.jar:/home/hadoop/.ivy2/cache/org.scala-lang.modules/scala-java8-compat_2.11/bundles/scala-java8-compat_2.11-0.7.0.jar:/home/hadoop/.ivy2/cache/com.typesafe/ssl-config-akka_2.11/bundles/ssl-config-akka_2.11-0.2.1.jar:/home/hadoop/.ivy2/cache/com.typesafe/ssl-config-core_2.11/bundles/ssl-config-core_2.11-0.2.1.jar:/home/hadoop/.ivy2/cache/org.scala-lang.modules/scala-parser-combinators_2.11/bundles/scala-parser-combinators_2.11-1.0.4.jar:/home/hadoop/.ivy2/cache/com.typesafe.akka/akka-slf4j_2.11/jars/akka-slf4j_2.11-2.4.4.jar:/home/hadoop/activator/repository/commons-codec/commons-codec/1.10/jars/commons-codec.jar:/home/hadoop/.ivy2/cache/xerces/xercesImpl/jars/xercesImpl-2.11.0.jar:/home/hadoop/.ivy2/cache/xml-apis/xml-apis/jars/xml-apis-1.4.01.jar:/home/hadoop/.ivy2/cache/javax.transaction/jta/jars/jta-1.1.jar:/home/hadoop/activator/repository/com.google.inject/guice/4.0/jars/guice.jar:/home/hadoop/.ivy2/cache/javax.inject/javax.inject/jars/javax.inject-1.jar:/home/hadoop/activator/repository/aopalliance/aopalliance/1.0/jars/aopalliance.jar:/home/hadoop/activator/repository/com.google.inject.extensions/guice-assistedinject/4.0/jars/guice-assistedinject.jar:/home/hadoop/.ivy2/cache/com.typesafe.play/play-netty-server_2.11/jars/play-netty-server_2.11-2.5.4.jar:/home/hadoop/.ivy2/cache/com.typesafe.netty/netty-reactive-streams-http/jars/netty-reactive-streams-http-1.0.6.jar:/home/hadoop/.ivy2/cache/com.typesafe.netty/netty-reactive-streams/jars/netty-reactive-streams-1.0.6.jar:/home/hadoop/activator/repository/io.netty/netty-handler/4.0.36.Final/jars/netty-handler.jar:/home/hadoop/activator/repository/io.netty/netty-buffer/4.0.36.Final/jars/netty-buffer.jar:/home/hadoop/activator/repository/io.netty/netty-common/4.0.36.Final/jars/netty-common.jar:/home/hadoop/activator/repository/io.netty/netty-transport/4.0.36.Final/jars/netty-transport.jar:/home/hadoop/activator/repository/io.netty/netty-codec/4.0.36.Final/jars/netty-codec.jar:/home/hadoop/activator/repository/io.netty/netty-codec-http/4.0.36.Final/jars/netty-codec-http.jar:/home/hadoop/activator/repository/io.netty/netty-transport-native-epoll/4.0.36.Final/jars/netty-transport-native-epoll-linux-x86_64.jar:/home/hadoop/.ivy2/cache/com.typesafe.play/play-logback_2.11/jars/play-logback_2.11-2.5.4.jar:/home/hadoop/.ivy2/cache/com.typesafe.play/play-jdbc_2.11/jars/play-jdbc_2.11-2.5.4.jar:/home/hadoop/.ivy2/cache/com.typesafe.play/play-jdbc-api_2.11/jars/play-jdbc-api_2.11-2.5.4.jar:/home/hadoop/activator/repository/com.jolbox/bonecp/0.8.0.RELEASE/bundles/bonecp.jar:/home/hadoop/activator/repository/com.zaxxer/HikariCP/2.4.3/bundles/HikariCP.jar:/home/hadoop/activator/repository/com.googlecode.usc/jdbcdslog/1.0.6.2/jars/jdbcdslog.jar:/home/hadoop/activator/repository/com.h2database/h2/1.4.191/jars/h2.jar:/home/hadoop/activator/repository/tyrex/tyrex/1.0.1/jars/tyrex.jar:/home/hadoop/.ivy2/cache/com.typesafe.play/play-cache_2.11/jars/play-cache_2.11-2.5.4.jar:/home/hadoop/activator/repository/net.sf.ehcache/ehcache-core/2.6.11/jars/ehcache-core.jar:/home/hadoop/.ivy2/cache/com.typesafe.play/play-ws_2.11/jars/play-ws_2.11-2.5.4.jar:/home/hadoop/activator/repository/com.google.guava/guava/19.0/bundles/guava.jar:/home/hadoop/.ivy2/cache/org.asynchttpclient/async-http-client/jars/async-http-client-2.0.2.jar:/home/hadoop/.ivy2/cache/org.asynchttpclient/netty-resolver-dns/jars/netty-resolver-dns-2.0.2.jar:/home/hadoop/.ivy2/cache/org.asynchttpclient/netty-resolver/jars/netty-resolver-2.0.2.jar:/home/hadoop/activator/repository/org.slf4j/slf4j-api/1.7.21/jars/slf4j-api.jar:/home/hadoop/.ivy2/cache/org.asynchttpclient/netty-codec-dns/jars/netty-codec-dns-2.0.2.jar:/home/hadoop/activator/repository/org.javassist/javassist/3.20.0-GA/bundles/javassist.jar:/home/hadoop/.ivy2/cache/oauth.signpost/signpost-core/jars/signpost-core-1.2.1.2.jar:/home/hadoop/.ivy2/cache/oauth.signpost/signpost-commonshttp4/jars/signpost-commonshttp4-1.2.1.2.jar:/home/hadoop/activator/repository/org.apache.httpcomponents/httpcore/4.0.1/jars/httpcore.jar:/home/hadoop/activator/repository/org.apache.httpcomponents/httpclient/4.0.1/jars/httpclient.jar:/home/hadoop/.ivy2/cache/commons-logging/commons-logging/jars/commons-logging-1.1.1.jar:/home/hadoop/.ivy2/cache/com.typesafe.play/filters-helpers_2.11/jars/filters-helpers_2.11-2.5.4.jar:/home/hadoop/.ivy2/cache/com.typesafe.play/play-java_2.11/jars/play-java_2.11-2.5.4.jar:/home/hadoop/activator/repository/org.yaml/snakeyaml/1.16/bundles/snakeyaml.jar:/home/hadoop/activator/repository/org.hibernate/hibernate-validator/5.2.4.Final/jars/hibernate-validator.jar:/home/hadoop/activator/repository/javax.validation/validation-api/1.1.0.Final/jars/validation-api.jar:/home/hadoop/activator/repository/org.jboss.logging/jboss-logging/3.2.1.Final/jars/jboss-logging.jar:/home/hadoop/activator/repository/com.fasterxml/classmate/1.1.0/bundles/classmate.jar:/home/hadoop/activator/repository/javax.el/javax.el-api/3.0.0/jars/javax.el-api.jar:/home/hadoop/activator/repository/org.springframework/spring-context/4.2.4.RELEASE/jars/spring-context.jar:/home/hadoop/activator/repository/org.springframework/spring-core/4.2.4.RELEASE/jars/spring-core.jar:/home/hadoop/activator/repository/org.springframework/spring-beans/4.2.4.RELEASE/jars/spring-beans.jar:/home/hadoop/activator/repository/org.reflections/reflections/0.9.10/jars/reflections.jar:/home/hadoop/activator/repository/net.jodah/typetools/0.4.4/bundles/typetools.jar:/home/hadoop/activator/repository/com.google.code.findbugs/jsr305/3.0.1/jars/jsr305.jar:/home/hadoop/.ivy2/cache/org.apache.tomcat/tomcat-servlet-api/jars/tomcat-servlet-api-8.0.33.jar:/home/hadoop/.ivy2/cache/mysql/mysql-connector-java/jars/mysql-connector-java-6.0.3.jar
-Scala compilation took 1.919164392 s
-New invalidations:
-	Set()
-Initial set of included nodes: Set()
-Previously invalidated, but (transitively) depend on new invalidations:
-	Set()
-All newly invalidated sources after taking into account (previously) recompiled sources:Set()
-Total time: 2 s, completed Aug 8, 2016 8:30:12 PM
+Total time: 2 s, completed Sep 18, 2016 2:10:04 PM
 > server-post-command-cleanup
 > server-handle-next-server-request
-> {file:/home/hadoop/Code/aircheck-server/}root/*:playForkReload
+> {file:/Users/Scott/Code/aircheck-server/}root/compile:mainClass
+Evaluating tasks: compile:mainClass
+Running task... Cancel: sbt.server.ServerTaskCancellation@1c8c78ba, check cycles: false
+Total time: 0 s, completed Sep 18, 2016 2:10:05 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> backgroundRun
+Evaluating tasks: compile:backgroundRun
+Running task... Cancel: sbt.server.ServerTaskCancellation@75d51f10, check cycles: false
+Total time: 0 s, completed Sep 18, 2016 2:10:13 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/Users/Scott/Code/aircheck-server/}root/*:playForkConfig
+Evaluating tasks: *:playForkConfig
+Running task... Cancel: sbt.server.ServerTaskCancellation@589454c7, check cycles: false
+Total time: 1 s, completed Sep 18, 2016 2:10:18 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> root/playForkNotifyStart http://localhost:9000
+Evaluating tasks: *:playForkNotifyStart
+Running task... Cancel: sbt.server.ServerTaskCancellation@57363dd8, check cycles: false
+Total time: 0 s, completed Sep 18, 2016 2:10:21 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/Users/Scott/Code/aircheck-server/}root/*:playForkReload
 Evaluating tasks: *:playForkReload
-Running task... Cancel: sbt.server.ServerTaskCancellation@1dd28027, check cycles: false
+Running task... Cancel: sbt.server.ServerTaskCancellation@39aa47b7, check cycles: false
 
 Initial source changes: 
 	removed:Set()
@@ -467,15 +192,39 @@ Sources indirectly invalidated by:
 All initially invalidated sources: Set()
 
 Copy resource mappings: 
-	(/home/hadoop/Code/aircheck-server/conf/application.conf,/home/hadoop/Code/aircheck-server/target/scala-2.11/classes/application.conf)
-	(/home/hadoop/Code/aircheck-server/conf/routes,/home/hadoop/Code/aircheck-server/target/scala-2.11/classes/routes)
-	(/home/hadoop/Code/aircheck-server/conf/logback.xml,/home/hadoop/Code/aircheck-server/target/scala-2.11/classes/logback.xml)
-Total time: 0 s, completed Aug 8, 2016 8:30:12 PM
+	(/Users/Scott/Code/aircheck-server/conf/application.conf,/Users/Scott/Code/aircheck-server/target/scala-2.11/classes/application.conf)
+	(/Users/Scott/Code/aircheck-server/conf/logback.xml,/Users/Scott/Code/aircheck-server/target/scala-2.11/classes/logback.xml)
+	(/Users/Scott/Code/aircheck-server/conf/routes,/Users/Scott/Code/aircheck-server/target/scala-2.11/classes/routes)
+Total time: 2 s, completed Sep 18, 2016 2:11:37 PM
 > server-post-command-cleanup
 > server-handle-next-server-request
-> {file:/home/hadoop/Code/aircheck-server/}root/*:playForkReload
+> jobStop 1
+Evaluating tasks: *:jobStop
+Running task... Cancel: sbt.server.ServerTaskCancellation@c40773f, check cycles: false
+Total time: 0 s, completed Sep 18, 2016 2:12:08 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> backgroundRun
+Evaluating tasks: compile:backgroundRun
+Running task... Cancel: sbt.server.ServerTaskCancellation@1e6582e2, check cycles: false
+Total time: 0 s, completed Sep 18, 2016 2:12:14 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/Users/Scott/Code/aircheck-server/}root/*:playForkConfig
+Evaluating tasks: *:playForkConfig
+Running task... Cancel: sbt.server.ServerTaskCancellation@6ab75fff, check cycles: false
+Total time: 1 s, completed Sep 18, 2016 2:12:18 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> root/playForkNotifyStart http://localhost:9000
+Evaluating tasks: *:playForkNotifyStart
+Running task... Cancel: sbt.server.ServerTaskCancellation@2ca4f8d8, check cycles: false
+Total time: 0 s, completed Sep 18, 2016 2:12:19 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/Users/Scott/Code/aircheck-server/}root/*:playForkReload
 Evaluating tasks: *:playForkReload
-Running task... Cancel: sbt.server.ServerTaskCancellation@2ec76845, check cycles: false
+Running task... Cancel: sbt.server.ServerTaskCancellation@10b563, check cycles: false
 
 Initial source changes: 
 	removed:Set()
@@ -493,396 +242,9 @@ Sources indirectly invalidated by:
 All initially invalidated sources: Set()
 
 Copy resource mappings: 
-	(/home/hadoop/Code/aircheck-server/conf/application.conf,/home/hadoop/Code/aircheck-server/target/scala-2.11/classes/application.conf)
-	(/home/hadoop/Code/aircheck-server/conf/routes,/home/hadoop/Code/aircheck-server/target/scala-2.11/classes/routes)
-	(/home/hadoop/Code/aircheck-server/conf/logback.xml,/home/hadoop/Code/aircheck-server/target/scala-2.11/classes/logback.xml)
-Total time: 1 s, completed Aug 8, 2016 8:31:22 PM
+	(/Users/Scott/Code/aircheck-server/conf/application.conf,/Users/Scott/Code/aircheck-server/target/scala-2.11/classes/application.conf)
+	(/Users/Scott/Code/aircheck-server/conf/logback.xml,/Users/Scott/Code/aircheck-server/target/scala-2.11/classes/logback.xml)
+	(/Users/Scott/Code/aircheck-server/conf/routes,/Users/Scott/Code/aircheck-server/target/scala-2.11/classes/routes)
+Total time: 1 s, completed Sep 18, 2016 2:12:40 PM
 > server-post-command-cleanup
 > server-handle-next-server-request
-> {file:/home/hadoop/Code/aircheck-server/}root/*:playForkReload
-Evaluating tasks: *:playForkReload
-Running task... Cancel: sbt.server.ServerTaskCancellation@e8607e9, check cycles: false
-
-Initial source changes: 
-	removed:Set()
-	added: Set()
-	modified: Set()
-Removed products: Set()
-External API changes: API Changes: Set()
-Modified binary dependencies: Set()
-Initial directly invalidated sources: Set()
-
-Sources indirectly invalidated by:
-	product: Set()
-	binary dep: Set()
-	external source: Set()
-All initially invalidated sources: Set()
-
-Copy resource mappings: 
-	(/home/hadoop/Code/aircheck-server/conf/application.conf,/home/hadoop/Code/aircheck-server/target/scala-2.11/classes/application.conf)
-	(/home/hadoop/Code/aircheck-server/conf/routes,/home/hadoop/Code/aircheck-server/target/scala-2.11/classes/routes)
-	(/home/hadoop/Code/aircheck-server/conf/logback.xml,/home/hadoop/Code/aircheck-server/target/scala-2.11/classes/logback.xml)
-Total time: 0 s, completed Aug 8, 2016 8:32:04 PM
-> server-post-command-cleanup
-> server-handle-next-server-request
-> compile
-Evaluating tasks: compile:compile
-Running task... Cancel: sbt.server.ServerTaskCancellation@6a2be939, check cycles: false
-
-Initial source changes: 
-	removed:Set()
-	added: Set()
-	modified: Set(/home/hadoop/Code/aircheck-server/app/dao/MySQL.scala)
-Removed products: Set()
-External API changes: API Changes: Set()
-Modified binary dependencies: Set()
-Initial directly invalidated sources: Set(/home/hadoop/Code/aircheck-server/app/dao/MySQL.scala)
-
-Sources indirectly invalidated by:
-	product: Set()
-	binary dep: Set()
-	external source: Set()
-All initially invalidated sources: Set(/home/hadoop/Code/aircheck-server/app/dao/MySQL.scala)
-
-Read from stdout: Compiling 1 Scala source to /home/hadoop/Code/aircheck-server/target/scala-2.11/classes...
-Compiling 1 Scala source to /home/hadoop/Code/aircheck-server/target/scala-2.11/classes...
-Getting compiler-interface from component compiler for Scala 2.11.7
-Other repositories:
-Default repositories:
-Getting compiler-interface from component compiler for Scala 2.11.7
-Other repositories:
-Default repositories:
-Running cached compiler eb08671, interfacing (CompilerInterface) with Scala compiler version 2.11.7
-Calling Scala compiler with arguments  (CompilerInterface):
-	-deprecation
-	-unchecked
-	-encoding
-	utf8
-	-bootclasspath
-	/usr/lib/jvm/java-8-oracle/jre/lib/resources.jar:/usr/lib/jvm/java-8-oracle/jre/lib/rt.jar:/usr/lib/jvm/java-8-oracle/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jsse.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jce.jar:/usr/lib/jvm/java-8-oracle/jre/lib/charsets.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jfr.jar:/usr/lib/jvm/java-8-oracle/jre/classes:/home/hadoop/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.7.jar
-	-classpath
-	/home/hadoop/Code/aircheck-server/target/scala-2.11/classes:/home/hadoop/activator/repository/com.typesafe.play/twirl-api_2.11/1.1.1/jars/twirl-api_2.11.jar:/home/hadoop/activator/repository/org.apache.commons/commons-lang3/3.4/jars/commons-lang3.jar:/home/hadoop/.ivy2/cache/org.scala-lang.modules/scala-xml_2.11/bundles/scala-xml_2.11-1.0.1.jar:/home/hadoop/.ivy2/cache/com.typesafe.play/play-server_2.11/jars/play-server_2.11-2.5.4.jar:/home/hadoop/.ivy2/cache/com.typesafe.play/play_2.11/jars/play_2.11-2.5.4.jar:/home/hadoop/.ivy2/cache/com.typesafe.play/build-link/jars/build-link-2.5.4.jar:/home/hadoop/.ivy2/cache/com.typesafe.play/play-exceptions/jars/play-exceptions-2.5.4.jar:/home/hadoop/.ivy2/cache/com.typesafe.play/play-iteratees_2.11/jars/play-iteratees_2.11-2.5.4.jar:/home/hadoop/.ivy2/cache/org.scala-stm/scala-stm_2.11/jars/scala-stm_2.11-0.7.jar:/home/hadoop/.ivy2/cache/com.typesafe/config/bundles/config-1.3.0.jar:/home/hadoop/.ivy2/cache/ch.qos.logback/logback-classic/jars/logback-classic-1.1.7.jar:/home/hadoop/.ivy2/cache/ch.qos.logback/logback-core/jars/logback-core-1.1.7.jar:/home/hadoop/.ivy2/cache/com.typesafe.play/play-json_2.11/jars/play-json_2.11-2.5.4.jar:/home/hadoop/.ivy2/cache/com.typesafe.play/play-functional_2.11/jars/play-functional_2.11-2.5.4.jar:/home/hadoop/.ivy2/cache/com.typesafe.play/play-datacommons_2.11/jars/play-datacommons_2.11-2.5.4.jar:/home/hadoop/activator/repository/joda-time/joda-time/2.9.2/jars/joda-time.jar:/home/hadoop/activator/repository/org.joda/joda-convert/1.8.1/jars/joda-convert.jar:/home/hadoop/.ivy2/cache/org.scala-lang/scala-reflect/jars/scala-reflect-2.11.7.jar:/home/hadoop/activator/repository/com.fasterxml.jackson.core/jackson-core/2.7.1/bundles/jackson-core.jar:/home/hadoop/activator/repository/com.fasterxml.jackson.core/jackson-annotations/2.7.1/bundles/jackson-annotations.jar:/home/hadoop/activator/repository/com.fasterxml.jackson.core/jackson-databind/2.7.1/bundles/jackson-databind.jar:/home/hadoop/activator/repository/com.fasterxml.jackson.datatype/jackson-datatype-jdk8/2.7.1/bundles/jackson-datatype-jdk8.jar:/home/hadoop/activator/repository/com.fasterxml.jackson.datatype/jackson-datatype-jsr310/2.7.1/bundles/jackson-datatype-jsr310.jar:/home/hadoop/.ivy2/cache/com.typesafe.play/play-netty-utils/jars/play-netty-utils-2.5.4.jar:/home/hadoop/.ivy2/cache/org.slf4j/jul-to-slf4j/jars/jul-to-slf4j-1.7.19.jar:/home/hadoop/.ivy2/cache/org.slf4j/jcl-over-slf4j/jars/jcl-over-slf4j-1.7.19.jar:/home/hadoop/.ivy2/cache/com.typesafe.play/play-streams_2.11/jars/play-streams_2.11-2.5.4.jar:/home/hadoop/.ivy2/cache/org.reactivestreams/reactive-streams/jars/reactive-streams-1.0.0.jar:/home/hadoop/.ivy2/cache/com.typesafe.akka/akka-stream_2.11/jars/akka-stream_2.11-2.4.4.jar:/home/hadoop/.ivy2/cache/com.typesafe.akka/akka-actor_2.11/jars/akka-actor_2.11-2.4.4.jar:/home/hadoop/.ivy2/cache/org.scala-lang.modules/scala-java8-compat_2.11/bundles/scala-java8-compat_2.11-0.7.0.jar:/home/hadoop/.ivy2/cache/com.typesafe/ssl-config-akka_2.11/bundles/ssl-config-akka_2.11-0.2.1.jar:/home/hadoop/.ivy2/cache/com.typesafe/ssl-config-core_2.11/bundles/ssl-config-core_2.11-0.2.1.jar:/home/hadoop/.ivy2/cache/org.scala-lang.modules/scala-parser-combinators_2.11/bundles/scala-parser-combinators_2.11-1.0.4.jar:/home/hadoop/.ivy2/cache/com.typesafe.akka/akka-slf4j_2.11/jars/akka-slf4j_2.11-2.4.4.jar:/home/hadoop/activator/repository/commons-codec/commons-codec/1.10/jars/commons-codec.jar:/home/hadoop/.ivy2/cache/xerces/xercesImpl/jars/xercesImpl-2.11.0.jar:/home/hadoop/.ivy2/cache/xml-apis/xml-apis/jars/xml-apis-1.4.01.jar:/home/hadoop/.ivy2/cache/javax.transaction/jta/jars/jta-1.1.jar:/home/hadoop/activator/repository/com.google.inject/guice/4.0/jars/guice.jar:/home/hadoop/.ivy2/cache/javax.inject/javax.inject/jars/javax.inject-1.jar:/home/hadoop/activator/repository/aopalliance/aopalliance/1.0/jars/aopalliance.jar:/home/hadoop/activator/repository/com.google.inject.extensions/guice-assistedinject/4.0/jars/guice-assistedinject.jar:/home/hadoop/.ivy2/cache/com.typesafe.play/play-netty-server_2.11/jars/play-netty-server_2.11-2.5.4.jar:/home/hadoop/.ivy2/cache/com.typesafe.netty/netty-reactive-streams-http/jars/netty-reactive-streams-http-1.0.6.jar:/home/hadoop/.ivy2/cache/com.typesafe.netty/netty-reactive-streams/jars/netty-reactive-streams-1.0.6.jar:/home/hadoop/activator/repository/io.netty/netty-handler/4.0.36.Final/jars/netty-handler.jar:/home/hadoop/activator/repository/io.netty/netty-buffer/4.0.36.Final/jars/netty-buffer.jar:/home/hadoop/activator/repository/io.netty/netty-common/4.0.36.Final/jars/netty-common.jar:/home/hadoop/activator/repository/io.netty/netty-transport/4.0.36.Final/jars/netty-transport.jar:/home/hadoop/activator/repository/io.netty/netty-codec/4.0.36.Final/jars/netty-codec.jar:/home/hadoop/activator/repository/io.netty/netty-codec-http/4.0.36.Final/jars/netty-codec-http.jar:/home/hadoop/activator/repository/io.netty/netty-transport-native-epoll/4.0.36.Final/jars/netty-transport-native-epoll-linux-x86_64.jar:/home/hadoop/.ivy2/cache/com.typesafe.play/play-logback_2.11/jars/play-logback_2.11-2.5.4.jar:/home/hadoop/.ivy2/cache/com.typesafe.play/play-jdbc_2.11/jars/play-jdbc_2.11-2.5.4.jar:/home/hadoop/.ivy2/cache/com.typesafe.play/play-jdbc-api_2.11/jars/play-jdbc-api_2.11-2.5.4.jar:/home/hadoop/activator/repository/com.jolbox/bonecp/0.8.0.RELEASE/bundles/bonecp.jar:/home/hadoop/activator/repository/com.zaxxer/HikariCP/2.4.3/bundles/HikariCP.jar:/home/hadoop/activator/repository/com.googlecode.usc/jdbcdslog/1.0.6.2/jars/jdbcdslog.jar:/home/hadoop/activator/repository/com.h2database/h2/1.4.191/jars/h2.jar:/home/hadoop/activator/repository/tyrex/tyrex/1.0.1/jars/tyrex.jar:/home/hadoop/.ivy2/cache/com.typesafe.play/play-cache_2.11/jars/play-cache_2.11-2.5.4.jar:/home/hadoop/activator/repository/net.sf.ehcache/ehcache-core/2.6.11/jars/ehcache-core.jar:/home/hadoop/.ivy2/cache/com.typesafe.play/play-ws_2.11/jars/play-ws_2.11-2.5.4.jar:/home/hadoop/activator/repository/com.google.guava/guava/19.0/bundles/guava.jar:/home/hadoop/.ivy2/cache/org.asynchttpclient/async-http-client/jars/async-http-client-2.0.2.jar:/home/hadoop/.ivy2/cache/org.asynchttpclient/netty-resolver-dns/jars/netty-resolver-dns-2.0.2.jar:/home/hadoop/.ivy2/cache/org.asynchttpclient/netty-resolver/jars/netty-resolver-2.0.2.jar:/home/hadoop/activator/repository/org.slf4j/slf4j-api/1.7.21/jars/slf4j-api.jar:/home/hadoop/.ivy2/cache/org.asynchttpclient/netty-codec-dns/jars/netty-codec-dns-2.0.2.jar:/home/hadoop/activator/repository/org.javassist/javassist/3.20.0-GA/bundles/javassist.jar:/home/hadoop/.ivy2/cache/oauth.signpost/signpost-core/jars/signpost-core-1.2.1.2.jar:/home/hadoop/.ivy2/cache/oauth.signpost/signpost-commonshttp4/jars/signpost-commonshttp4-1.2.1.2.jar:/home/hadoop/activator/repository/org.apache.httpcomponents/httpcore/4.0.1/jars/httpcore.jar:/home/hadoop/activator/repository/org.apache.httpcomponents/httpclient/4.0.1/jars/httpclient.jar:/home/hadoop/.ivy2/cache/commons-logging/commons-logging/jars/commons-logging-1.1.1.jar:/home/hadoop/.ivy2/cache/com.typesafe.play/filters-helpers_2.11/jars/filters-helpers_2.11-2.5.4.jar:/home/hadoop/.ivy2/cache/com.typesafe.play/play-java_2.11/jars/play-java_2.11-2.5.4.jar:/home/hadoop/activator/repository/org.yaml/snakeyaml/1.16/bundles/snakeyaml.jar:/home/hadoop/activator/repository/org.hibernate/hibernate-validator/5.2.4.Final/jars/hibernate-validator.jar:/home/hadoop/activator/repository/javax.validation/validation-api/1.1.0.Final/jars/validation-api.jar:/home/hadoop/activator/repository/org.jboss.logging/jboss-logging/3.2.1.Final/jars/jboss-logging.jar:/home/hadoop/activator/repository/com.fasterxml/classmate/1.1.0/bundles/classmate.jar:/home/hadoop/activator/repository/javax.el/javax.el-api/3.0.0/jars/javax.el-api.jar:/home/hadoop/activator/repository/org.springframework/spring-context/4.2.4.RELEASE/jars/spring-context.jar:/home/hadoop/activator/repository/org.springframework/spring-core/4.2.4.RELEASE/jars/spring-core.jar:/home/hadoop/activator/repository/org.springframework/spring-beans/4.2.4.RELEASE/jars/spring-beans.jar:/home/hadoop/activator/repository/org.reflections/reflections/0.9.10/jars/reflections.jar:/home/hadoop/activator/repository/net.jodah/typetools/0.4.4/bundles/typetools.jar:/home/hadoop/activator/repository/com.google.code.findbugs/jsr305/3.0.1/jars/jsr305.jar:/home/hadoop/.ivy2/cache/org.apache.tomcat/tomcat-servlet-api/jars/tomcat-servlet-api-8.0.33.jar:/home/hadoop/.ivy2/cache/mysql/mysql-connector-java/jars/mysql-connector-java-6.0.3.jar
-Scala compilation took 0.667901462 s
-New invalidations:
-	Set()
-Initial set of included nodes: Set()
-Previously invalidated, but (transitively) depend on new invalidations:
-	Set()
-All newly invalidated sources after taking into account (previously) recompiled sources:Set()
-Total time: 1 s, completed Aug 8, 2016 8:34:46 PM
-> server-post-command-cleanup
-> server-handle-next-server-request
-> {file:/home/hadoop/Code/aircheck-server/}root/*:playForkReload
-Evaluating tasks: *:playForkReload
-Running task... Cancel: sbt.server.ServerTaskCancellation@2a3c90f5, check cycles: false
-
-Initial source changes: 
-	removed:Set()
-	added: Set()
-	modified: Set()
-Removed products: Set()
-External API changes: API Changes: Set()
-Modified binary dependencies: Set()
-Initial directly invalidated sources: Set()
-
-Sources indirectly invalidated by:
-	product: Set()
-	binary dep: Set()
-	external source: Set()
-All initially invalidated sources: Set()
-
-Copy resource mappings: 
-	(/home/hadoop/Code/aircheck-server/conf/application.conf,/home/hadoop/Code/aircheck-server/target/scala-2.11/classes/application.conf)
-	(/home/hadoop/Code/aircheck-server/conf/routes,/home/hadoop/Code/aircheck-server/target/scala-2.11/classes/routes)
-	(/home/hadoop/Code/aircheck-server/conf/logback.xml,/home/hadoop/Code/aircheck-server/target/scala-2.11/classes/logback.xml)
-Total time: 0 s, completed Aug 8, 2016 8:34:48 PM
-> server-post-command-cleanup
-> server-handle-next-server-request
-> {file:/home/hadoop/Code/aircheck-server/}root/*:playForkReload
-Evaluating tasks: *:playForkReload
-Running task... Cancel: sbt.server.ServerTaskCancellation@2ae86922, check cycles: false
-
-Initial source changes: 
-	removed:Set()
-	added: Set()
-	modified: Set(/home/hadoop/Code/aircheck-server/target/scala-2.11/twirl/main/views/html/visualize.template.scala, /home/hadoop/Code/aircheck-server/target/scala-2.11/twirl/main/views/html/contact.template.scala, /home/hadoop/Code/aircheck-server/target/scala-2.11/twirl/main/views/html/index_logined.template.scala, /home/hadoop/Code/aircheck-server/target/scala-2.11/twirl/main/views/html/registrate.template.scala, /home/hadoop/Code/aircheck-server/target/scala-2.11/twirl/main/views/html/index.template.scala, /home/hadoop/Code/aircheck-server/target/scala-2.11/twirl/main/views/html/about.template.scala)
-Removed products: Set()
-External API changes: API Changes: Set()
-Modified binary dependencies: Set()
-Initial directly invalidated sources: Set(/home/hadoop/Code/aircheck-server/target/scala-2.11/twirl/main/views/html/visualize.template.scala, /home/hadoop/Code/aircheck-server/target/scala-2.11/twirl/main/views/html/contact.template.scala, /home/hadoop/Code/aircheck-server/target/scala-2.11/twirl/main/views/html/index_logined.template.scala, /home/hadoop/Code/aircheck-server/target/scala-2.11/twirl/main/views/html/registrate.template.scala, /home/hadoop/Code/aircheck-server/target/scala-2.11/twirl/main/views/html/index.template.scala, /home/hadoop/Code/aircheck-server/target/scala-2.11/twirl/main/views/html/about.template.scala)
-
-Sources indirectly invalidated by:
-	product: Set()
-	binary dep: Set()
-	external source: Set()
-All initially invalidated sources: Set(/home/hadoop/Code/aircheck-server/target/scala-2.11/twirl/main/views/html/visualize.template.scala, /home/hadoop/Code/aircheck-server/target/scala-2.11/twirl/main/views/html/contact.template.scala, /home/hadoop/Code/aircheck-server/target/scala-2.11/twirl/main/views/html/index_logined.template.scala, /home/hadoop/Code/aircheck-server/target/scala-2.11/twirl/main/views/html/registrate.template.scala, /home/hadoop/Code/aircheck-server/target/scala-2.11/twirl/main/views/html/index.template.scala, /home/hadoop/Code/aircheck-server/target/scala-2.11/twirl/main/views/html/about.template.scala)
-
-Read from stdout: Compiling 6 Scala sources to /home/hadoop/Code/aircheck-server/target/scala-2.11/classes...
-Compiling 6 Scala sources to /home/hadoop/Code/aircheck-server/target/scala-2.11/classes...
-Getting compiler-interface from component compiler for Scala 2.11.7
-Other repositories:
-Default repositories:
-Getting compiler-interface from component compiler for Scala 2.11.7
-Other repositories:
-Default repositories:
-Running cached compiler 2a64d6dc, interfacing (CompilerInterface) with Scala compiler version 2.11.7
-Calling Scala compiler with arguments  (CompilerInterface):
-	-deprecation
-	-unchecked
-	-encoding
-	utf8
-	-bootclasspath
-	/usr/lib/jvm/java-8-oracle/jre/lib/resources.jar:/usr/lib/jvm/java-8-oracle/jre/lib/rt.jar:/usr/lib/jvm/java-8-oracle/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jsse.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jce.jar:/usr/lib/jvm/java-8-oracle/jre/lib/charsets.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jfr.jar:/usr/lib/jvm/java-8-oracle/jre/classes:/home/hadoop/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.7.jar
-	-classpath
-	/home/hadoop/Code/aircheck-server/target/scala-2.11/classes:/home/hadoop/activator/repository/com.typesafe.play/twirl-api_2.11/1.1.1/jars/twirl-api_2.11.jar:/home/hadoop/activator/repository/org.apache.commons/commons-lang3/3.4/jars/commons-lang3.jar:/home/hadoop/.ivy2/cache/org.scala-lang.modules/scala-xml_2.11/bundles/scala-xml_2.11-1.0.1.jar:/home/hadoop/.ivy2/cache/com.typesafe.play/play-server_2.11/jars/play-server_2.11-2.5.4.jar:/home/hadoop/.ivy2/cache/com.typesafe.play/play_2.11/jars/play_2.11-2.5.4.jar:/home/hadoop/.ivy2/cache/com.typesafe.play/build-link/jars/build-link-2.5.4.jar:/home/hadoop/.ivy2/cache/com.typesafe.play/play-exceptions/jars/play-exceptions-2.5.4.jar:/home/hadoop/.ivy2/cache/com.typesafe.play/play-iteratees_2.11/jars/play-iteratees_2.11-2.5.4.jar:/home/hadoop/.ivy2/cache/org.scala-stm/scala-stm_2.11/jars/scala-stm_2.11-0.7.jar:/home/hadoop/.ivy2/cache/com.typesafe/config/bundles/config-1.3.0.jar:/home/hadoop/.ivy2/cache/ch.qos.logback/logback-classic/jars/logback-classic-1.1.7.jar:/home/hadoop/.ivy2/cache/ch.qos.logback/logback-core/jars/logback-core-1.1.7.jar:/home/hadoop/.ivy2/cache/com.typesafe.play/play-json_2.11/jars/play-json_2.11-2.5.4.jar:/home/hadoop/.ivy2/cache/com.typesafe.play/play-functional_2.11/jars/play-functional_2.11-2.5.4.jar:/home/hadoop/.ivy2/cache/com.typesafe.play/play-datacommons_2.11/jars/play-datacommons_2.11-2.5.4.jar:/home/hadoop/activator/repository/joda-time/joda-time/2.9.2/jars/joda-time.jar:/home/hadoop/activator/repository/org.joda/joda-convert/1.8.1/jars/joda-convert.jar:/home/hadoop/.ivy2/cache/org.scala-lang/scala-reflect/jars/scala-reflect-2.11.7.jar:/home/hadoop/activator/repository/com.fasterxml.jackson.core/jackson-core/2.7.1/bundles/jackson-core.jar:/home/hadoop/activator/repository/com.fasterxml.jackson.core/jackson-annotations/2.7.1/bundles/jackson-annotations.jar:/home/hadoop/activator/repository/com.fasterxml.jackson.core/jackson-databind/2.7.1/bundles/jackson-databind.jar:/home/hadoop/activator/repository/com.fasterxml.jackson.datatype/jackson-datatype-jdk8/2.7.1/bundles/jackson-datatype-jdk8.jar:/home/hadoop/activator/repository/com.fasterxml.jackson.datatype/jackson-datatype-jsr310/2.7.1/bundles/jackson-datatype-jsr310.jar:/home/hadoop/.ivy2/cache/com.typesafe.play/play-netty-utils/jars/play-netty-utils-2.5.4.jar:/home/hadoop/.ivy2/cache/org.slf4j/jul-to-slf4j/jars/jul-to-slf4j-1.7.19.jar:/home/hadoop/.ivy2/cache/org.slf4j/jcl-over-slf4j/jars/jcl-over-slf4j-1.7.19.jar:/home/hadoop/.ivy2/cache/com.typesafe.play/play-streams_2.11/jars/play-streams_2.11-2.5.4.jar:/home/hadoop/.ivy2/cache/org.reactivestreams/reactive-streams/jars/reactive-streams-1.0.0.jar:/home/hadoop/.ivy2/cache/com.typesafe.akka/akka-stream_2.11/jars/akka-stream_2.11-2.4.4.jar:/home/hadoop/.ivy2/cache/com.typesafe.akka/akka-actor_2.11/jars/akka-actor_2.11-2.4.4.jar:/home/hadoop/.ivy2/cache/org.scala-lang.modules/scala-java8-compat_2.11/bundles/scala-java8-compat_2.11-0.7.0.jar:/home/hadoop/.ivy2/cache/com.typesafe/ssl-config-akka_2.11/bundles/ssl-config-akka_2.11-0.2.1.jar:/home/hadoop/.ivy2/cache/com.typesafe/ssl-config-core_2.11/bundles/ssl-config-core_2.11-0.2.1.jar:/home/hadoop/.ivy2/cache/org.scala-lang.modules/scala-parser-combinators_2.11/bundles/scala-parser-combinators_2.11-1.0.4.jar:/home/hadoop/.ivy2/cache/com.typesafe.akka/akka-slf4j_2.11/jars/akka-slf4j_2.11-2.4.4.jar:/home/hadoop/activator/repository/commons-codec/commons-codec/1.10/jars/commons-codec.jar:/home/hadoop/.ivy2/cache/xerces/xercesImpl/jars/xercesImpl-2.11.0.jar:/home/hadoop/.ivy2/cache/xml-apis/xml-apis/jars/xml-apis-1.4.01.jar:/home/hadoop/.ivy2/cache/javax.transaction/jta/jars/jta-1.1.jar:/home/hadoop/activator/repository/com.google.inject/guice/4.0/jars/guice.jar:/home/hadoop/.ivy2/cache/javax.inject/javax.inject/jars/javax.inject-1.jar:/home/hadoop/activator/repository/aopalliance/aopalliance/1.0/jars/aopalliance.jar:/home/hadoop/activator/repository/com.google.inject.extensions/guice-assistedinject/4.0/jars/guice-assistedinject.jar:/home/hadoop/.ivy2/cache/com.typesafe.play/play-netty-server_2.11/jars/play-netty-server_2.11-2.5.4.jar:/home/hadoop/.ivy2/cache/com.typesafe.netty/netty-reactive-streams-http/jars/netty-reactive-streams-http-1.0.6.jar:/home/hadoop/.ivy2/cache/com.typesafe.netty/netty-reactive-streams/jars/netty-reactive-streams-1.0.6.jar:/home/hadoop/activator/repository/io.netty/netty-handler/4.0.36.Final/jars/netty-handler.jar:/home/hadoop/activator/repository/io.netty/netty-buffer/4.0.36.Final/jars/netty-buffer.jar:/home/hadoop/activator/repository/io.netty/netty-common/4.0.36.Final/jars/netty-common.jar:/home/hadoop/activator/repository/io.netty/netty-transport/4.0.36.Final/jars/netty-transport.jar:/home/hadoop/activator/repository/io.netty/netty-codec/4.0.36.Final/jars/netty-codec.jar:/home/hadoop/activator/repository/io.netty/netty-codec-http/4.0.36.Final/jars/netty-codec-http.jar:/home/hadoop/activator/repository/io.netty/netty-transport-native-epoll/4.0.36.Final/jars/netty-transport-native-epoll-linux-x86_64.jar:/home/hadoop/.ivy2/cache/com.typesafe.play/play-logback_2.11/jars/play-logback_2.11-2.5.4.jar:/home/hadoop/.ivy2/cache/com.typesafe.play/play-jdbc_2.11/jars/play-jdbc_2.11-2.5.4.jar:/home/hadoop/.ivy2/cache/com.typesafe.play/play-jdbc-api_2.11/jars/play-jdbc-api_2.11-2.5.4.jar:/home/hadoop/activator/repository/com.jolbox/bonecp/0.8.0.RELEASE/bundles/bonecp.jar:/home/hadoop/activator/repository/com.zaxxer/HikariCP/2.4.3/bundles/HikariCP.jar:/home/hadoop/activator/repository/com.googlecode.usc/jdbcdslog/1.0.6.2/jars/jdbcdslog.jar:/home/hadoop/activator/repository/com.h2database/h2/1.4.191/jars/h2.jar:/home/hadoop/activator/repository/tyrex/tyrex/1.0.1/jars/tyrex.jar:/home/hadoop/.ivy2/cache/com.typesafe.play/play-cache_2.11/jars/play-cache_2.11-2.5.4.jar:/home/hadoop/activator/repository/net.sf.ehcache/ehcache-core/2.6.11/jars/ehcache-core.jar:/home/hadoop/.ivy2/cache/com.typesafe.play/play-ws_2.11/jars/play-ws_2.11-2.5.4.jar:/home/hadoop/activator/repository/com.google.guava/guava/19.0/bundles/guava.jar:/home/hadoop/.ivy2/cache/org.asynchttpclient/async-http-client/jars/async-http-client-2.0.2.jar:/home/hadoop/.ivy2/cache/org.asynchttpclient/netty-resolver-dns/jars/netty-resolver-dns-2.0.2.jar:/home/hadoop/.ivy2/cache/org.asynchttpclient/netty-resolver/jars/netty-resolver-2.0.2.jar:/home/hadoop/activator/repository/org.slf4j/slf4j-api/1.7.21/jars/slf4j-api.jar:/home/hadoop/.ivy2/cache/org.asynchttpclient/netty-codec-dns/jars/netty-codec-dns-2.0.2.jar:/home/hadoop/activator/repository/org.javassist/javassist/3.20.0-GA/bundles/javassist.jar:/home/hadoop/.ivy2/cache/oauth.signpost/signpost-core/jars/signpost-core-1.2.1.2.jar:/home/hadoop/.ivy2/cache/oauth.signpost/signpost-commonshttp4/jars/signpost-commonshttp4-1.2.1.2.jar:/home/hadoop/activator/repository/org.apache.httpcomponents/httpcore/4.0.1/jars/httpcore.jar:/home/hadoop/activator/repository/org.apache.httpcomponents/httpclient/4.0.1/jars/httpclient.jar:/home/hadoop/.ivy2/cache/commons-logging/commons-logging/jars/commons-logging-1.1.1.jar:/home/hadoop/.ivy2/cache/com.typesafe.play/filters-helpers_2.11/jars/filters-helpers_2.11-2.5.4.jar:/home/hadoop/.ivy2/cache/com.typesafe.play/play-java_2.11/jars/play-java_2.11-2.5.4.jar:/home/hadoop/activator/repository/org.yaml/snakeyaml/1.16/bundles/snakeyaml.jar:/home/hadoop/activator/repository/org.hibernate/hibernate-validator/5.2.4.Final/jars/hibernate-validator.jar:/home/hadoop/activator/repository/javax.validation/validation-api/1.1.0.Final/jars/validation-api.jar:/home/hadoop/activator/repository/org.jboss.logging/jboss-logging/3.2.1.Final/jars/jboss-logging.jar:/home/hadoop/activator/repository/com.fasterxml/classmate/1.1.0/bundles/classmate.jar:/home/hadoop/activator/repository/javax.el/javax.el-api/3.0.0/jars/javax.el-api.jar:/home/hadoop/activator/repository/org.springframework/spring-context/4.2.4.RELEASE/jars/spring-context.jar:/home/hadoop/activator/repository/org.springframework/spring-core/4.2.4.RELEASE/jars/spring-core.jar:/home/hadoop/activator/repository/org.springframework/spring-beans/4.2.4.RELEASE/jars/spring-beans.jar:/home/hadoop/activator/repository/org.reflections/reflections/0.9.10/jars/reflections.jar:/home/hadoop/activator/repository/net.jodah/typetools/0.4.4/bundles/typetools.jar:/home/hadoop/activator/repository/com.google.code.findbugs/jsr305/3.0.1/jars/jsr305.jar:/home/hadoop/.ivy2/cache/org.apache.tomcat/tomcat-servlet-api/jars/tomcat-servlet-api-8.0.33.jar:/home/hadoop/.ivy2/cache/mysql/mysql-connector-java/jars/mysql-connector-java-6.0.3.jar
-Scala compilation took 1.321235546 s
-New invalidations:
-	Set()
-Initial set of included nodes: Set()
-Previously invalidated, but (transitively) depend on new invalidations:
-	Set()
-All newly invalidated sources after taking into account (previously) recompiled sources:Set()
-Copy resource mappings: 
-	(/home/hadoop/Code/aircheck-server/conf/application.conf,/home/hadoop/Code/aircheck-server/target/scala-2.11/classes/application.conf)
-	(/home/hadoop/Code/aircheck-server/conf/routes,/home/hadoop/Code/aircheck-server/target/scala-2.11/classes/routes)
-	(/home/hadoop/Code/aircheck-server/conf/logback.xml,/home/hadoop/Code/aircheck-server/target/scala-2.11/classes/logback.xml)
-Total time: 2 s, completed Aug 8, 2016 8:38:00 PM
-> server-post-command-cleanup
-> server-handle-next-server-request
-> {file:/home/hadoop/Code/aircheck-server/}root/*:playForkReload
-Evaluating tasks: *:playForkReload
-Running task... Cancel: sbt.server.ServerTaskCancellation@3e2c8e48, check cycles: false
-
-Initial source changes: 
-	removed:Set()
-	added: Set()
-	modified: Set()
-Removed products: Set()
-External API changes: API Changes: Set()
-Modified binary dependencies: Set()
-Initial directly invalidated sources: Set()
-
-Sources indirectly invalidated by:
-	product: Set()
-	binary dep: Set()
-	external source: Set()
-All initially invalidated sources: Set()
-
-Copy resource mappings: 
-	(/home/hadoop/Code/aircheck-server/conf/application.conf,/home/hadoop/Code/aircheck-server/target/scala-2.11/classes/application.conf)
-	(/home/hadoop/Code/aircheck-server/conf/routes,/home/hadoop/Code/aircheck-server/target/scala-2.11/classes/routes)
-	(/home/hadoop/Code/aircheck-server/conf/logback.xml,/home/hadoop/Code/aircheck-server/target/scala-2.11/classes/logback.xml)
-Total time: 0 s, completed Aug 8, 2016 8:39:32 PM
-> server-post-command-cleanup
-> server-handle-next-server-request
-> {file:/home/hadoop/Code/aircheck-server/}root/*:playForkReload
-Evaluating tasks: *:playForkReload
-Running task... Cancel: sbt.server.ServerTaskCancellation@120e05e4, check cycles: false
-
-Initial source changes: 
-	removed:Set()
-	added: Set()
-	modified: Set(/home/hadoop/Code/aircheck-server/target/scala-2.11/twirl/main/views/html/visualize.template.scala)
-Removed products: Set()
-External API changes: API Changes: Set()
-Modified binary dependencies: Set()
-Initial directly invalidated sources: Set(/home/hadoop/Code/aircheck-server/target/scala-2.11/twirl/main/views/html/visualize.template.scala)
-
-Sources indirectly invalidated by:
-	product: Set()
-	binary dep: Set()
-	external source: Set()
-All initially invalidated sources: Set(/home/hadoop/Code/aircheck-server/target/scala-2.11/twirl/main/views/html/visualize.template.scala)
-
-Read from stdout: Compiling 1 Scala source to /home/hadoop/Code/aircheck-server/target/scala-2.11/classes...
-Compiling 1 Scala source to /home/hadoop/Code/aircheck-server/target/scala-2.11/classes...
-Getting compiler-interface from component compiler for Scala 2.11.7
-Other repositories:
-Default repositories:
-Getting compiler-interface from component compiler for Scala 2.11.7
-Other repositories:
-Default repositories:
-Running cached compiler 754a5b5d, interfacing (CompilerInterface) with Scala compiler version 2.11.7
-Calling Scala compiler with arguments  (CompilerInterface):
-	-deprecation
-	-unchecked
-	-encoding
-	utf8
-	-bootclasspath
-	/usr/lib/jvm/java-8-oracle/jre/lib/resources.jar:/usr/lib/jvm/java-8-oracle/jre/lib/rt.jar:/usr/lib/jvm/java-8-oracle/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jsse.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jce.jar:/usr/lib/jvm/java-8-oracle/jre/lib/charsets.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jfr.jar:/usr/lib/jvm/java-8-oracle/jre/classes:/home/hadoop/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.7.jar
-	-classpath
-	/home/hadoop/Code/aircheck-server/target/scala-2.11/classes:/home/hadoop/activator/repository/com.typesafe.play/twirl-api_2.11/1.1.1/jars/twirl-api_2.11.jar:/home/hadoop/activator/repository/org.apache.commons/commons-lang3/3.4/jars/commons-lang3.jar:/home/hadoop/.ivy2/cache/org.scala-lang.modules/scala-xml_2.11/bundles/scala-xml_2.11-1.0.1.jar:/home/hadoop/.ivy2/cache/com.typesafe.play/play-server_2.11/jars/play-server_2.11-2.5.4.jar:/home/hadoop/.ivy2/cache/com.typesafe.play/play_2.11/jars/play_2.11-2.5.4.jar:/home/hadoop/.ivy2/cache/com.typesafe.play/build-link/jars/build-link-2.5.4.jar:/home/hadoop/.ivy2/cache/com.typesafe.play/play-exceptions/jars/play-exceptions-2.5.4.jar:/home/hadoop/.ivy2/cache/com.typesafe.play/play-iteratees_2.11/jars/play-iteratees_2.11-2.5.4.jar:/home/hadoop/.ivy2/cache/org.scala-stm/scala-stm_2.11/jars/scala-stm_2.11-0.7.jar:/home/hadoop/.ivy2/cache/com.typesafe/config/bundles/config-1.3.0.jar:/home/hadoop/.ivy2/cache/ch.qos.logback/logback-classic/jars/logback-classic-1.1.7.jar:/home/hadoop/.ivy2/cache/ch.qos.logback/logback-core/jars/logback-core-1.1.7.jar:/home/hadoop/.ivy2/cache/com.typesafe.play/play-json_2.11/jars/play-json_2.11-2.5.4.jar:/home/hadoop/.ivy2/cache/com.typesafe.play/play-functional_2.11/jars/play-functional_2.11-2.5.4.jar:/home/hadoop/.ivy2/cache/com.typesafe.play/play-datacommons_2.11/jars/play-datacommons_2.11-2.5.4.jar:/home/hadoop/activator/repository/joda-time/joda-time/2.9.2/jars/joda-time.jar:/home/hadoop/activator/repository/org.joda/joda-convert/1.8.1/jars/joda-convert.jar:/home/hadoop/.ivy2/cache/org.scala-lang/scala-reflect/jars/scala-reflect-2.11.7.jar:/home/hadoop/activator/repository/com.fasterxml.jackson.core/jackson-core/2.7.1/bundles/jackson-core.jar:/home/hadoop/activator/repository/com.fasterxml.jackson.core/jackson-annotations/2.7.1/bundles/jackson-annotations.jar:/home/hadoop/activator/repository/com.fasterxml.jackson.core/jackson-databind/2.7.1/bundles/jackson-databind.jar:/home/hadoop/activator/repository/com.fasterxml.jackson.datatype/jackson-datatype-jdk8/2.7.1/bundles/jackson-datatype-jdk8.jar:/home/hadoop/activator/repository/com.fasterxml.jackson.datatype/jackson-datatype-jsr310/2.7.1/bundles/jackson-datatype-jsr310.jar:/home/hadoop/.ivy2/cache/com.typesafe.play/play-netty-utils/jars/play-netty-utils-2.5.4.jar:/home/hadoop/.ivy2/cache/org.slf4j/jul-to-slf4j/jars/jul-to-slf4j-1.7.19.jar:/home/hadoop/.ivy2/cache/org.slf4j/jcl-over-slf4j/jars/jcl-over-slf4j-1.7.19.jar:/home/hadoop/.ivy2/cache/com.typesafe.play/play-streams_2.11/jars/play-streams_2.11-2.5.4.jar:/home/hadoop/.ivy2/cache/org.reactivestreams/reactive-streams/jars/reactive-streams-1.0.0.jar:/home/hadoop/.ivy2/cache/com.typesafe.akka/akka-stream_2.11/jars/akka-stream_2.11-2.4.4.jar:/home/hadoop/.ivy2/cache/com.typesafe.akka/akka-actor_2.11/jars/akka-actor_2.11-2.4.4.jar:/home/hadoop/.ivy2/cache/org.scala-lang.modules/scala-java8-compat_2.11/bundles/scala-java8-compat_2.11-0.7.0.jar:/home/hadoop/.ivy2/cache/com.typesafe/ssl-config-akka_2.11/bundles/ssl-config-akka_2.11-0.2.1.jar:/home/hadoop/.ivy2/cache/com.typesafe/ssl-config-core_2.11/bundles/ssl-config-core_2.11-0.2.1.jar:/home/hadoop/.ivy2/cache/org.scala-lang.modules/scala-parser-combinators_2.11/bundles/scala-parser-combinators_2.11-1.0.4.jar:/home/hadoop/.ivy2/cache/com.typesafe.akka/akka-slf4j_2.11/jars/akka-slf4j_2.11-2.4.4.jar:/home/hadoop/activator/repository/commons-codec/commons-codec/1.10/jars/commons-codec.jar:/home/hadoop/.ivy2/cache/xerces/xercesImpl/jars/xercesImpl-2.11.0.jar:/home/hadoop/.ivy2/cache/xml-apis/xml-apis/jars/xml-apis-1.4.01.jar:/home/hadoop/.ivy2/cache/javax.transaction/jta/jars/jta-1.1.jar:/home/hadoop/activator/repository/com.google.inject/guice/4.0/jars/guice.jar:/home/hadoop/.ivy2/cache/javax.inject/javax.inject/jars/javax.inject-1.jar:/home/hadoop/activator/repository/aopalliance/aopalliance/1.0/jars/aopalliance.jar:/home/hadoop/activator/repository/com.google.inject.extensions/guice-assistedinject/4.0/jars/guice-assistedinject.jar:/home/hadoop/.ivy2/cache/com.typesafe.play/play-netty-server_2.11/jars/play-netty-server_2.11-2.5.4.jar:/home/hadoop/.ivy2/cache/com.typesafe.netty/netty-reactive-streams-http/jars/netty-reactive-streams-http-1.0.6.jar:/home/hadoop/.ivy2/cache/com.typesafe.netty/netty-reactive-streams/jars/netty-reactive-streams-1.0.6.jar:/home/hadoop/activator/repository/io.netty/netty-handler/4.0.36.Final/jars/netty-handler.jar:/home/hadoop/activator/repository/io.netty/netty-buffer/4.0.36.Final/jars/netty-buffer.jar:/home/hadoop/activator/repository/io.netty/netty-common/4.0.36.Final/jars/netty-common.jar:/home/hadoop/activator/repository/io.netty/netty-transport/4.0.36.Final/jars/netty-transport.jar:/home/hadoop/activator/repository/io.netty/netty-codec/4.0.36.Final/jars/netty-codec.jar:/home/hadoop/activator/repository/io.netty/netty-codec-http/4.0.36.Final/jars/netty-codec-http.jar:/home/hadoop/activator/repository/io.netty/netty-transport-native-epoll/4.0.36.Final/jars/netty-transport-native-epoll-linux-x86_64.jar:/home/hadoop/.ivy2/cache/com.typesafe.play/play-logback_2.11/jars/play-logback_2.11-2.5.4.jar:/home/hadoop/.ivy2/cache/com.typesafe.play/play-jdbc_2.11/jars/play-jdbc_2.11-2.5.4.jar:/home/hadoop/.ivy2/cache/com.typesafe.play/play-jdbc-api_2.11/jars/play-jdbc-api_2.11-2.5.4.jar:/home/hadoop/activator/repository/com.jolbox/bonecp/0.8.0.RELEASE/bundles/bonecp.jar:/home/hadoop/activator/repository/com.zaxxer/HikariCP/2.4.3/bundles/HikariCP.jar:/home/hadoop/activator/repository/com.googlecode.usc/jdbcdslog/1.0.6.2/jars/jdbcdslog.jar:/home/hadoop/activator/repository/com.h2database/h2/1.4.191/jars/h2.jar:/home/hadoop/activator/repository/tyrex/tyrex/1.0.1/jars/tyrex.jar:/home/hadoop/.ivy2/cache/com.typesafe.play/play-cache_2.11/jars/play-cache_2.11-2.5.4.jar:/home/hadoop/activator/repository/net.sf.ehcache/ehcache-core/2.6.11/jars/ehcache-core.jar:/home/hadoop/.ivy2/cache/com.typesafe.play/play-ws_2.11/jars/play-ws_2.11-2.5.4.jar:/home/hadoop/activator/repository/com.google.guava/guava/19.0/bundles/guava.jar:/home/hadoop/.ivy2/cache/org.asynchttpclient/async-http-client/jars/async-http-client-2.0.2.jar:/home/hadoop/.ivy2/cache/org.asynchttpclient/netty-resolver-dns/jars/netty-resolver-dns-2.0.2.jar:/home/hadoop/.ivy2/cache/org.asynchttpclient/netty-resolver/jars/netty-resolver-2.0.2.jar:/home/hadoop/activator/repository/org.slf4j/slf4j-api/1.7.21/jars/slf4j-api.jar:/home/hadoop/.ivy2/cache/org.asynchttpclient/netty-codec-dns/jars/netty-codec-dns-2.0.2.jar:/home/hadoop/activator/repository/org.javassist/javassist/3.20.0-GA/bundles/javassist.jar:/home/hadoop/.ivy2/cache/oauth.signpost/signpost-core/jars/signpost-core-1.2.1.2.jar:/home/hadoop/.ivy2/cache/oauth.signpost/signpost-commonshttp4/jars/signpost-commonshttp4-1.2.1.2.jar:/home/hadoop/activator/repository/org.apache.httpcomponents/httpcore/4.0.1/jars/httpcore.jar:/home/hadoop/activator/repository/org.apache.httpcomponents/httpclient/4.0.1/jars/httpclient.jar:/home/hadoop/.ivy2/cache/commons-logging/commons-logging/jars/commons-logging-1.1.1.jar:/home/hadoop/.ivy2/cache/com.typesafe.play/filters-helpers_2.11/jars/filters-helpers_2.11-2.5.4.jar:/home/hadoop/.ivy2/cache/com.typesafe.play/play-java_2.11/jars/play-java_2.11-2.5.4.jar:/home/hadoop/activator/repository/org.yaml/snakeyaml/1.16/bundles/snakeyaml.jar:/home/hadoop/activator/repository/org.hibernate/hibernate-validator/5.2.4.Final/jars/hibernate-validator.jar:/home/hadoop/activator/repository/javax.validation/validation-api/1.1.0.Final/jars/validation-api.jar:/home/hadoop/activator/repository/org.jboss.logging/jboss-logging/3.2.1.Final/jars/jboss-logging.jar:/home/hadoop/activator/repository/com.fasterxml/classmate/1.1.0/bundles/classmate.jar:/home/hadoop/activator/repository/javax.el/javax.el-api/3.0.0/jars/javax.el-api.jar:/home/hadoop/activator/repository/org.springframework/spring-context/4.2.4.RELEASE/jars/spring-context.jar:/home/hadoop/activator/repository/org.springframework/spring-core/4.2.4.RELEASE/jars/spring-core.jar:/home/hadoop/activator/repository/org.springframework/spring-beans/4.2.4.RELEASE/jars/spring-beans.jar:/home/hadoop/activator/repository/org.reflections/reflections/0.9.10/jars/reflections.jar:/home/hadoop/activator/repository/net.jodah/typetools/0.4.4/bundles/typetools.jar:/home/hadoop/activator/repository/com.google.code.findbugs/jsr305/3.0.1/jars/jsr305.jar:/home/hadoop/.ivy2/cache/org.apache.tomcat/tomcat-servlet-api/jars/tomcat-servlet-api-8.0.33.jar:/home/hadoop/.ivy2/cache/mysql/mysql-connector-java/jars/mysql-connector-java-6.0.3.jar
-Scala compilation took 0.761723249 s
-New invalidations:
-	Set()
-Initial set of included nodes: Set()
-Previously invalidated, but (transitively) depend on new invalidations:
-	Set()
-All newly invalidated sources after taking into account (previously) recompiled sources:Set()
-Copy resource mappings: 
-	(/home/hadoop/Code/aircheck-server/conf/application.conf,/home/hadoop/Code/aircheck-server/target/scala-2.11/classes/application.conf)
-	(/home/hadoop/Code/aircheck-server/conf/routes,/home/hadoop/Code/aircheck-server/target/scala-2.11/classes/routes)
-	(/home/hadoop/Code/aircheck-server/conf/logback.xml,/home/hadoop/Code/aircheck-server/target/scala-2.11/classes/logback.xml)
-Total time: 1 s, completed Aug 8, 2016 8:41:30 PM
-> server-post-command-cleanup
-> server-handle-next-server-request
-> {file:/home/hadoop/Code/aircheck-server/}root/*:playForkReload
-Evaluating tasks: *:playForkReload
-Running task... Cancel: sbt.server.ServerTaskCancellation@257fe1e7, check cycles: false
-
-Initial source changes: 
-	removed:Set()
-	added: Set()
-	modified: Set(/home/hadoop/Code/aircheck-server/target/scala-2.11/twirl/main/views/html/registrate.template.scala)
-Removed products: Set()
-External API changes: API Changes: Set()
-Modified binary dependencies: Set()
-Initial directly invalidated sources: Set(/home/hadoop/Code/aircheck-server/target/scala-2.11/twirl/main/views/html/registrate.template.scala)
-
-Sources indirectly invalidated by:
-	product: Set()
-	binary dep: Set()
-	external source: Set()
-All initially invalidated sources: Set(/home/hadoop/Code/aircheck-server/target/scala-2.11/twirl/main/views/html/registrate.template.scala)
-
-Read from stdout: Compiling 1 Scala source to /home/hadoop/Code/aircheck-server/target/scala-2.11/classes...
-Compiling 1 Scala source to /home/hadoop/Code/aircheck-server/target/scala-2.11/classes...
-Getting compiler-interface from component compiler for Scala 2.11.7
-Other repositories:
-Default repositories:
-Getting compiler-interface from component compiler for Scala 2.11.7
-Other repositories:
-Default repositories:
-Running cached compiler 1d0f2f30, interfacing (CompilerInterface) with Scala compiler version 2.11.7
-Calling Scala compiler with arguments  (CompilerInterface):
-	-deprecation
-	-unchecked
-	-encoding
-	utf8
-	-bootclasspath
-	/usr/lib/jvm/java-8-oracle/jre/lib/resources.jar:/usr/lib/jvm/java-8-oracle/jre/lib/rt.jar:/usr/lib/jvm/java-8-oracle/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jsse.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jce.jar:/usr/lib/jvm/java-8-oracle/jre/lib/charsets.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jfr.jar:/usr/lib/jvm/java-8-oracle/jre/classes:/home/hadoop/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.7.jar
-	-classpath
-	/home/hadoop/Code/aircheck-server/target/scala-2.11/classes:/home/hadoop/activator/repository/com.typesafe.play/twirl-api_2.11/1.1.1/jars/twirl-api_2.11.jar:/home/hadoop/activator/repository/org.apache.commons/commons-lang3/3.4/jars/commons-lang3.jar:/home/hadoop/.ivy2/cache/org.scala-lang.modules/scala-xml_2.11/bundles/scala-xml_2.11-1.0.1.jar:/home/hadoop/.ivy2/cache/com.typesafe.play/play-server_2.11/jars/play-server_2.11-2.5.4.jar:/home/hadoop/.ivy2/cache/com.typesafe.play/play_2.11/jars/play_2.11-2.5.4.jar:/home/hadoop/.ivy2/cache/com.typesafe.play/build-link/jars/build-link-2.5.4.jar:/home/hadoop/.ivy2/cache/com.typesafe.play/play-exceptions/jars/play-exceptions-2.5.4.jar:/home/hadoop/.ivy2/cache/com.typesafe.play/play-iteratees_2.11/jars/play-iteratees_2.11-2.5.4.jar:/home/hadoop/.ivy2/cache/org.scala-stm/scala-stm_2.11/jars/scala-stm_2.11-0.7.jar:/home/hadoop/.ivy2/cache/com.typesafe/config/bundles/config-1.3.0.jar:/home/hadoop/.ivy2/cache/ch.qos.logback/logback-classic/jars/logback-classic-1.1.7.jar:/home/hadoop/.ivy2/cache/ch.qos.logback/logback-core/jars/logback-core-1.1.7.jar:/home/hadoop/.ivy2/cache/com.typesafe.play/play-json_2.11/jars/play-json_2.11-2.5.4.jar:/home/hadoop/.ivy2/cache/com.typesafe.play/play-functional_2.11/jars/play-functional_2.11-2.5.4.jar:/home/hadoop/.ivy2/cache/com.typesafe.play/play-datacommons_2.11/jars/play-datacommons_2.11-2.5.4.jar:/home/hadoop/activator/repository/joda-time/joda-time/2.9.2/jars/joda-time.jar:/home/hadoop/activator/repository/org.joda/joda-convert/1.8.1/jars/joda-convert.jar:/home/hadoop/.ivy2/cache/org.scala-lang/scala-reflect/jars/scala-reflect-2.11.7.jar:/home/hadoop/activator/repository/com.fasterxml.jackson.core/jackson-core/2.7.1/bundles/jackson-core.jar:/home/hadoop/activator/repository/com.fasterxml.jackson.core/jackson-annotations/2.7.1/bundles/jackson-annotations.jar:/home/hadoop/activator/repository/com.fasterxml.jackson.core/jackson-databind/2.7.1/bundles/jackson-databind.jar:/home/hadoop/activator/repository/com.fasterxml.jackson.datatype/jackson-datatype-jdk8/2.7.1/bundles/jackson-datatype-jdk8.jar:/home/hadoop/activator/repository/com.fasterxml.jackson.datatype/jackson-datatype-jsr310/2.7.1/bundles/jackson-datatype-jsr310.jar:/home/hadoop/.ivy2/cache/com.typesafe.play/play-netty-utils/jars/play-netty-utils-2.5.4.jar:/home/hadoop/.ivy2/cache/org.slf4j/jul-to-slf4j/jars/jul-to-slf4j-1.7.19.jar:/home/hadoop/.ivy2/cache/org.slf4j/jcl-over-slf4j/jars/jcl-over-slf4j-1.7.19.jar:/home/hadoop/.ivy2/cache/com.typesafe.play/play-streams_2.11/jars/play-streams_2.11-2.5.4.jar:/home/hadoop/.ivy2/cache/org.reactivestreams/reactive-streams/jars/reactive-streams-1.0.0.jar:/home/hadoop/.ivy2/cache/com.typesafe.akka/akka-stream_2.11/jars/akka-stream_2.11-2.4.4.jar:/home/hadoop/.ivy2/cache/com.typesafe.akka/akka-actor_2.11/jars/akka-actor_2.11-2.4.4.jar:/home/hadoop/.ivy2/cache/org.scala-lang.modules/scala-java8-compat_2.11/bundles/scala-java8-compat_2.11-0.7.0.jar:/home/hadoop/.ivy2/cache/com.typesafe/ssl-config-akka_2.11/bundles/ssl-config-akka_2.11-0.2.1.jar:/home/hadoop/.ivy2/cache/com.typesafe/ssl-config-core_2.11/bundles/ssl-config-core_2.11-0.2.1.jar:/home/hadoop/.ivy2/cache/org.scala-lang.modules/scala-parser-combinators_2.11/bundles/scala-parser-combinators_2.11-1.0.4.jar:/home/hadoop/.ivy2/cache/com.typesafe.akka/akka-slf4j_2.11/jars/akka-slf4j_2.11-2.4.4.jar:/home/hadoop/activator/repository/commons-codec/commons-codec/1.10/jars/commons-codec.jar:/home/hadoop/.ivy2/cache/xerces/xercesImpl/jars/xercesImpl-2.11.0.jar:/home/hadoop/.ivy2/cache/xml-apis/xml-apis/jars/xml-apis-1.4.01.jar:/home/hadoop/.ivy2/cache/javax.transaction/jta/jars/jta-1.1.jar:/home/hadoop/activator/repository/com.google.inject/guice/4.0/jars/guice.jar:/home/hadoop/.ivy2/cache/javax.inject/javax.inject/jars/javax.inject-1.jar:/home/hadoop/activator/repository/aopalliance/aopalliance/1.0/jars/aopalliance.jar:/home/hadoop/activator/repository/com.google.inject.extensions/guice-assistedinject/4.0/jars/guice-assistedinject.jar:/home/hadoop/.ivy2/cache/com.typesafe.play/play-netty-server_2.11/jars/play-netty-server_2.11-2.5.4.jar:/home/hadoop/.ivy2/cache/com.typesafe.netty/netty-reactive-streams-http/jars/netty-reactive-streams-http-1.0.6.jar:/home/hadoop/.ivy2/cache/com.typesafe.netty/netty-reactive-streams/jars/netty-reactive-streams-1.0.6.jar:/home/hadoop/activator/repository/io.netty/netty-handler/4.0.36.Final/jars/netty-handler.jar:/home/hadoop/activator/repository/io.netty/netty-buffer/4.0.36.Final/jars/netty-buffer.jar:/home/hadoop/activator/repository/io.netty/netty-common/4.0.36.Final/jars/netty-common.jar:/home/hadoop/activator/repository/io.netty/netty-transport/4.0.36.Final/jars/netty-transport.jar:/home/hadoop/activator/repository/io.netty/netty-codec/4.0.36.Final/jars/netty-codec.jar:/home/hadoop/activator/repository/io.netty/netty-codec-http/4.0.36.Final/jars/netty-codec-http.jar:/home/hadoop/activator/repository/io.netty/netty-transport-native-epoll/4.0.36.Final/jars/netty-transport-native-epoll-linux-x86_64.jar:/home/hadoop/.ivy2/cache/com.typesafe.play/play-logback_2.11/jars/play-logback_2.11-2.5.4.jar:/home/hadoop/.ivy2/cache/com.typesafe.play/play-jdbc_2.11/jars/play-jdbc_2.11-2.5.4.jar:/home/hadoop/.ivy2/cache/com.typesafe.play/play-jdbc-api_2.11/jars/play-jdbc-api_2.11-2.5.4.jar:/home/hadoop/activator/repository/com.jolbox/bonecp/0.8.0.RELEASE/bundles/bonecp.jar:/home/hadoop/activator/repository/com.zaxxer/HikariCP/2.4.3/bundles/HikariCP.jar:/home/hadoop/activator/repository/com.googlecode.usc/jdbcdslog/1.0.6.2/jars/jdbcdslog.jar:/home/hadoop/activator/repository/com.h2database/h2/1.4.191/jars/h2.jar:/home/hadoop/activator/repository/tyrex/tyrex/1.0.1/jars/tyrex.jar:/home/hadoop/.ivy2/cache/com.typesafe.play/play-cache_2.11/jars/play-cache_2.11-2.5.4.jar:/home/hadoop/activator/repository/net.sf.ehcache/ehcache-core/2.6.11/jars/ehcache-core.jar:/home/hadoop/.ivy2/cache/com.typesafe.play/play-ws_2.11/jars/play-ws_2.11-2.5.4.jar:/home/hadoop/activator/repository/com.google.guava/guava/19.0/bundles/guava.jar:/home/hadoop/.ivy2/cache/org.asynchttpclient/async-http-client/jars/async-http-client-2.0.2.jar:/home/hadoop/.ivy2/cache/org.asynchttpclient/netty-resolver-dns/jars/netty-resolver-dns-2.0.2.jar:/home/hadoop/.ivy2/cache/org.asynchttpclient/netty-resolver/jars/netty-resolver-2.0.2.jar:/home/hadoop/activator/repository/org.slf4j/slf4j-api/1.7.21/jars/slf4j-api.jar:/home/hadoop/.ivy2/cache/org.asynchttpclient/netty-codec-dns/jars/netty-codec-dns-2.0.2.jar:/home/hadoop/activator/repository/org.javassist/javassist/3.20.0-GA/bundles/javassist.jar:/home/hadoop/.ivy2/cache/oauth.signpost/signpost-core/jars/signpost-core-1.2.1.2.jar:/home/hadoop/.ivy2/cache/oauth.signpost/signpost-commonshttp4/jars/signpost-commonshttp4-1.2.1.2.jar:/home/hadoop/activator/repository/org.apache.httpcomponents/httpcore/4.0.1/jars/httpcore.jar:/home/hadoop/activator/repository/org.apache.httpcomponents/httpclient/4.0.1/jars/httpclient.jar:/home/hadoop/.ivy2/cache/commons-logging/commons-logging/jars/commons-logging-1.1.1.jar:/home/hadoop/.ivy2/cache/com.typesafe.play/filters-helpers_2.11/jars/filters-helpers_2.11-2.5.4.jar:/home/hadoop/.ivy2/cache/com.typesafe.play/play-java_2.11/jars/play-java_2.11-2.5.4.jar:/home/hadoop/activator/repository/org.yaml/snakeyaml/1.16/bundles/snakeyaml.jar:/home/hadoop/activator/repository/org.hibernate/hibernate-validator/5.2.4.Final/jars/hibernate-validator.jar:/home/hadoop/activator/repository/javax.validation/validation-api/1.1.0.Final/jars/validation-api.jar:/home/hadoop/activator/repository/org.jboss.logging/jboss-logging/3.2.1.Final/jars/jboss-logging.jar:/home/hadoop/activator/repository/com.fasterxml/classmate/1.1.0/bundles/classmate.jar:/home/hadoop/activator/repository/javax.el/javax.el-api/3.0.0/jars/javax.el-api.jar:/home/hadoop/activator/repository/org.springframework/spring-context/4.2.4.RELEASE/jars/spring-context.jar:/home/hadoop/activator/repository/org.springframework/spring-core/4.2.4.RELEASE/jars/spring-core.jar:/home/hadoop/activator/repository/org.springframework/spring-beans/4.2.4.RELEASE/jars/spring-beans.jar:/home/hadoop/activator/repository/org.reflections/reflections/0.9.10/jars/reflections.jar:/home/hadoop/activator/repository/net.jodah/typetools/0.4.4/bundles/typetools.jar:/home/hadoop/activator/repository/com.google.code.findbugs/jsr305/3.0.1/jars/jsr305.jar:/home/hadoop/.ivy2/cache/org.apache.tomcat/tomcat-servlet-api/jars/tomcat-servlet-api-8.0.33.jar:/home/hadoop/.ivy2/cache/mysql/mysql-connector-java/jars/mysql-connector-java-6.0.3.jar
-Scala compilation took 0.807253524 s
-New invalidations:
-	Set()
-Initial set of included nodes: Set()
-Previously invalidated, but (transitively) depend on new invalidations:
-	Set()
-All newly invalidated sources after taking into account (previously) recompiled sources:Set()
-Copy resource mappings: 
-	(/home/hadoop/Code/aircheck-server/conf/application.conf,/home/hadoop/Code/aircheck-server/target/scala-2.11/classes/application.conf)
-	(/home/hadoop/Code/aircheck-server/conf/routes,/home/hadoop/Code/aircheck-server/target/scala-2.11/classes/routes)
-	(/home/hadoop/Code/aircheck-server/conf/logback.xml,/home/hadoop/Code/aircheck-server/target/scala-2.11/classes/logback.xml)
-Total time: 1 s, completed Aug 8, 2016 8:41:57 PM
-> server-post-command-cleanup
-> server-handle-next-server-request
-> {file:/home/hadoop/Code/aircheck-server/}root/*:playForkReload
-Evaluating tasks: *:playForkReload
-Running task... Cancel: sbt.server.ServerTaskCancellation@7943c738, check cycles: false
-
-Initial source changes: 
-	removed:Set()
-	added: Set()
-	modified: Set(/home/hadoop/Code/aircheck-server/target/scala-2.11/twirl/main/views/html/registrate.template.scala)
-Removed products: Set()
-External API changes: API Changes: Set()
-Modified binary dependencies: Set()
-Initial directly invalidated sources: Set(/home/hadoop/Code/aircheck-server/target/scala-2.11/twirl/main/views/html/registrate.template.scala)
-
-Sources indirectly invalidated by:
-	product: Set()
-	binary dep: Set()
-	external source: Set()
-All initially invalidated sources: Set(/home/hadoop/Code/aircheck-server/target/scala-2.11/twirl/main/views/html/registrate.template.scala)
-
-Read from stdout: Compiling 1 Scala source to /home/hadoop/Code/aircheck-server/target/scala-2.11/classes...
-Compiling 1 Scala source to /home/hadoop/Code/aircheck-server/target/scala-2.11/classes...
-Getting compiler-interface from component compiler for Scala 2.11.7
-Other repositories:
-Default repositories:
-Getting compiler-interface from component compiler for Scala 2.11.7
-Other repositories:
-Default repositories:
-Running cached compiler 394da624, interfacing (CompilerInterface) with Scala compiler version 2.11.7
-Calling Scala compiler with arguments  (CompilerInterface):
-	-deprecation
-	-unchecked
-	-encoding
-	utf8
-	-bootclasspath
-	/usr/lib/jvm/java-8-oracle/jre/lib/resources.jar:/usr/lib/jvm/java-8-oracle/jre/lib/rt.jar:/usr/lib/jvm/java-8-oracle/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jsse.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jce.jar:/usr/lib/jvm/java-8-oracle/jre/lib/charsets.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jfr.jar:/usr/lib/jvm/java-8-oracle/jre/classes:/home/hadoop/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.7.jar
-	-classpath
-	/home/hadoop/Code/aircheck-server/target/scala-2.11/classes:/home/hadoop/activator/repository/com.typesafe.play/twirl-api_2.11/1.1.1/jars/twirl-api_2.11.jar:/home/hadoop/activator/repository/org.apache.commons/commons-lang3/3.4/jars/commons-lang3.jar:/home/hadoop/.ivy2/cache/org.scala-lang.modules/scala-xml_2.11/bundles/scala-xml_2.11-1.0.1.jar:/home/hadoop/.ivy2/cache/com.typesafe.play/play-server_2.11/jars/play-server_2.11-2.5.4.jar:/home/hadoop/.ivy2/cache/com.typesafe.play/play_2.11/jars/play_2.11-2.5.4.jar:/home/hadoop/.ivy2/cache/com.typesafe.play/build-link/jars/build-link-2.5.4.jar:/home/hadoop/.ivy2/cache/com.typesafe.play/play-exceptions/jars/play-exceptions-2.5.4.jar:/home/hadoop/.ivy2/cache/com.typesafe.play/play-iteratees_2.11/jars/play-iteratees_2.11-2.5.4.jar:/home/hadoop/.ivy2/cache/org.scala-stm/scala-stm_2.11/jars/scala-stm_2.11-0.7.jar:/home/hadoop/.ivy2/cache/com.typesafe/config/bundles/config-1.3.0.jar:/home/hadoop/.ivy2/cache/ch.qos.logback/logback-classic/jars/logback-classic-1.1.7.jar:/home/hadoop/.ivy2/cache/ch.qos.logback/logback-core/jars/logback-core-1.1.7.jar:/home/hadoop/.ivy2/cache/com.typesafe.play/play-json_2.11/jars/play-json_2.11-2.5.4.jar:/home/hadoop/.ivy2/cache/com.typesafe.play/play-functional_2.11/jars/play-functional_2.11-2.5.4.jar:/home/hadoop/.ivy2/cache/com.typesafe.play/play-datacommons_2.11/jars/play-datacommons_2.11-2.5.4.jar:/home/hadoop/activator/repository/joda-time/joda-time/2.9.2/jars/joda-time.jar:/home/hadoop/activator/repository/org.joda/joda-convert/1.8.1/jars/joda-convert.jar:/home/hadoop/.ivy2/cache/org.scala-lang/scala-reflect/jars/scala-reflect-2.11.7.jar:/home/hadoop/activator/repository/com.fasterxml.jackson.core/jackson-core/2.7.1/bundles/jackson-core.jar:/home/hadoop/activator/repository/com.fasterxml.jackson.core/jackson-annotations/2.7.1/bundles/jackson-annotations.jar:/home/hadoop/activator/repository/com.fasterxml.jackson.core/jackson-databind/2.7.1/bundles/jackson-databind.jar:/home/hadoop/activator/repository/com.fasterxml.jackson.datatype/jackson-datatype-jdk8/2.7.1/bundles/jackson-datatype-jdk8.jar:/home/hadoop/activator/repository/com.fasterxml.jackson.datatype/jackson-datatype-jsr310/2.7.1/bundles/jackson-datatype-jsr310.jar:/home/hadoop/.ivy2/cache/com.typesafe.play/play-netty-utils/jars/play-netty-utils-2.5.4.jar:/home/hadoop/.ivy2/cache/org.slf4j/jul-to-slf4j/jars/jul-to-slf4j-1.7.19.jar:/home/hadoop/.ivy2/cache/org.slf4j/jcl-over-slf4j/jars/jcl-over-slf4j-1.7.19.jar:/home/hadoop/.ivy2/cache/com.typesafe.play/play-streams_2.11/jars/play-streams_2.11-2.5.4.jar:/home/hadoop/.ivy2/cache/org.reactivestreams/reactive-streams/jars/reactive-streams-1.0.0.jar:/home/hadoop/.ivy2/cache/com.typesafe.akka/akka-stream_2.11/jars/akka-stream_2.11-2.4.4.jar:/home/hadoop/.ivy2/cache/com.typesafe.akka/akka-actor_2.11/jars/akka-actor_2.11-2.4.4.jar:/home/hadoop/.ivy2/cache/org.scala-lang.modules/scala-java8-compat_2.11/bundles/scala-java8-compat_2.11-0.7.0.jar:/home/hadoop/.ivy2/cache/com.typesafe/ssl-config-akka_2.11/bundles/ssl-config-akka_2.11-0.2.1.jar:/home/hadoop/.ivy2/cache/com.typesafe/ssl-config-core_2.11/bundles/ssl-config-core_2.11-0.2.1.jar:/home/hadoop/.ivy2/cache/org.scala-lang.modules/scala-parser-combinators_2.11/bundles/scala-parser-combinators_2.11-1.0.4.jar:/home/hadoop/.ivy2/cache/com.typesafe.akka/akka-slf4j_2.11/jars/akka-slf4j_2.11-2.4.4.jar:/home/hadoop/activator/repository/commons-codec/commons-codec/1.10/jars/commons-codec.jar:/home/hadoop/.ivy2/cache/xerces/xercesImpl/jars/xercesImpl-2.11.0.jar:/home/hadoop/.ivy2/cache/xml-apis/xml-apis/jars/xml-apis-1.4.01.jar:/home/hadoop/.ivy2/cache/javax.transaction/jta/jars/jta-1.1.jar:/home/hadoop/activator/repository/com.google.inject/guice/4.0/jars/guice.jar:/home/hadoop/.ivy2/cache/javax.inject/javax.inject/jars/javax.inject-1.jar:/home/hadoop/activator/repository/aopalliance/aopalliance/1.0/jars/aopalliance.jar:/home/hadoop/activator/repository/com.google.inject.extensions/guice-assistedinject/4.0/jars/guice-assistedinject.jar:/home/hadoop/.ivy2/cache/com.typesafe.play/play-netty-server_2.11/jars/play-netty-server_2.11-2.5.4.jar:/home/hadoop/.ivy2/cache/com.typesafe.netty/netty-reactive-streams-http/jars/netty-reactive-streams-http-1.0.6.jar:/home/hadoop/.ivy2/cache/com.typesafe.netty/netty-reactive-streams/jars/netty-reactive-streams-1.0.6.jar:/home/hadoop/activator/repository/io.netty/netty-handler/4.0.36.Final/jars/netty-handler.jar:/home/hadoop/activator/repository/io.netty/netty-buffer/4.0.36.Final/jars/netty-buffer.jar:/home/hadoop/activator/repository/io.netty/netty-common/4.0.36.Final/jars/netty-common.jar:/home/hadoop/activator/repository/io.netty/netty-transport/4.0.36.Final/jars/netty-transport.jar:/home/hadoop/activator/repository/io.netty/netty-codec/4.0.36.Final/jars/netty-codec.jar:/home/hadoop/activator/repository/io.netty/netty-codec-http/4.0.36.Final/jars/netty-codec-http.jar:/home/hadoop/activator/repository/io.netty/netty-transport-native-epoll/4.0.36.Final/jars/netty-transport-native-epoll-linux-x86_64.jar:/home/hadoop/.ivy2/cache/com.typesafe.play/play-logback_2.11/jars/play-logback_2.11-2.5.4.jar:/home/hadoop/.ivy2/cache/com.typesafe.play/play-jdbc_2.11/jars/play-jdbc_2.11-2.5.4.jar:/home/hadoop/.ivy2/cache/com.typesafe.play/play-jdbc-api_2.11/jars/play-jdbc-api_2.11-2.5.4.jar:/home/hadoop/activator/repository/com.jolbox/bonecp/0.8.0.RELEASE/bundles/bonecp.jar:/home/hadoop/activator/repository/com.zaxxer/HikariCP/2.4.3/bundles/HikariCP.jar:/home/hadoop/activator/repository/com.googlecode.usc/jdbcdslog/1.0.6.2/jars/jdbcdslog.jar:/home/hadoop/activator/repository/com.h2database/h2/1.4.191/jars/h2.jar:/home/hadoop/activator/repository/tyrex/tyrex/1.0.1/jars/tyrex.jar:/home/hadoop/.ivy2/cache/com.typesafe.play/play-cache_2.11/jars/play-cache_2.11-2.5.4.jar:/home/hadoop/activator/repository/net.sf.ehcache/ehcache-core/2.6.11/jars/ehcache-core.jar:/home/hadoop/.ivy2/cache/com.typesafe.play/play-ws_2.11/jars/play-ws_2.11-2.5.4.jar:/home/hadoop/activator/repository/com.google.guava/guava/19.0/bundles/guava.jar:/home/hadoop/.ivy2/cache/org.asynchttpclient/async-http-client/jars/async-http-client-2.0.2.jar:/home/hadoop/.ivy2/cache/org.asynchttpclient/netty-resolver-dns/jars/netty-resolver-dns-2.0.2.jar:/home/hadoop/.ivy2/cache/org.asynchttpclient/netty-resolver/jars/netty-resolver-2.0.2.jar:/home/hadoop/activator/repository/org.slf4j/slf4j-api/1.7.21/jars/slf4j-api.jar:/home/hadoop/.ivy2/cache/org.asynchttpclient/netty-codec-dns/jars/netty-codec-dns-2.0.2.jar:/home/hadoop/activator/repository/org.javassist/javassist/3.20.0-GA/bundles/javassist.jar:/home/hadoop/.ivy2/cache/oauth.signpost/signpost-core/jars/signpost-core-1.2.1.2.jar:/home/hadoop/.ivy2/cache/oauth.signpost/signpost-commonshttp4/jars/signpost-commonshttp4-1.2.1.2.jar:/home/hadoop/activator/repository/org.apache.httpcomponents/httpcore/4.0.1/jars/httpcore.jar:/home/hadoop/activator/repository/org.apache.httpcomponents/httpclient/4.0.1/jars/httpclient.jar:/home/hadoop/.ivy2/cache/commons-logging/commons-logging/jars/commons-logging-1.1.1.jar:/home/hadoop/.ivy2/cache/com.typesafe.play/filters-helpers_2.11/jars/filters-helpers_2.11-2.5.4.jar:/home/hadoop/.ivy2/cache/com.typesafe.play/play-java_2.11/jars/play-java_2.11-2.5.4.jar:/home/hadoop/activator/repository/org.yaml/snakeyaml/1.16/bundles/snakeyaml.jar:/home/hadoop/activator/repository/org.hibernate/hibernate-validator/5.2.4.Final/jars/hibernate-validator.jar:/home/hadoop/activator/repository/javax.validation/validation-api/1.1.0.Final/jars/validation-api.jar:/home/hadoop/activator/repository/org.jboss.logging/jboss-logging/3.2.1.Final/jars/jboss-logging.jar:/home/hadoop/activator/repository/com.fasterxml/classmate/1.1.0/bundles/classmate.jar:/home/hadoop/activator/repository/javax.el/javax.el-api/3.0.0/jars/javax.el-api.jar:/home/hadoop/activator/repository/org.springframework/spring-context/4.2.4.RELEASE/jars/spring-context.jar:/home/hadoop/activator/repository/org.springframework/spring-core/4.2.4.RELEASE/jars/spring-core.jar:/home/hadoop/activator/repository/org.springframework/spring-beans/4.2.4.RELEASE/jars/spring-beans.jar:/home/hadoop/activator/repository/org.reflections/reflections/0.9.10/jars/reflections.jar:/home/hadoop/activator/repository/net.jodah/typetools/0.4.4/bundles/typetools.jar:/home/hadoop/activator/repository/com.google.code.findbugs/jsr305/3.0.1/jars/jsr305.jar:/home/hadoop/.ivy2/cache/org.apache.tomcat/tomcat-servlet-api/jars/tomcat-servlet-api-8.0.33.jar:/home/hadoop/.ivy2/cache/mysql/mysql-connector-java/jars/mysql-connector-java-6.0.3.jar
-Scala compilation took 0.706704371 s
-New invalidations:
-	Set()
-Initial set of included nodes: Set()
-Previously invalidated, but (transitively) depend on new invalidations:
-	Set()
-All newly invalidated sources after taking into account (previously) recompiled sources:Set()
-Copy resource mappings: 
-	(/home/hadoop/Code/aircheck-server/conf/application.conf,/home/hadoop/Code/aircheck-server/target/scala-2.11/classes/application.conf)
-	(/home/hadoop/Code/aircheck-server/conf/routes,/home/hadoop/Code/aircheck-server/target/scala-2.11/classes/routes)
-	(/home/hadoop/Code/aircheck-server/conf/logback.xml,/home/hadoop/Code/aircheck-server/target/scala-2.11/classes/logback.xml)
-Total time: 1 s, completed Aug 8, 2016 8:42:48 PM
-> server-post-command-cleanup
-> server-handle-next-server-request
-> {file:/home/hadoop/Code/aircheck-server/}root/*:playForkReload
-Evaluating tasks: *:playForkReload
-Running task... Cancel: sbt.server.ServerTaskCancellation@7eb78715, check cycles: false
-
-Initial source changes: 
-	removed:Set()
-	added: Set()
-	modified: Set(/home/hadoop/Code/aircheck-server/target/scala-2.11/twirl/main/views/html/registrate.template.scala)
-Removed products: Set()
-External API changes: API Changes: Set()
-Modified binary dependencies: Set()
-Initial directly invalidated sources: Set(/home/hadoop/Code/aircheck-server/target/scala-2.11/twirl/main/views/html/registrate.template.scala)
-
-Sources indirectly invalidated by:
-	product: Set()
-	binary dep: Set()
-	external source: Set()
-All initially invalidated sources: Set(/home/hadoop/Code/aircheck-server/target/scala-2.11/twirl/main/views/html/registrate.template.scala)
-
-Read from stdout: Compiling 1 Scala source to /home/hadoop/Code/aircheck-server/target/scala-2.11/classes...
-Compiling 1 Scala source to /home/hadoop/Code/aircheck-server/target/scala-2.11/classes...
-Getting compiler-interface from component compiler for Scala 2.11.7
-Other repositories:
-Default repositories:
-Getting compiler-interface from component compiler for Scala 2.11.7
-Other repositories:
-Default repositories:
-Running cached compiler 2a1c5a19, interfacing (CompilerInterface) with Scala compiler version 2.11.7
-Calling Scala compiler with arguments  (CompilerInterface):
-	-deprecation
-	-unchecked
-	-encoding
-	utf8
-	-bootclasspath
-	/usr/lib/jvm/java-8-oracle/jre/lib/resources.jar:/usr/lib/jvm/java-8-oracle/jre/lib/rt.jar:/usr/lib/jvm/java-8-oracle/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jsse.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jce.jar:/usr/lib/jvm/java-8-oracle/jre/lib/charsets.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jfr.jar:/usr/lib/jvm/java-8-oracle/jre/classes:/home/hadoop/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.7.jar
-	-classpath
-	/home/hadoop/Code/aircheck-server/target/scala-2.11/classes:/home/hadoop/activator/repository/com.typesafe.play/twirl-api_2.11/1.1.1/jars/twirl-api_2.11.jar:/home/hadoop/activator/repository/org.apache.commons/commons-lang3/3.4/jars/commons-lang3.jar:/home/hadoop/.ivy2/cache/org.scala-lang.modules/scala-xml_2.11/bundles/scala-xml_2.11-1.0.1.jar:/home/hadoop/.ivy2/cache/com.typesafe.play/play-server_2.11/jars/play-server_2.11-2.5.4.jar:/home/hadoop/.ivy2/cache/com.typesafe.play/play_2.11/jars/play_2.11-2.5.4.jar:/home/hadoop/.ivy2/cache/com.typesafe.play/build-link/jars/build-link-2.5.4.jar:/home/hadoop/.ivy2/cache/com.typesafe.play/play-exceptions/jars/play-exceptions-2.5.4.jar:/home/hadoop/.ivy2/cache/com.typesafe.play/play-iteratees_2.11/jars/play-iteratees_2.11-2.5.4.jar:/home/hadoop/.ivy2/cache/org.scala-stm/scala-stm_2.11/jars/scala-stm_2.11-0.7.jar:/home/hadoop/.ivy2/cache/com.typesafe/config/bundles/config-1.3.0.jar:/home/hadoop/.ivy2/cache/ch.qos.logback/logback-classic/jars/logback-classic-1.1.7.jar:/home/hadoop/.ivy2/cache/ch.qos.logback/logback-core/jars/logback-core-1.1.7.jar:/home/hadoop/.ivy2/cache/com.typesafe.play/play-json_2.11/jars/play-json_2.11-2.5.4.jar:/home/hadoop/.ivy2/cache/com.typesafe.play/play-functional_2.11/jars/play-functional_2.11-2.5.4.jar:/home/hadoop/.ivy2/cache/com.typesafe.play/play-datacommons_2.11/jars/play-datacommons_2.11-2.5.4.jar:/home/hadoop/activator/repository/joda-time/joda-time/2.9.2/jars/joda-time.jar:/home/hadoop/activator/repository/org.joda/joda-convert/1.8.1/jars/joda-convert.jar:/home/hadoop/.ivy2/cache/org.scala-lang/scala-reflect/jars/scala-reflect-2.11.7.jar:/home/hadoop/activator/repository/com.fasterxml.jackson.core/jackson-core/2.7.1/bundles/jackson-core.jar:/home/hadoop/activator/repository/com.fasterxml.jackson.core/jackson-annotations/2.7.1/bundles/jackson-annotations.jar:/home/hadoop/activator/repository/com.fasterxml.jackson.core/jackson-databind/2.7.1/bundles/jackson-databind.jar:/home/hadoop/activator/repository/com.fasterxml.jackson.datatype/jackson-datatype-jdk8/2.7.1/bundles/jackson-datatype-jdk8.jar:/home/hadoop/activator/repository/com.fasterxml.jackson.datatype/jackson-datatype-jsr310/2.7.1/bundles/jackson-datatype-jsr310.jar:/home/hadoop/.ivy2/cache/com.typesafe.play/play-netty-utils/jars/play-netty-utils-2.5.4.jar:/home/hadoop/.ivy2/cache/org.slf4j/jul-to-slf4j/jars/jul-to-slf4j-1.7.19.jar:/home/hadoop/.ivy2/cache/org.slf4j/jcl-over-slf4j/jars/jcl-over-slf4j-1.7.19.jar:/home/hadoop/.ivy2/cache/com.typesafe.play/play-streams_2.11/jars/play-streams_2.11-2.5.4.jar:/home/hadoop/.ivy2/cache/org.reactivestreams/reactive-streams/jars/reactive-streams-1.0.0.jar:/home/hadoop/.ivy2/cache/com.typesafe.akka/akka-stream_2.11/jars/akka-stream_2.11-2.4.4.jar:/home/hadoop/.ivy2/cache/com.typesafe.akka/akka-actor_2.11/jars/akka-actor_2.11-2.4.4.jar:/home/hadoop/.ivy2/cache/org.scala-lang.modules/scala-java8-compat_2.11/bundles/scala-java8-compat_2.11-0.7.0.jar:/home/hadoop/.ivy2/cache/com.typesafe/ssl-config-akka_2.11/bundles/ssl-config-akka_2.11-0.2.1.jar:/home/hadoop/.ivy2/cache/com.typesafe/ssl-config-core_2.11/bundles/ssl-config-core_2.11-0.2.1.jar:/home/hadoop/.ivy2/cache/org.scala-lang.modules/scala-parser-combinators_2.11/bundles/scala-parser-combinators_2.11-1.0.4.jar:/home/hadoop/.ivy2/cache/com.typesafe.akka/akka-slf4j_2.11/jars/akka-slf4j_2.11-2.4.4.jar:/home/hadoop/activator/repository/commons-codec/commons-codec/1.10/jars/commons-codec.jar:/home/hadoop/.ivy2/cache/xerces/xercesImpl/jars/xercesImpl-2.11.0.jar:/home/hadoop/.ivy2/cache/xml-apis/xml-apis/jars/xml-apis-1.4.01.jar:/home/hadoop/.ivy2/cache/javax.transaction/jta/jars/jta-1.1.jar:/home/hadoop/activator/repository/com.google.inject/guice/4.0/jars/guice.jar:/home/hadoop/.ivy2/cache/javax.inject/javax.inject/jars/javax.inject-1.jar:/home/hadoop/activator/repository/aopalliance/aopalliance/1.0/jars/aopalliance.jar:/home/hadoop/activator/repository/com.google.inject.extensions/guice-assistedinject/4.0/jars/guice-assistedinject.jar:/home/hadoop/.ivy2/cache/com.typesafe.play/play-netty-server_2.11/jars/play-netty-server_2.11-2.5.4.jar:/home/hadoop/.ivy2/cache/com.typesafe.netty/netty-reactive-streams-http/jars/netty-reactive-streams-http-1.0.6.jar:/home/hadoop/.ivy2/cache/com.typesafe.netty/netty-reactive-streams/jars/netty-reactive-streams-1.0.6.jar:/home/hadoop/activator/repository/io.netty/netty-handler/4.0.36.Final/jars/netty-handler.jar:/home/hadoop/activator/repository/io.netty/netty-buffer/4.0.36.Final/jars/netty-buffer.jar:/home/hadoop/activator/repository/io.netty/netty-common/4.0.36.Final/jars/netty-common.jar:/home/hadoop/activator/repository/io.netty/netty-transport/4.0.36.Final/jars/netty-transport.jar:/home/hadoop/activator/repository/io.netty/netty-codec/4.0.36.Final/jars/netty-codec.jar:/home/hadoop/activator/repository/io.netty/netty-codec-http/4.0.36.Final/jars/netty-codec-http.jar:/home/hadoop/activator/repository/io.netty/netty-transport-native-epoll/4.0.36.Final/jars/netty-transport-native-epoll-linux-x86_64.jar:/home/hadoop/.ivy2/cache/com.typesafe.play/play-logback_2.11/jars/play-logback_2.11-2.5.4.jar:/home/hadoop/.ivy2/cache/com.typesafe.play/play-jdbc_2.11/jars/play-jdbc_2.11-2.5.4.jar:/home/hadoop/.ivy2/cache/com.typesafe.play/play-jdbc-api_2.11/jars/play-jdbc-api_2.11-2.5.4.jar:/home/hadoop/activator/repository/com.jolbox/bonecp/0.8.0.RELEASE/bundles/bonecp.jar:/home/hadoop/activator/repository/com.zaxxer/HikariCP/2.4.3/bundles/HikariCP.jar:/home/hadoop/activator/repository/com.googlecode.usc/jdbcdslog/1.0.6.2/jars/jdbcdslog.jar:/home/hadoop/activator/repository/com.h2database/h2/1.4.191/jars/h2.jar:/home/hadoop/activator/repository/tyrex/tyrex/1.0.1/jars/tyrex.jar:/home/hadoop/.ivy2/cache/com.typesafe.play/play-cache_2.11/jars/play-cache_2.11-2.5.4.jar:/home/hadoop/activator/repository/net.sf.ehcache/ehcache-core/2.6.11/jars/ehcache-core.jar:/home/hadoop/.ivy2/cache/com.typesafe.play/play-ws_2.11/jars/play-ws_2.11-2.5.4.jar:/home/hadoop/activator/repository/com.google.guava/guava/19.0/bundles/guava.jar:/home/hadoop/.ivy2/cache/org.asynchttpclient/async-http-client/jars/async-http-client-2.0.2.jar:/home/hadoop/.ivy2/cache/org.asynchttpclient/netty-resolver-dns/jars/netty-resolver-dns-2.0.2.jar:/home/hadoop/.ivy2/cache/org.asynchttpclient/netty-resolver/jars/netty-resolver-2.0.2.jar:/home/hadoop/activator/repository/org.slf4j/slf4j-api/1.7.21/jars/slf4j-api.jar:/home/hadoop/.ivy2/cache/org.asynchttpclient/netty-codec-dns/jars/netty-codec-dns-2.0.2.jar:/home/hadoop/activator/repository/org.javassist/javassist/3.20.0-GA/bundles/javassist.jar:/home/hadoop/.ivy2/cache/oauth.signpost/signpost-core/jars/signpost-core-1.2.1.2.jar:/home/hadoop/.ivy2/cache/oauth.signpost/signpost-commonshttp4/jars/signpost-commonshttp4-1.2.1.2.jar:/home/hadoop/activator/repository/org.apache.httpcomponents/httpcore/4.0.1/jars/httpcore.jar:/home/hadoop/activator/repository/org.apache.httpcomponents/httpclient/4.0.1/jars/httpclient.jar:/home/hadoop/.ivy2/cache/commons-logging/commons-logging/jars/commons-logging-1.1.1.jar:/home/hadoop/.ivy2/cache/com.typesafe.play/filters-helpers_2.11/jars/filters-helpers_2.11-2.5.4.jar:/home/hadoop/.ivy2/cache/com.typesafe.play/play-java_2.11/jars/play-java_2.11-2.5.4.jar:/home/hadoop/activator/repository/org.yaml/snakeyaml/1.16/bundles/snakeyaml.jar:/home/hadoop/activator/repository/org.hibernate/hibernate-validator/5.2.4.Final/jars/hibernate-validator.jar:/home/hadoop/activator/repository/javax.validation/validation-api/1.1.0.Final/jars/validation-api.jar:/home/hadoop/activator/repository/org.jboss.logging/jboss-logging/3.2.1.Final/jars/jboss-logging.jar:/home/hadoop/activator/repository/com.fasterxml/classmate/1.1.0/bundles/classmate.jar:/home/hadoop/activator/repository/javax.el/javax.el-api/3.0.0/jars/javax.el-api.jar:/home/hadoop/activator/repository/org.springframework/spring-context/4.2.4.RELEASE/jars/spring-context.jar:/home/hadoop/activator/repository/org.springframework/spring-core/4.2.4.RELEASE/jars/spring-core.jar:/home/hadoop/activator/repository/org.springframework/spring-beans/4.2.4.RELEASE/jars/spring-beans.jar:/home/hadoop/activator/repository/org.reflections/reflections/0.9.10/jars/reflections.jar:/home/hadoop/activator/repository/net.jodah/typetools/0.4.4/bundles/typetools.jar:/home/hadoop/activator/repository/com.google.code.findbugs/jsr305/3.0.1/jars/jsr305.jar:/home/hadoop/.ivy2/cache/org.apache.tomcat/tomcat-servlet-api/jars/tomcat-servlet-api-8.0.33.jar:/home/hadoop/.ivy2/cache/mysql/mysql-connector-java/jars/mysql-connector-java-6.0.3.jar
-Scala compilation took 0.724271553 s
-New invalidations:
-	Set()
-Initial set of included nodes: Set()
-Previously invalidated, but (transitively) depend on new invalidations:
-	Set()
-All newly invalidated sources after taking into account (previously) recompiled sources:Set()
-Copy resource mappings: 
-	(/home/hadoop/Code/aircheck-server/conf/application.conf,/home/hadoop/Code/aircheck-server/target/scala-2.11/classes/application.conf)
-	(/home/hadoop/Code/aircheck-server/conf/routes,/home/hadoop/Code/aircheck-server/target/scala-2.11/classes/routes)
-	(/home/hadoop/Code/aircheck-server/conf/logback.xml,/home/hadoop/Code/aircheck-server/target/scala-2.11/classes/logback.xml)
-Total time: 1 s, completed Aug 8, 2016 8:42:59 PM
-> server-post-command-cleanup
-> server-handle-next-server-request
-Done executing sbt server engine, result Right(Exit(0))
-Closing listening server socket
-Waiting for socket thread
-Waiting for request processor thread
-Waiting for command engine result
-Returning control to sbt launcher with result Exit(0)
-Closing the 22862@slave3 logs at Mon Aug 08 20:47:28 CST 2016, goodbye.
