@@ -11,9 +11,10 @@ import javax.inject._
 
 import play.filters.csrf.CSRF
 import play.filters.csrf.CSRF.Token
+import services.SessionManager
 
 @Singleton
-class APIController @Inject() (dao:DAO)extends Controller{
+class APIController @Inject() (dao:DAO, credManager:SessionManager)extends Controller{
 
   import model.Record.jsonReads
 
@@ -43,5 +44,19 @@ class APIController @Inject() (dao:DAO)extends Controller{
     implicit request =>
       val Token(name, value) = CSRF.getToken.get
       Ok(s"$name=$value")
+  }
+
+  def getUserID = Action{
+    implicit request =>
+      request.session.get("login_key").map{
+        cred =>
+          credManager.getUsername(cred) match {
+            case Some(x) =>
+              val result = "name: " + dao.getUserIDbyName(x).toString
+              Ok(result)
+            case None =>
+              Ok("no match")
+          }
+      } getOrElse Ok("no mathc")
   }
 }

@@ -19,7 +19,7 @@ class MySQL @Inject() (db: Database) extends DAO{
       stmt.setDouble(2, r.longitude)
       stmt.setDouble(3, r.latitude)
       stmt.setInt(4, r.user_id)
-      stmt.setTimestamp(5, r.time)
+      stmt.setString(5, r.timeString)
       Logger.info(stmt.toString)
       stmt.execute()
     } finally{
@@ -103,18 +103,18 @@ class MySQL @Inject() (db: Database) extends DAO{
         val longitude:Double = results.getDouble(2)
         val latitude: Double = results.getDouble(3)
         val user_id: Int = results.getInt(4)
-        val time: java.sql.Timestamp = results.getTimestamp(5)
-        val r = Record(density, longitude, latitude, user_id, Record.date_format format time)
+        val time: String = results.getString(5)
+        val r = Record(density, longitude, latitude, user_id, time)
         buf += r
       }
       buf.toList
     } finally { conn.close()}
   }
 
-  def getRecordByUserID(id:Int, limit:Int):List[model.Record] = {
+  def getRecordByUserID(id:Int, limit:Int = 1000):List[model.Record] = {
     val conn = db.getConnection()
     try{
-      val stmt = conn.prepareStatement("SELECT * FROM record WHERE user_id = ? LIMIT ?;")
+      val stmt = conn.prepareStatement("SELECT * FROM record WHERE user_id = ? ORDER BY time DESC LIMIT ?;")
 
       stmt.setInt(1,id)
       stmt.setInt(2, limit)
@@ -126,8 +126,8 @@ class MySQL @Inject() (db: Database) extends DAO{
         val longitude:Double = results.getDouble(2)
         val latitude: Double = results.getDouble(3)
         val user_id: Int = results.getInt(5)
-        val time: java.sql.Timestamp = results.getTimestamp(5)
-        val r = Record(density, longitude, latitude, user_id, Record.date_format format time)
+        val time: String = results.getString(5)
+        val r = Record(density, longitude, latitude, user_id, time)
         buf += r
       }
       buf.toList

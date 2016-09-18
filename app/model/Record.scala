@@ -2,6 +2,7 @@ package model
 
 import java.sql.Timestamp
 import java.text.SimpleDateFormat
+import java.util.Locale
 
 import play.api.libs.json._
 import play.api.libs.functional.syntax._
@@ -13,15 +14,10 @@ case class Record(density:Float,
                   user_id: Int,
                   timeString: String){
 
-  lazy val time = Record.format(timeString)
   def toDensityPoint = DensityPoint(lat = latitude, lng = longitude, count = density)
 }
 
 object Record{
-  val date_format = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss")
-  def format(time_string:String) = java.sql.Timestamp.valueOf(time_string)
-
-
   implicit val jsonWrites:Writes[Record] = (
     (JsPath \ "density").write[Float] and
       (JsPath \ "lng").write[Double] and
