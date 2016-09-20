@@ -21,7 +21,7 @@ Simply: `activator ui` under this folder
 
 ###Android Insertion Convention:
 ```
-POST /api/insert
+POST /api/insert?csrfToken=CSRFTOKEN
 
 {
   "density":25.0,
@@ -33,6 +33,19 @@ POST /api/insert
 
 ```
 
+###Login Service:
+
+```
+POST /user/login?csrfToken=CSRFTOKEN
+
+username=admin&password=password
+```
+
+###CSRF Token
+
+```
+GET /api/token
+```
 
 
 
