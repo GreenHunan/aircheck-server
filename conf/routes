@@ -17,7 +17,6 @@ POST    /user/registrate            controllers.RegistrationController.postPage
 GET     /visualize                  controllers.VisualizationController.visualize
 
 POST /api/insert                    controllers.APIController.insert
-GET  /api/insert                    controllers.APIController.token
 GET  /api/token                     controllers.APIController.token
 GET  /api/id                        controllers.APIController.getUserID
 # Map static resources from the /public folder to the /assets URL path
